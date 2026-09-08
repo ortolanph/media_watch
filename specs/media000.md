@@ -16,3 +16,7 @@ This is a tech document on how to implement this project.
   * `make test` - runs the tests
 * Create PowerShell Scripts to perform the same things as the Makefile commands. The scripts should be named `build.ps1`, `run.ps1`, and `test.ps1`.
 * Create or update a README.md file with instructions on how to build and run the project, as well as how to run the tests.
+* For every implemented task, keep a track on a separate file named `tasks.md` with the following information:
+  * Task description
+  * Date of implementation
+  * Any relevant notes or comments
