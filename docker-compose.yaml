@@ -1,0 +1,15 @@
+name: "Media Watch Application"
+
+services:
+  media_watch_app:
+    container_name: media_watch_application
+    image: media_watch:latest
+    pull_policy: never
+    ports:
+      - "8080:8080"
+    networks:
+      - media_watch_net
+
+networks:
+  media_watch_net:
+    driver: bridge
