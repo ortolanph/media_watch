@@ -1,0 +1,993 @@
+Date,Name,Year,Letterboxd URI,Rating,Rewatch,Tags,Watched Date
+2013-08-25,Django Unchained,2012,https://boxd.it/1EVWP,5,,"genre:action, genre:western, tmdb_id:68718, genre:adventure, source:alternative",2013-08-24
+2013-08-25,A Fantastic Fear of Everything,2012,https://boxd.it/1EYBb,4,,"source:netflix, genre:comedy, genre:drama, genre:horror, tmdb_id:101519",2013-08-25
+2013-08-26,Fargo,1996,https://boxd.it/1FdSh,2.5,,"source:alternative, genre:comedy, genre:thriller, tmdb_id:275",2013-08-25
+2013-08-28,Insomnia,2002,https://boxd.it/1FTA5,2.5,,"source:alternative, genre:thriller, genre:action, tmdb_id:320",2013-08-27
+2013-08-30,Secretary,2002,https://boxd.it/1Gu0D,3.5,,"source:alternative, genre:comedy, genre:drama, tmdb_id:11013",2013-08-29
+2013-09-02,Rock of Ages,2012,https://boxd.it/1HqPf,3.5,,"source:alternative, genre:musical, genre:drama, tmdb_id:80585",2013-09-01
+2013-09-09,Coyote Ugly,2000,https://boxd.it/1JnI5,2.5,,"source:tv, genre:drama, tmdb_id:6282",2013-09-08
+2013-09-14,Napoleon Dynamite,2004,https://boxd.it/1KEK5,5,,"source:alternative, genre:drama, tmdb_id:8193",2013-09-13
+2013-09-14,The Skin I Live In,2011,https://boxd.it/1KGlL,5,,"source:alternative, genre:drama, genre:horror, tmdb_id:63311, genre:sci-fi",2013-09-13
+2013-09-23,Justice League: The Flashpoint Paradox,2013,https://boxd.it/1MXOp,3.5,,"source:dvd, genre:action, genre:adventure, style:animation, adaptation:comics, tmdb_id:183011, genre:sci-fi",2013-09-20
+2013-09-23,Trance,2013,https://boxd.it/1MZM1,3.5,,"source:alternative, genre:action, genre:drama, tmdb_id:68727",2013-09-22
+2013-09-29,Primer,2004,https://boxd.it/1Oe7p,5,,"source:youtube, genre:action, tmdb_id:14337, style:short, genre:sci-fi",2013-09-28
+2013-09-29,The SpongeBob SquarePants Movie,2004,https://boxd.it/1OjqV,3,,"source:tv, genre:action, genre:adventure, genre:comedy, style:animation, tmdb_id:11836",2013-09-29
+2013-09-30,My Name Ain't Johnny,2008,https://boxd.it/1ODvL,4,,"source:tv, genre:drama, adaptation:facts, tmdb_id:17358",2013-09-30
+2013-10-06,Limitless,2011,https://boxd.it/1Q0ED,4,,"source:alternative, genre:action, tmdb_id:51876, genre:sci-fi",2013-10-05
+2013-10-06,The Wall,2012,https://boxd.it/1Q4hX,4,,"source:alternative, genre:drama, genre:thriller, tmdb_id:115442",2013-10-06
+2013-10-07,The Milky Way,1969,https://boxd.it/1Qf1B,4,,"source:alternative, genre:drama, tmdb_id:35031",2013-10-06
+2013-10-20,Joseph and the Amazing Technicolor Dreamcoat,1999,https://boxd.it/1TBvT,4,,"source:dvd, genre:musical, genre:adventure, adaptation:book, adaptation:musical, tmdb_id:24272",2013-10-13
+2013-10-20,Sunflower,1970,https://boxd.it/1TFhV,3.5,,"source:dvd, genre:drama, genre:war, tmdb_id:1863",2013-10-19
+2013-10-20,Phase IV,1974,https://boxd.it/1TKBh,4,Yes,"source:alternative, genre:action, tmdb_id:59189, genre:sci-fi",2013-10-19
+2013-10-20,Lili Marleen,1981,https://boxd.it/1TMXT,4,,"source:dvd, genre:drama, genre:war, tmdb_id:265",2013-10-20
+2013-10-21,Madame Bovary,1991,https://boxd.it/1TZ4x,3.5,,"source:dvd, genre:drama, adaptation:book, tmdb_id:2528",2013-10-20
+2013-10-21,Star Trek Into Darkness,2013,https://boxd.it/1U7WR,4,,"source:theater, genre:sci-fi, genre:adventure, genre:action, adaptation:tvshow, adaptation:tvshow., tmdb_id:54138",2013-10-21
+2013-10-22,1984,1956,https://boxd.it/1UoS3,3.5,,"source:dvd, genre:sci-fi, genre:thriller, adaptation:book, tmdb_id:1984",2013-10-21
+2013-10-24,Die Another Day,2002,https://boxd.it/1USdp,2,,"source:bluray, genre:action, genre:adventure, tmdb_id:36669",2013-10-23
+2013-10-25,Living in Oblivion,1995,https://boxd.it/1V7dp,5,,"source:alternative, genre:drama, tmdb_id:9071",2013-10-25
+2013-10-26,Sidewalls,2011,https://boxd.it/1VaLz,5,,"source:alternative, genre:drama, tmdb_id:76696",2013-10-25
+2013-10-28,Battleship Potemkin,1925,https://boxd.it/1VQ9d,5,,"source:dvd, genre:drama, genre:war, tmdb_id:643",2013-10-25
+2013-10-29,The Intouchables,2011,https://boxd.it/1Wed9,5,,"source:alternative, genre:drama, adaptation:facts, tmdb_id:77338",2013-10-28
+2013-10-31,Gravity,2013,https://boxd.it/1WHDZ,5,,"source:theater, genre:sci-fi, genre:adventure, tmdb_id:49047",2013-10-30
+2013-11-01,Scoop,2006,https://boxd.it/1WRoP,3,,"source:dvd, genre:drama, genre:comedy, tmdb_id:512",2013-10-31
+2013-11-03,Inkheart,2008,https://boxd.it/1Xs1j,3,,"source:tv, genre:action, genre:adventure, genre:fantasy, tmdb_id:2309",2013-11-02
+2013-11-03,The Lady Vanishes,1938,https://boxd.it/1Xy0L,4,,"source:dvd, genre:thriller, adaptation:book, tmdb_id:940",2013-11-03
+2013-11-04,Astro Boy,2009,https://boxd.it/1XJJn,3,,"source:tv, genre:sci-fi, genre:adventure, genre:action, adaptation:anime, tmdb_id:16577",2013-11-03
+2013-11-05,Looper,2012,https://boxd.it/1Y6XR,3,,"source:alternative, genre:action, genre:adventure, genre:sci-fi, genre:thriller, tmdb_id:59967",2013-11-04
+2013-11-05,Galaxy Quest,1999,https://boxd.it/1Y9FL,3.5,,"source:alternative, genre:action, genre:adventure, genre:sci-fi, adaptation:tvshow, tmdb_id:926",2013-11-04
+2013-11-07,The Tempest,2010,https://boxd.it/1YxAP,3.5,,"genre:comedy, source:alternative, genre:drama, adaptation:play, tmdb_id:44638",2013-11-06
+2013-11-07,Liquid Sky,1982,https://boxd.it/1YzWt,4.5,,"source:alternative, genre:sci-fi, tmdb_id:20980",2013-11-06
+2013-11-07,Koyaanisqatsi,1982,https://boxd.it/1YD1B,4.5,,"source:alterative, genre:musical, tmdb_id:11314",2013-11-06
+2013-11-07,Powaqqatsi,1988,https://boxd.it/1YERt,4.5,,"source:alterative, genre:musical, tmdb_id:24348",2013-11-07
+2013-11-08,Naqoyqatsi,2002,https://boxd.it/1YJZx,5,,"source:alterative, genre:musical, tmdb_id:21925",2013-11-07
+2013-11-09,Tomorrow Never Dies,1997,https://boxd.it/1ZaAp,4,,"source:bluray, genre:action, genre:adventure, tmdb_id:714",2013-11-08
+2013-11-11,The Last Castle,2001,https://boxd.it/1ZLe1,3.5,,"source:tv, genre:thriller, genre:action, tmdb_id:2100",2013-11-10
+2013-11-11,"Faster, Pussycat! Kill! Kill!",1965,https://boxd.it/1ZQcJ,5,,"source:alternative, genre:action, tmdb_id:315",2013-11-10
+2013-11-11,Irreversible,2002,https://boxd.it/1ZVqB,5,,"source:alternative, genre:drama, genre:thriller, tmdb_id:979",2013-11-11
+2013-11-13,Pi,1998,https://boxd.it/20lB1,5,,"source:alternative, genre:drama, genre:sci-fi, tmdb_id:473",2013-11-12
+2013-11-14,Sleeper,1973,https://boxd.it/20BEZ,5,,"source:alternative, genre:comedy, genre:sci-fi, tmdb_id:11561",2013-11-13
+2013-11-18,Thunderball,1965,https://boxd.it/21I1n,4,,"source:bluray, genre:action, genre:adventure, tmdb_id:660",2013-11-17
+2013-11-25,On Her Majesty's Secret Service,1969,https://boxd.it/23Onj,3.5,,"source:bluray, genre:action, genre:adventure, tmdb_id:668",2013-11-17
+2013-12-19,The Rock,1996,https://boxd.it/2aPbd,4,,"source:alternative, genre:action, genre:adventure, tmdb_id:9802",2013-12-19
+2013-12-22,Now Is Good,2012,https://boxd.it/2bynt,4.5,,"source:alternative, genre:romance, tmdb_id:90369",2013-12-20
+2013-12-23,The Hobbit: The Desolation of Smaug,2013,https://boxd.it/2bRxx,5,,"source:theater, genre:action, genre:adventure, genre:fantasy, adaptation:book, tmdb_id:57158",2013-12-21
+2013-12-23,The Secret Life of Walter Mitty,2013,https://boxd.it/2c5Iz,5,,"source:theater, genre:adventure, genre:drama, adpation:movie, tmdb_id:116745",2013-12-22
+2013-12-28,Moonrise Kingdom,2012,https://boxd.it/2dXaX,5,,"source:alternative, genre:fantasy, genre:drama, tmdb_id:83666",2013-12-27
+2014-01-02,Red Desert,1964,https://boxd.it/2gjw1,5,,"source:dvd, genre:drama, tmdb_id:26638",2014-01-01
+2014-01-08,Back to the Future,1985,https://boxd.it/2jG6h,5,Yes,"source:tv, genre:action, genre:adventure, genre:sci-fi, tmdb_id:105",2014-01-01
+2014-01-03,Movie 43,2013,https://boxd.it/2gUQ3,1,,"source:alternative, genre:comedy, tmdb_id:87818",2014-01-02
+2014-01-03,Upstream Color,2013,https://boxd.it/2gY8z,5,,"source:youtube, genre:romance, style:short, genre:sci-fi, tmdb_id:145197",2014-01-03
+2014-01-05,Nine Queens,2000,https://boxd.it/2i7q5,5,Yes,"source:alternative, genre:comedy, genre:drama, tmdb_id:18079",2014-01-05
+2014-01-05,Be Kind Rewind,2008,https://boxd.it/2i7CP,5,Yes,"source:alternative, genre:comedy, tmdb_id:4953",2014-01-05
+2014-01-06,Safe,2012,https://boxd.it/2iuyh,2.5,,"source:tv, genre:action, genre:adventure, tmdb_id:72387",2014-01-05
+2014-01-07,Oh! What a Lovely War,1969,https://boxd.it/2jdB1,5,Yes,"source:alternative, genre:drama, genre:war, tmdb_id:21335",2014-01-06
+2014-01-08,Rashomon,1950,https://boxd.it/2jG0t,5,,"source:alternative, genre:drama, tmdb_id:548",2014-01-08
+2014-01-08,Back to the Future Part II,1989,https://boxd.it/2jGb7,5,Yes,"source:tv, genre:action, genre:adventure, genre:sci-fi, tmdb_id:16577",2014-01-08
+2014-01-12,Back to the Future Part III,1990,https://boxd.it/2ltld,5,Yes,"source:tv, genre:action, genre:adventure, genre:sci-fi, tmdb_id:196",2014-01-10
+2014-01-12,Finding Nemo,2003,https://boxd.it/2lzUt,4,,"source:tv, style:animation, genre:adventure, tmdb_id:12",2014-01-11
+2014-01-13,I'm Here,2010,https://boxd.it/2mghp,5,,"source:youtube, genre:sci-fi, genre:drama, style:short, tmdb_id:37058",2014-01-12
+2014-01-15,Being John Malkovich,1999,https://boxd.it/2nad9,5,,"source:alternative, genre:drama, genre:thriller, tmdb_id:492",2014-01-14
+2014-01-16,Upside Down,2012,https://boxd.it/2nAtd,3.5,,"source:alternative, genre:sci-fi, genre:romance, genre:adventure, tmdb_id:58244",2014-01-15
+2014-01-20,Donnie Darko,2001,https://boxd.it/2pyzH,5,,"genre:sci-fi, genre:thriller, source:alternative, tmdb_id:141, genre:horror",2014-01-16
+2014-01-20,Last Ounce of Courage,2012,https://boxd.it/2pz6h,1,,"source:tv, genre:war, genre:action, tmdb_id:130774",2014-01-17
+2014-01-20,The Handmaid's Tale,1990,https://boxd.it/2pziH,4,,"source:alternative, genre:sci-fi, genre:thriller, tmdb_id:20815",2014-01-19
+2014-01-22,Under the Sun of Satan,1987,https://boxd.it/2qvvf,4.5,,"source:alternative, genre:horror, tmdb_id:31300, genre:drama",2014-01-21
+2014-01-23,Memento,2000,https://boxd.it/2qYex,5,,"source:alternative, genre:thriller, genre:action, tmdb_id:77",2014-01-22
+2014-01-27,2012,2009,https://boxd.it/2sGpL,2,,"source:tv, genre:adventure, genre:action, tmdb_id:14161",2014-01-24
+2014-01-27,Never Let Me Go,2010,https://boxd.it/2sBRF,4,,,2014-01-26
+2014-01-27,Kick-Ass,2010,https://boxd.it/2sKWf,4,,,2014-01-27
+2014-01-29,Jabberwocky,1977,https://boxd.it/2tt2L,4,Yes,,2014-01-28
+2014-02-02,Circular,2011,https://boxd.it/2uZln,4,,"source:alternative, genre:drama, genre:thriller, tmdb_id:235178",2014-02-01
+2014-02-02,Up,2009,https://boxd.it/2v2Qj,5,,,2014-02-01
+2014-02-04,The Prestige,2006,https://boxd.it/2w2bR,4.5,,,2014-02-03
+2014-02-09,Zack and Miri Make a Porno,2008,https://boxd.it/2y5kB,3.5,,,2014-02-09
+2014-02-10,Cosmopolis,2012,https://boxd.it/2yvAl,2.5,,,2014-02-09
+2014-02-10,Mission: Impossible – Ghost Protocol,2011,https://boxd.it/2yBXl,2.5,,,2014-02-10
+2014-02-11,Six Degrees of Separation,1993,https://boxd.it/2yZ4p,5,,,2014-02-10
+2014-02-19,Blank: A Vinylmation Love Story,2014,https://boxd.it/2Ci4J,2.5,,,2014-02-15
+2014-02-19,The Star Wars Holiday Special,1978,https://boxd.it/2CfET,1,,,2014-02-18
+2014-02-23,Chinese Take-Away,2011,https://boxd.it/2DGrz,5,,,2014-02-22
+2014-03-05,The Master,2012,https://boxd.it/2HxvP,4,,,2014-02-26
+2014-03-05,Three Colours: Blue,1993,https://boxd.it/2HxAv,5,,,2014-02-28
+2014-03-05,Three Colours: White,1994,https://boxd.it/2HxEd,5,,,2014-03-01
+2014-03-05,Three Colours: Red,1994,https://boxd.it/2HxTH,5,,,2014-03-01
+2014-03-05,That Obscure Object of Desire,1977,https://boxd.it/2HxZ1,5,Yes,,2014-03-01
+2014-03-05,Hamlet,1990,https://boxd.it/2Hy9l,4,,,2014-03-02
+2014-03-09,Marvel One-Shot: The Consultant,2011,https://boxd.it/2IUHL,3.5,,,2014-03-05
+2014-03-09,Marvel One-Shot: A Funny Thing Happened on the Way to Thor's Hammer,2011,https://boxd.it/2IUKF,4,,,2014-03-05
+2014-03-09,Marvel One-Shot: Item 47,2012,https://boxd.it/2IUNT,4,,,2014-03-05
+2014-03-09,Marvel One-Shot: Agent Carter,2013,https://boxd.it/2IUTn,4,,,2014-03-05
+2014-03-09,Marvel One-Shot: All Hail the King,2014,https://boxd.it/2IV1L,5,,,2014-03-05
+2014-03-09,Domino,2005,https://boxd.it/2IVut,4,,,2014-03-08
+2014-03-12,Bottle Rocket,1996,https://boxd.it/2K5F9,4,,,2014-03-12
+2014-03-13,Thor: The Dark World,2013,https://boxd.it/2Kpsf,4,,,2014-03-12
+2014-03-16,Manhattan,1979,https://boxd.it/2LwEf,5,,,2014-03-15
+2014-03-19,Brazil,1985,https://boxd.it/2MWvZ,5,Yes,,2014-03-18
+2014-03-23,Bullet to the Head,2012,https://boxd.it/2O9fR,1.5,,,2014-03-21
+2014-03-23,Out of the Furnace,2013,https://boxd.it/2O9mD,3,,,2014-03-22
+2014-03-26,Wonder Woman,2013,https://boxd.it/2PEUX,4,,,2014-03-25
+2014-03-29,The Love Guru,2008,https://boxd.it/2QJS5,1,,,2014-03-28
+2014-03-29,Filth,2013,https://boxd.it/2QJZl,5,,,2014-03-28
+2014-03-31,Belle de Jour,1967,https://boxd.it/2RFeH,5,,,2014-03-30
+2014-04-12,2001: A Space Travesty,2000,https://boxd.it/2W02v,1,,,2014-04-12
+2014-04-15,2010: The Year We Make Contact,1984,https://boxd.it/2Xdtr,3,,,2014-04-14
+2014-04-18,Sukiyaki Western Django,2007,https://boxd.it/2Yf6r,5,,,2014-04-17
+2014-04-19,Sphere,1998,https://boxd.it/2YutP,5,,,2014-04-18
+2014-04-20,Chronicle,2012,https://boxd.it/2Z543,4,,,2014-04-19
+2014-04-21,Megaman,2010,https://boxd.it/2Zj4L,3,,,2014-04-20
+2014-04-21,Snowpiercer,2013,https://boxd.it/2ZwDJ,5,,,2014-04-20
+2014-04-22,In Time,2011,https://boxd.it/2ZOFj,4,,,2014-04-21
+2014-04-23,Punisher: War Zone,2008,https://boxd.it/30qpN,2,,,2014-04-23
+2014-04-25,Until the End of the World,1991,https://boxd.it/314YN,5,,,2014-04-24
+2014-04-28,Beauty and the Beast: The Enchanted Christmas,1997,https://boxd.it/31Zdz,1.5,,,2014-04-26
+2014-05-02,The Squid and the Whale,2005,https://boxd.it/33D2D,4,,,2014-05-01
+2014-05-11,Forklift Driver Klaus: The First Day on the Job,2001,https://boxd.it/36Bhx,5,,,2014-05-10
+2014-05-16,Captain America: The Winter Soldier,2014,https://boxd.it/38jT3,4,,,2014-05-11
+2014-05-19,Frances Ha,2012,https://boxd.it/39lAJ,5,,,2014-05-18
+2014-05-19,Death to Smoochy,2002,https://boxd.it/39vfV,4,Yes,,2014-05-19
+2014-05-22,Yojimbo,1961,https://boxd.it/3asWT,5,,,2014-05-21
+2014-05-25,Nineteen Eighty-Four,1984,https://boxd.it/3beAr,4,,,2014-05-23
+2014-05-25,Tampopo,1985,https://boxd.it/3bkVb,5,Yes,,2014-05-24
+2014-05-26,"Lock, Stock and Two Smoking Barrels",1998,https://boxd.it/3bJfz,4,,,2014-05-25
+2014-05-26,Kung Fu Panda 2,2011,https://boxd.it/3bWpn,3.5,,,2014-05-25
+2014-05-26,To Live and Die in L.A.,1985,https://boxd.it/3bWwN,4,,,2014-05-25
+2014-05-28,The Count of Monte Cristo,2002,https://boxd.it/3cGF7,3.5,,,2014-05-25
+2014-05-28,The Diving Bell and the Butterfly,2007,https://boxd.it/3cHwF,5,,,2014-05-26
+2014-05-28,The Holy Mountain,1973,https://boxd.it/3cGtb,5,,,2014-05-27
+2014-05-29,El Topo,1970,https://boxd.it/3d437,5,Yes,,2014-05-28
+2014-06-08,Erik the Viking,1989,https://boxd.it/3gOi9,5,,,2014-06-07
+2014-06-09,Fear and Loathing in Las Vegas,1998,https://boxd.it/3hbI5,4,,,2014-06-08
+2014-06-12,Time Bandits,1981,https://boxd.it/3ia5t,5,,,2014-06-11
+2014-06-12,Computer Chess,2013,https://boxd.it/3ibHX,5,,,2014-06-11
+2014-06-13,Star Wars: A Musical Journey,2005,https://boxd.it/3ik1V,5,,,2014-06-12
+2014-06-20,The Dreamers,2003,https://boxd.it/3kyfr,3.5,,,2014-06-19
+2014-06-23,"Synecdoche, New York",2008,https://boxd.it/3lE1x,5,,,2014-06-23
+2014-06-25,A Town Called Panic,2009,https://boxd.it/3mdCj,5,,,2014-06-24
+2014-06-25,Immortals,2011,https://boxd.it/3miMN,3,,,2014-06-25
+2014-06-26,Alvin and the Chipmunks: Chipwrecked,2011,https://boxd.it/3mz7x,1,,,2014-06-25
+2014-07-02,The French Connection,1971,https://boxd.it/3oKlT,5,,,2014-07-01
+2014-07-07,The Social Network,2010,https://boxd.it/3qfGl,4,,,2014-07-06
+2014-07-07,Species III,2004,https://boxd.it/3qfMj,1.5,,,2014-07-06
+2014-07-08,Valkyrie,2008,https://boxd.it/3qXmp,3.5,,,2014-07-07
+2014-07-08,Spirit of a Denture,2012,https://boxd.it/3qXz9,5,,,2014-07-07
+2014-07-12,Wyatt Earp,1994,https://boxd.it/3skRH,3.5,,,2014-07-08
+2014-07-14,The Grand Budapest Hotel,2014,https://boxd.it/3taal,5,,,2014-07-11
+2014-07-16,The Wave,2008,https://boxd.it/3tUr3,5,,,2014-07-15
+2014-07-21,National Treasure: Book of Secrets,2007,https://boxd.it/3vTYf,2,,,2014-07-20
+2014-07-22,Hotel Chevalier,2007,https://boxd.it/3wjrh,4,,,2014-07-21
+2014-07-23,Man on the Moon,1999,https://boxd.it/3wIKN,5,,,2014-07-23
+2014-07-28,Mamma Mia!,2008,https://boxd.it/3yzBB,1,,,2014-07-27
+2014-08-09,Penelope,2006,https://boxd.it/3DsKB,2.5,,,2014-08-05
+2014-08-09,Buddies,2013,https://boxd.it/3DsQT,5,,,2014-08-06
+2014-08-10,Rio 2,2014,https://boxd.it/3DGyz,2.5,,,2014-08-08
+2014-08-10,Mirror Mirror,2012,https://boxd.it/3DRKB,3.5,,,2014-08-09
+2014-08-11,The Fall,2006,https://boxd.it/3Enjx,3.5,,,2014-08-10
+2014-08-11,Finding Neverland,2004,https://boxd.it/3Enxp,4,,,2014-08-10
+2014-08-19,How to Lose a Guy in 10 Days,2003,https://boxd.it/3HwBV,3.5,,,2014-08-14
+2014-08-19,Guardians of the Galaxy,2014,https://boxd.it/3HwMz,5,,,2014-08-17
+2014-08-24,Blue Ruin,2013,https://boxd.it/3Jie3,3.5,,,2014-08-23
+2014-08-30,Lucy,2014,https://boxd.it/3LKKF,5,,,2014-08-30
+2014-09-08,The Ewok Adventure,1984,https://boxd.it/3PguZ,2.5,Yes,,2014-09-07
+2014-09-19,Dersu Uzala,1975,https://boxd.it/3TCHf,5,,,2014-09-18
+2014-09-22,Escape from Tomorrow,2013,https://boxd.it/3UMdh,2.5,,,2014-09-21
+2014-09-25,Happiness,1998,https://boxd.it/3VVVf,5,,,2014-09-25
+2014-10-13,The Hunt,2012,https://boxd.it/42C8x,4,,,2014-10-11
+2014-10-17,Her,2013,https://boxd.it/44hqp,5,,,2014-10-14
+2014-10-17,Phantom of the Paradise,1974,https://boxd.it/44hI9,5,,,2014-10-15
+2014-10-20,Gone Girl,2014,https://boxd.it/45ypZ,4,,,2014-10-19
+2014-10-24,Mighty Aphrodite,1995,https://boxd.it/473QJ,4,,,2014-10-23
+2014-10-25,Edge of Tomorrow,2014,https://boxd.it/47svB,3.5,,,2014-10-24
+2014-10-31,Melancholia,2011,https://boxd.it/4a2Bz,4,,,2014-10-30
+2014-11-02,The Right Stuff,1983,https://boxd.it/4aKC7,4,,,2014-11-01
+2014-11-03,My Neighbors the Yamadas,1999,https://boxd.it/4biqf,5,,,2014-11-02
+2014-11-06,"Dearest Relatives, Poisonous Relations",1992,https://boxd.it/4cM5D,5,,,2014-11-05
+2014-11-07,Electronic Labyrinth: THX 1138 4EB,1967,https://boxd.it/4d7eV,3.5,,,2014-11-06
+2014-11-10,We Need to Talk About Kevin,2011,https://boxd.it/4ee2J,5,,,2014-11-08
+2014-11-10,Ocean Waves,1993,https://boxd.it/4eIFh,4,,,2014-11-10
+2014-11-14,Monsters,2010,https://boxd.it/4gcgX,4,,,2014-11-13
+2014-11-23,Interstellar,2014,https://boxd.it/4k0SN,5,,,2014-11-16
+2014-11-23,My Neighbor Totoro,1988,https://boxd.it/4k137,4.5,,,2014-11-20
+2014-11-23,Grave of the Fireflies,1988,https://boxd.it/4k1jJ,4,Yes,,2014-11-20
+2014-11-23,The Discreet Charm of the Bourgeoisie,1972,https://boxd.it/4k1qZ,5,Yes,,2014-11-20
+2014-11-23,Plan 9 from Outer Space,1957,https://boxd.it/4k1O3,1,Yes,,2014-11-22
+2014-11-23,La Jetée,1962,https://boxd.it/4k1Tn,5,,,2014-11-22
+2014-11-23,Macbeth,1948,https://boxd.it/4k2d3,3,,,2014-11-22
+2014-11-23,Only Yesterday,1991,https://boxd.it/4k2in,3,,,2014-11-22
+2014-11-24,Belle,2013,https://boxd.it/4kCKH,4,,,2014-11-23
+2014-12-05,Dallas Buyers Club,2013,https://boxd.it/4pre1,4,,,2014-12-04
+2014-12-16,Snow White and the Huntsman,2012,https://boxd.it/4uwfN,2.5,,,2014-12-14
+2014-12-21,Dead Men Don't Wear Plaid,1982,https://boxd.it/4wXyh,4,,,2014-12-20
+2014-12-22,Dredd,2012,https://boxd.it/4xfYd,4,,,2014-12-20
+2014-12-22,Role Models,2008,https://boxd.it/4xg9l,2.5,,,2014-12-21
+2014-12-26,The Calcium Kid,2004,https://boxd.it/4zLxd,4,,,2014-12-24
+2014-12-27,Things to Come,1936,https://boxd.it/4Ag0T,5,,,2014-12-26
+2015-01-01,The Interview,2014,https://boxd.it/4DlrV,5,,,2014-12-31
+2015-01-11,Excalibur,1981,https://boxd.it/4Kzd3,5,,,2015-01-01
+2015-01-11,The Hobbit: The Battle of the Five Armies,2014,https://boxd.it/4Kztb,4,,,2015-01-03
+2015-01-11,The Elephant Man,1980,https://boxd.it/4KzDv,5,,,2015-01-07
+2015-01-12,Toy Story 3,2010,https://boxd.it/4LK2x,3.5,,,2015-01-10
+2015-01-12,X-Men: Days of Future Past,2014,https://boxd.it/4LKqp,4.5,,,2015-01-11
+2015-01-12,The Imaginarium of Doctor Parnassus,2009,https://boxd.it/4LKyD,5,,,2015-01-11
+2015-01-18,Ikiru,1952,https://boxd.it/4PpN1,5,,,2015-01-17
+2015-01-19,"The Cook, the Thief, His Wife & Her Lover",1989,https://boxd.it/4PPpz,5,,,2015-01-17
+2015-01-19,Dear John,2010,https://boxd.it/4Qnpt,3,,,2015-01-18
+2015-01-24,The Lego Movie,2014,https://boxd.it/4Tsnj,5,,,2015-01-19
+2015-01-24,Fantasia,1940,https://boxd.it/4Tspz,5,,,2015-01-19
+2015-01-24,Zardoz,1974,https://boxd.it/4TsBP,3,,,2015-01-21
+2015-01-25,The Andromeda Strain,1971,https://boxd.it/4TLdx,5,,,2015-01-24
+2015-01-25,Lessons of a Dream,2011,https://boxd.it/4UaIb,4,,,2015-01-24
+2015-01-29,The Professional,1981,https://boxd.it/4WLtV,5,,,2015-01-27
+2015-01-31,Armored,2009,https://boxd.it/4XM1P,1.5,,,2015-01-30
+2015-02-08,Time Trap,2014,https://boxd.it/52pU3,5,,,2015-02-07
+2015-02-15,Tideland,2005,https://boxd.it/56sI3,4,,,2015-02-09
+2015-02-15,Frank,2014,https://boxd.it/56sNx,5,,,2015-02-14
+2015-02-15,Monte Carlo,2011,https://boxd.it/56O0R,1.5,,,2015-02-15
+2015-02-16,Maleficent,2014,https://boxd.it/57mBd,4,,,2015-02-15
+2015-02-16,Barbarella,1968,https://boxd.it/57Kox,3.5,,,2015-02-16
+2015-02-17,Fantasia 2000,1999,https://boxd.it/57WiV,4,,,2015-02-16
+2015-02-17,Jodorowsky's Dune,2013,https://boxd.it/57WvP,4.5,,,2015-02-16
+2015-02-17,The Bling Ring,2013,https://boxd.it/584Kt,5,,,2015-02-16
+2015-02-19,Birdman or (The Unexpected Virtue of Ignorance),2014,https://boxd.it/5997X,5,,,2015-02-18
+2015-02-19,Cronos,1992,https://boxd.it/599xr,5,,,2015-02-18
+2015-02-21,The Double,2013,https://boxd.it/5a5Yv,5,,,2015-02-20
+2015-02-22,The Wolf of Wall Street,2013,https://boxd.it/5aV5n,5,,,2015-02-21
+2015-02-23,"Good Night, and Good Luck.",2005,https://boxd.it/5bEd7,4,,,2015-02-22
+2015-02-23,The Raid,2011,https://boxd.it/5bEgP,4,,,2015-02-22
+2015-03-01,The Raid 2,2014,https://boxd.it/5ez8x,4,,,2015-02-28
+2015-03-01,The Fisher King,1991,https://boxd.it/5ezX1,5,,,2015-02-28
+2015-03-01,Dazed and Confused,1993,https://boxd.it/5eA1H,3.5,,,2015-02-28
+2015-03-10,The Zero Theorem,2013,https://boxd.it/5jFgx,5,,,2015-03-09
+2015-03-10,Feast,2014,https://boxd.it/5jGNR,4,,,2015-03-09
+2015-03-12,The Immigrant,2013,https://boxd.it/5kJkF,4,,,2015-03-10
+2015-03-12,The Tale of The Princess Kaguya,2013,https://boxd.it/5kJtd,5,,,2015-03-11
+2015-03-13,Naked Lunch,1991,https://boxd.it/5laQX,5,,,2015-03-12
+2015-03-13,Stranger Than Paradise,1984,https://boxd.it/5lbtF,5,,,2015-03-12
+2015-03-13,The Babadook,2014,https://boxd.it/5lbLJ,5,,,2015-03-12
+2015-03-18,Barry Lyndon,1975,https://boxd.it/5nAKl,5,,,2015-03-14
+2015-03-18,Solaris,1972,https://boxd.it/5nAZv,5,,,2015-03-17
+2015-03-18,Krull,1983,https://boxd.it/5nSq9,5,Yes,,2015-03-17
+2015-03-20,Whiteout,2009,https://boxd.it/5othX,2.5,,,2015-03-19
+2015-03-25,Just Like Heaven,2005,https://boxd.it/5ryVz,3.5,Yes,,2015-03-25
+2015-03-27,Everything Is Illuminated,2005,https://boxd.it/5s6rD,4,,,2015-03-26
+2015-03-27,Ghost World,2001,https://boxd.it/5sebN,3,,,2015-03-26
+2015-03-29,Life After Beth,2014,https://boxd.it/5t3LH,2,,,2015-03-28
+2015-03-29,Now You See Me,2013,https://boxd.it/5t49p,3,,,2015-03-28
+2015-03-29,Everyone's Hero,2006,https://boxd.it/5t4ep,2.5,,,2015-03-28
+2015-04-07,Silent Running,1972,https://boxd.it/5yk0N,4,,,2015-04-04
+2015-04-07,Juno,2007,https://boxd.it/5ykel,4,,,2015-04-04
+2015-04-07,Tangled,2010,https://boxd.it/5yl9h,2.5,,,2015-04-04
+2015-04-07,Furious 7,2015,https://boxd.it/5ynFz,3.5,,,2015-04-05
+2015-04-11,The Love Punch,2013,https://boxd.it/5Andf,1.5,,,2015-04-10
+2015-04-16,ParaNorman,2012,https://boxd.it/5Cwpj,3,,,2015-04-16
+2015-04-19,Kill the Irishman,2011,https://boxd.it/5DU1n,3.5,,,2015-04-19
+2015-04-20,Labyrinth,1986,https://boxd.it/5E5x5,4,,,2015-04-19
+2015-04-22,Obvious Child,2014,https://boxd.it/5EYmr,5,,,2015-04-19
+2015-05-09,State of Play,2009,https://boxd.it/5N8nb,4,,,2015-04-21
+2015-05-09,Chappie,2015,https://boxd.it/5N8B3,5,,,2015-04-21
+2015-05-09,Le Chef,2012,https://boxd.it/5N8Fp,4,,,2015-04-27
+2015-05-09,R.I.P.D.,2013,https://boxd.it/5N8J7,2.5,,,2015-05-01
+2015-05-09,Submarine,2010,https://boxd.it/5N8Tr,4,,,2015-05-07
+2015-05-09,Super,2010,https://boxd.it/5N96v,4,,,2015-05-08
+2015-05-16,Avengers: Age of Ultron,2015,https://boxd.it/5QuSL,5,,,2015-05-13
+2015-05-16,The Birds,1963,https://boxd.it/5Qv5b,5,,,2015-05-15
+2015-05-16,The Black Hole,1979,https://boxd.it/5QvyH,4.5,,,2015-05-15
+2015-05-26,The Brave One,2007,https://boxd.it/5Whmf,2.5,,,2015-05-19
+2015-06-01,The Divide,2011,https://boxd.it/5Zrvd,3.5,,,2015-05-27
+2015-06-06,The Maltese Falcon,1941,https://boxd.it/61Jkh,5,,,2015-06-04
+2015-06-06,Kung Fury,2015,https://boxd.it/61Jp7,5,,,2015-06-04
+2015-06-06,The Perks of Being a Wallflower,2012,https://boxd.it/61Jvz,4,,,2015-06-04
+2015-06-08,Three Days of the Condor,1975,https://boxd.it/62GuP,5,,,2015-06-06
+2015-06-08,Waking Life,2001,https://boxd.it/62GA9,5,,,2015-06-06
+2015-06-11,Trouble Man,1972,https://boxd.it/64pVt,4,,,2015-06-08
+2015-06-11,Clerks,1994,https://boxd.it/64q8H,4.5,Yes,,2015-06-10
+2015-06-11,Dick Tracy,1990,https://boxd.it/64td1,2.5,Yes,,2015-06-10
+2015-06-19,Fantastic Mr. Fox,2009,https://boxd.it/68jJT,5,Yes,,2015-06-18
+2015-06-21,The Men Who Stare at Goats,2009,https://boxd.it/69ilj,3,,,2015-06-20
+2015-06-21,The Tree of Wooden Clogs,1978,https://boxd.it/69ljl,5,,,2015-06-20
+2015-06-21,Gandhi,1982,https://boxd.it/69lx3,5,,,2015-06-20
+2015-06-23,Jack Reacher,2012,https://boxd.it/6aq8f,3.5,,,2015-06-22
+2015-06-23,A Girl Walks Home Alone at Night,2014,https://boxd.it/6azlH,5,,,2015-06-22
+2015-07-01,Capitalism: A Love Story,2009,https://boxd.it/6enRJ,4,,,2015-06-24
+2015-07-01,Certified Copy,2010,https://boxd.it/6eo1J,5,,,2015-06-27
+2015-07-01,Funny Games,1997,https://boxd.it/6eo3F,2.5,,,2015-06-28
+2015-07-01,Gran Torino,2008,https://boxd.it/6eocR,4,,,2015-06-28
+2015-07-01,Lovelace,2013,https://boxd.it/6eoot,3,,,2015-06-28
+2015-07-01,Mary and Max,2009,https://boxd.it/6eqo1,5,,,2015-06-30
+2015-07-08,Still Alice,2014,https://boxd.it/6iiVJ,4,,,2015-07-06
+2015-07-08,eXistenZ,1999,https://boxd.it/6iiZ7,5,,,2015-07-07
+2015-07-10,Wild Tales,2014,https://boxd.it/6iV3L,5,,,2015-07-09
+2015-07-17,My Blueberry Nights,2007,https://boxd.it/6mL3z,3,,,2015-07-13
+2015-07-17,Silent Wedding,2008,https://boxd.it/6mL8f,5,,,2015-07-16
+2015-07-21,Ant-Man,2015,https://boxd.it/6p4eZ,5,,,2015-07-18
+2015-08-01,White Material,2009,https://boxd.it/6vD8T,2.5,,,2015-07-24
+2015-08-01,The Secret Life of Walter Mitty,1947,https://boxd.it/6vDip,5,,,2015-07-25
+2015-08-02,Men Are from Mars... And That's Where I'm Going!,2014,https://boxd.it/6vDlN,2,,,2015-07-25
+2015-08-02,The Limits of Control,2009,https://boxd.it/6vDrB,4,,,2015-07-26
+2015-08-02,Lucy,2014,https://boxd.it/6vDzP,5,Yes,,2015-07-28
+2015-08-02,The Wiz,1978,https://boxd.it/6vDEP,5,Yes,,2015-07-31
+2015-08-03,The Amazing Spider-Man,2012,https://boxd.it/6wKfT,4,,netflix,2015-08-02
+2015-08-10,Only Lovers Left Alive,2013,https://boxd.it/6AknF,5,,,2015-08-08
+2015-08-10,Transformers: Dark of the Moon,2011,https://boxd.it/6Akrd,3.5,Yes,,2015-08-08
+2015-08-10,Despicable Me 2,2013,https://boxd.it/6AkD9,4,,,2015-08-08
+2015-08-10,The Best of Me,2014,https://boxd.it/6AkUJ,4,,,2015-08-09
+2015-08-10,Takers,2010,https://boxd.it/6AloJ,2.5,,,2015-08-09
+2015-08-10,The Way Steve Jobs Changed the World,2011,https://boxd.it/6Aq0x,4,,,2015-08-09
+2015-08-16,The Internet's Own Boy: The Story of Aaron Swartz,2014,https://boxd.it/6DQLZ,5,,,2015-08-13
+2015-08-16,The Imitation Game,2014,https://boxd.it/6DQQ1,5,,,2015-08-15
+2015-08-17,Cloudy with a Chance of Meatballs 2,2013,https://boxd.it/6ESPL,3.5,,,2015-08-16
+2015-08-17,Die Hard,1988,https://boxd.it/6ETk5,4,,,2015-08-16
+2015-08-18,A Night at the Roxbury,1998,https://boxd.it/6FGFh,3,,,2015-08-17
+2015-08-23,Adaptation.,2002,https://boxd.it/6Ibgh,4,,,2015-08-22
+2015-08-25,The Machine,2013,https://boxd.it/6JC2j,4,,,2015-08-24
+2015-08-27,The Warriors,1979,https://boxd.it/6KrDl,5,,,2015-08-26
+2015-08-31,Welcome to the Dollhouse,1995,https://boxd.it/6Mqej,5,,,2015-08-28
+2015-08-31,Pirates of Silicon Valley,1999,https://boxd.it/6Mqvp,5,Yes,,2015-08-30
+2015-09-04,Hackers,1995,https://boxd.it/6OQhn,3,,,2015-09-04
+2015-09-06,Iron Sky,2012,https://boxd.it/6PDmh,3,,,2015-09-05
+2015-09-07,Sky Captain and the World of Tomorrow,2004,https://boxd.it/6Q429,2.5,,,2015-09-05
+2015-09-07,Source Code,2011,https://boxd.it/6Q4kn,4,,,2015-09-05
+2015-09-07,Run Lola Run,1998,https://boxd.it/6Q4o5,5,,,2015-09-05
+2015-09-07,Pinocchio,1940,https://boxd.it/6Q953,5,Yes,,2015-09-05
+2015-09-07,Jobs,2013,https://boxd.it/6Qs5h,4,,,2015-09-06
+2015-09-08,Beastly,2011,https://boxd.it/6QNXz,1,,,2015-09-07
+2015-09-09,Don Jon,2013,https://boxd.it/6RK5r,5,,,2015-09-07
+2015-09-13,The Purge,2013,https://boxd.it/6TBA5,3,,,2015-09-13
+2015-09-19,The Purge: Anarchy,2014,https://boxd.it/6WPyN,3.5,,,2015-09-18
+2015-10-19,The Martian,2015,https://boxd.it/7dWFl,5,,,2015-10-09
+2015-10-19,Into the Wild,2007,https://boxd.it/7dWWh,5,,,2015-10-18
+2015-11-09,Star Wars: Episode I – The Phantom Menace,1999,https://boxd.it/7qual,3.5,Yes,,2015-11-07
+2015-11-09,Spectre,2015,https://boxd.it/7qIUd,5,,"James Bond, spectre, daniel craig",2015-11-08
+2015-11-10,Cosmic Scrat-tastrophe,2015,https://boxd.it/7rrDB,4,,,2015-11-10
+2015-11-16,Star Wars: Episode II – Attack of the Clones,2002,https://boxd.it/7uhkl,3,,,2015-11-11
+2015-11-16,Star Wars: Episode III – Revenge of the Sith,2005,https://boxd.it/7ui0h,4,,,2015-11-12
+2015-11-16,2001: A Space Odyssey,1968,https://boxd.it/7uiCF,5,Yes,,2015-11-14
+2015-11-16,The Theory of Everything,2014,https://boxd.it/7ukzX,4,,,2015-11-14
+2015-11-20,Star Wars,1977,https://boxd.it/7wzdB,4.5,,"source:dvd, genre:action, genre:adventure, genre:fantasy, genre:sci-fi, tmdb_id:11",2015-11-15
+2015-11-25,The Empire Strikes Back,1980,https://boxd.it/7zhOP,5,,,2015-11-18
+2015-12-01,Return of the Jedi,1983,https://boxd.it/7CFTl,4,,,2015-11-26
+2015-12-01,Horrible Bosses,2011,https://boxd.it/7CGhx,3,,,2015-11-29
+2015-12-21,Star Wars: The Force Awakens,2015,https://boxd.it/7OvdX,5,,,2015-12-17
+2016-01-25,Inside Out,2015,https://boxd.it/8j7ax,5,,,2016-01-13
+2016-01-25,The White Ribbon,2009,https://boxd.it/8j7gP,4,,,2016-01-24
+2016-01-25,Walt Before Mickey,2015,https://boxd.it/8j85N,4,,,2016-01-24
+2016-03-08,Creed,2015,https://boxd.it/8RLRf,3.5,,,2016-02-07
+2016-03-08,Black Mirror: White Christmas,2014,https://boxd.it/8RLSn,4,,,2016-02-12
+2016-03-08,Deadpool,2016,https://boxd.it/8RLT1,5,,,2016-02-14
+2016-03-08,Rush,2013,https://boxd.it/8RLU9,4,,,2016-02-18
+2016-03-08,Annie Hall,1977,https://boxd.it/8RLV7,5,,,2016-02-19
+2016-03-08,The Amazing Spider-Man 2,2014,https://boxd.it/8RLWp,3.5,,,2016-02-21
+2016-03-08,The Last Starfighter,1984,https://boxd.it/8RLXx,3.5,,,2016-02-23
+2016-03-08,Inside Llewyn Davis,2013,https://boxd.it/8RLYl,4,,,2016-02-24
+2016-03-08,Byzantium,2012,https://boxd.it/8RLZt,3.5,,,2016-03-04
+2016-03-12,Colombiana,2011,https://boxd.it/8TXx1,2.5,,,2016-03-09
+2016-03-11,Enter the Void,2009,https://boxd.it/8TtDj,4,,,2016-03-10
+2016-03-21,Mad Max: Fury Road,2015,https://boxd.it/91gW9,5,,,2016-03-12
+2016-03-21,Only God Forgives,2013,https://boxd.it/91gT5,2.5,,,2016-03-13
+2016-03-21,Escape from New York,1981,https://boxd.it/91h0F,3.5,,,2016-03-16
+2016-03-21,Escape from L.A.,1996,https://boxd.it/91h2V,3.5,,,2016-03-17
+2016-03-29,Godzilla,2014,https://boxd.it/98zqv,4,,,2016-03-21
+2016-03-29,Minions,2015,https://boxd.it/98zzH,4,,,2016-03-24
+2016-03-29,The Lobster,2015,https://boxd.it/98zuH,5,,,2016-03-25
+2016-03-29,Coherence,2013,https://boxd.it/98zCL,5,,,2016-03-27
+2016-03-30,Walk the Line,2005,https://boxd.it/98YuR,3.5,,,2016-03-29
+2016-05-14,The Wizard of Oz,1939,https://boxd.it/9Iyat,5,,,2016-04-22
+2016-05-14,Captain America: Civil War,2016,https://boxd.it/9Iyx3,5,,theater,2016-04-30
+2016-05-14,Serenity,2005,https://boxd.it/9IyL5,4,,firefly,2016-05-11
+2016-07-26,Mary Poppins,1964,https://boxd.it/aBREx,5,Yes,,2016-05-14
+2016-05-15,Jurassic World,2015,https://boxd.it/9JqiL,4,,,2016-05-15
+2016-07-26,"Paris, Texas",1984,https://boxd.it/aBRBt,5,,,2016-05-22
+2016-07-26,Serpico,1973,https://boxd.it/aBRGN,4,,,2016-05-24
+2016-07-26,Stalker,1979,https://boxd.it/aBRIT,5,,,2016-06-04
+2016-07-26,Inherent Vice,2014,https://boxd.it/aBRLj,3.5,,,2016-06-05
+2016-07-26,Saving Mr. Banks,2013,https://boxd.it/aBROn,5,,,2016-06-05
+2016-07-26,Under the Skin,2013,https://boxd.it/aBRQ9,4,,,2016-06-10
+2016-07-26,The Man Who Laughs,1928,https://boxd.it/aBRTd,5,,,2016-06-14
+2016-07-26,Zootopia,2016,https://boxd.it/aBRVj,3.5,,,2016-06-17
+2016-07-26,Elysium,2013,https://boxd.it/aBRXf,4,,,2016-06-26
+2016-07-26,10 Cloverfield Lane,2016,https://boxd.it/aBRZb,4,,,2016-07-01
+2016-07-26,A Scanner Darkly,2006,https://boxd.it/aBS5t,3.5,,,2016-07-02
+2016-07-26,Ex Machina,2015,https://boxd.it/aBS7z,4,,,2016-07-08
+2016-07-26,7 Faces of Dr. Lao,1964,https://boxd.it/aBS8R,4,Yes,,2016-07-08
+2016-07-26,Me Before You,2016,https://boxd.it/aBSat,4,,,2016-07-12
+2016-07-26,Munich,2005,https://boxd.it/aBScT,4,,,2016-07-13
+2016-07-26,Ghostbusters,2016,https://boxd.it/aBSeZ,4,,,2016-07-20
+2016-07-26,La Dolce Vita,1960,https://boxd.it/aBShz,5,,,2016-07-21
+2016-08-28,Fitzcarraldo,1982,https://boxd.it/b1Amj,5,,,2016-08-28
+2016-09-03,Breathless,1960,https://boxd.it/b6IQV,5,,,2016-08-28
+2016-09-03,Pickpocket,1959,https://boxd.it/b6J8b,5,,,2016-09-03
+2016-09-16,"Rome, Open City",1945,https://boxd.it/bhCWl,4,,,2016-09-10
+2016-09-16,Mamma Roma,1962,https://boxd.it/bhD9J,4,,,2016-09-12
+2016-09-16,Star Trek Beyond,2016,https://boxd.it/bhDrt,4,,,2016-09-13
+2016-10-02,Rocco and His Brothers,1960,https://boxd.it/buxCL,5,,,2016-09-28
+2016-10-02,The Rules of the Game,1939,https://boxd.it/buxZ1,4,,,2016-10-01
+2016-10-10,Hardcore Henry,2015,https://boxd.it/bBocj,4,,netflix,2016-10-04
+2016-10-16,Mama Turns 100,1979,https://boxd.it/bGzmJ,5,,,2016-10-15
+2016-10-19,Au Revoir les Enfants,1987,https://boxd.it/bJLjN,5,,,2016-10-16
+2016-11-02,Hiroshima Mon Amour,1959,https://boxd.it/bVNc9,5,,,2016-11-01
+2016-11-03,Wings of Desire,1987,https://boxd.it/bWGyz,5,,,2016-11-02
+2016-11-03,Piper,2016,https://boxd.it/bWGDJ,5,,,2016-11-02
+2016-11-14,The 400 Blows,1959,https://boxd.it/c5M9X,4,,dvd,2016-11-13
+2016-11-20,Cinema Paradiso,1988,https://boxd.it/carfb,5,,"dvd, coleção folha de filmes europeus",2016-11-15
+2016-11-21,The Fault in Our Stars,2014,https://boxd.it/cbW5X,3.5,,cable,2016-11-15
+2016-11-21,Wild Strawberries,1957,https://boxd.it/cbqah,4,,"dvd, coleção folha de filmes europeus",2016-11-20
+2016-11-21,Transformers: Age of Extinction,2014,https://boxd.it/cbVh9,2.5,,cable,2016-11-20
+2016-11-24,Of Gods and Men,2010,https://boxd.it/celIp,4,,,2016-11-23
+2016-11-27,Nerve,2016,https://boxd.it/cgyjV,4,,,2016-11-26
+2016-11-29,What We Do in the Shadows,2014,https://boxd.it/cjgl1,4,,,2016-11-27
+2016-11-29,Westworld,1973,https://boxd.it/cjfTV,4,,,2016-11-28
+2016-12-19,Rogue One: A Star Wars Story,2016,https://boxd.it/cC50f,5,,"source:theater, genre:sci-fi, genre:adventure, genre:action, genre:fantasy, tmdb_id:330459",2016-12-15
+2016-12-19,Nymphomaniac: Vol. I,2013,https://boxd.it/cC5FH,4,,tv,2016-12-18
+2016-12-24,Nymphomaniac: Vol. II,2013,https://boxd.it/cH3jT,3,,,2016-12-22
+2017-01-04,Batman: The Killing Joke,2016,https://boxd.it/cVSxF,5,,,2016-12-31
+2017-01-04,Spectre,2015,https://boxd.it/cVSKz,5,Yes,,2016-12-31
+2017-01-04,Fantastic Four,2015,https://boxd.it/cVTX5,3,,,2017-01-03
+2017-01-06,Ghost in the Shell,1995,https://boxd.it/cZoap,5,Yes,,2017-01-05
+2017-02-05,Dr. No,1962,https://boxd.it/dEFP7,5,,blu-ray,2017-02-02
+2017-02-21,"Hail, Caesar!",2016,https://boxd.it/ezPDz,4,,,2017-02-11
+2017-02-21,Aquarius,2016,https://boxd.it/ezQaj,4,,,2017-02-12
+2017-02-21,Doctor Strange,2016,https://boxd.it/ezQJt,4,,,2017-02-18
+2017-03-04,La La Land,2016,https://boxd.it/f4Gd5,5,,cinemark,2017-02-23
+2017-03-13,If I Stay,2014,https://boxd.it/fqOmX,4,,fox,2017-03-12
+2017-03-27,Beauty and the Beast,2017,https://boxd.it/fTD4r,5,,"movie, cinemark, première",2017-03-16
+2017-03-27,Logan,2017,https://boxd.it/fTDBZ,4,,,2017-03-22
+2017-03-27,My Mom Is a Character 2,2016,https://boxd.it/fTG1P,4,,,2017-03-26
+2017-04-15,Arrival,2016,https://boxd.it/grI29,4.5,,google movies,2017-04-09
+2017-04-15,Spectral,2016,https://boxd.it/grIez,4,,netflix,2017-04-12
+2017-05-03,Sully,2016,https://boxd.it/gWwDJ,4,,google movies,2017-04-16
+2017-05-03,A Man Apart,2003,https://boxd.it/gWz35,2,,cable,2017-04-23
+2017-05-22,Guardians of the Galaxy Vol. 2,2017,https://boxd.it/hn3sh,5,,theater,2017-05-03
+2017-05-22,The BFG,2016,https://boxd.it/hn87X,5,,tv,2017-05-21
+2017-06-04,Batman v Superman: Dawn of Justice,2016,https://boxd.it/hDFKb,3.5,,,2017-05-27
+2017-06-04,Justice League: The New Frontier,2008,https://boxd.it/hDGMx,4,,,2017-06-03
+2017-06-04,Hacksaw Ridge,2016,https://boxd.it/hDHxD,5,,netflix,2017-06-04
+2017-06-18,Sing,2016,https://boxd.it/hUKet,4.5,,telecine,2017-06-15
+2017-06-18,Ice Age: Collision Course,2016,https://boxd.it/hV9dF,4,,telecine,2017-06-17
+2017-09-02,Passengers,2016,https://boxd.it/jLEUj,5,,,2017-07-01
+2017-09-02,What the Health,2017,https://boxd.it/jLF4j,5,,netflix,2017-07-02
+2017-09-02,Wonder Woman,2017,https://boxd.it/jLFBn,5,,cinemark,2017-07-12
+2017-09-02,The Founder,2016,https://boxd.it/jLG3r,4.5,,netflix,2017-08-04
+2017-09-02,Lava,2014,https://boxd.it/jLGRh,4,,,2017-08-30
+2017-09-02,The Princess Bride,1987,https://boxd.it/jLGI5,5,,,2017-09-02
+2017-09-25,Personal Shopper,2016,https://boxd.it/km3Kv,4,,,2017-09-10
+2017-09-25,The Twelve Chairs,1970,https://boxd.it/km46L,4,,,2017-09-24
+2017-10-09,Midnight Special,2016,https://boxd.it/kGrGx,3.5,,,2017-10-08
+2017-10-28,Saint Seiya: Legend of Sanctuary,2014,https://boxd.it/lb3DB,2.5,,,2017-10-12
+2017-10-28,Tomorrowland,2015,https://boxd.it/lb4cB,4,,,2017-10-14
+2019-01-23,Aquaman,2018,https://boxd.it/CvD0X,5,,"source:theater, genre:action, genre:adventure, adaptation:comics, tmdb_id:297802",2018-12-13
+2019-01-23,Teen Titans Go! To the Movies,2018,https://boxd.it/CvC9z,4,,"source:rental, genre:action, genre:adventure, genre:comedy, style:animation, adaptation:comics, tmdb_id:474395",2018-12-31
+2019-02-09,Memoirs of an Invisible Man,1992,https://boxd.it/Dr20H,4.5,,tv,2019-02-02
+2019-02-19,Downsizing,2017,https://boxd.it/DXXwJ,4,,tv,2019-02-16
+2019-03-11,What Happened to Monday,2017,https://boxd.it/F1oiT,4.5,,tv,2019-03-10
+2019-03-18,Chef,2014,https://boxd.it/FrItT,3,,tv,2019-03-16
+2019-04-23,"Paul, Apostle of Christ",2018,https://boxd.it/H8aEN,3,,tv,2019-04-20
+2019-05-11,Avengers: Endgame,2019,https://boxd.it/HZaDr,5,,"uci, theater",2019-05-04
+2019-06-02,Bohemian Rhapsody,2018,https://boxd.it/J3iFR,4,,tv,2019-06-01
+2019-06-22,Venom,2018,https://boxd.it/K2LV7,3,,tv,2019-06-21
+2019-07-24,Captain Fantastic,2016,https://boxd.it/LFHfj,5,,,2019-07-13
+2019-07-24,Captain America,1990,https://boxd.it/LFLrN,3,,,2019-07-14
+2019-07-24,Tales from Earthsea,2006,https://boxd.it/LFMMH,5,,,2019-07-22
+2019-07-24,Bingo: The King of the Mornings,2017,https://boxd.it/LFNhP,5,,,2019-07-23
+2019-07-25,The Congress,2013,https://boxd.it/LINdp,5,,,2019-07-24
+2019-07-28,Coco,2017,https://boxd.it/LU5wV,5,,,2019-07-25
+2019-07-28,The Bad Batch,2016,https://boxd.it/LU6aL,2,,,2019-07-25
+2019-07-28,"O Brother, Where Art Thou?",2000,https://boxd.it/LU5Tl,5,,,2019-07-26
+2019-07-28,Get Out,2017,https://boxd.it/LU5Lr,5,,,2019-07-27
+2019-08-09,A Ghost Story,2017,https://boxd.it/MuHkF,4,,,2019-07-31
+2019-08-09,Valhalla Rising,2009,https://boxd.it/MuHKN,2.5,,,2019-08-01
+2019-08-30,Shazam!,2019,https://boxd.it/NCTwj,4.5,,,2019-08-23
+2019-09-23,Mortal Engines,2018,https://boxd.it/OTDaT,3.5,,tv,2019-09-20
+2019-09-25,Northmen: A Viking Saga,2014,https://boxd.it/P0o3H,3.5,,tv,2019-09-25
+2019-10-11,Captain Marvel,2019,https://boxd.it/PQiF5,4,,,2019-09-28
+2019-10-26,Ewoks: The Battle for Endor,1985,https://boxd.it/QKpSH,3.5,,,2019-10-21
+2019-11-19,Toy Story 4,2019,https://boxd.it/ScSuT,3.5,,meo,2019-11-04
+2019-11-19,Spider-Man: Far From Home,2019,https://boxd.it/ScUOB,4,,meo,2019-11-11
+2019-11-19,Yesterday,2019,https://boxd.it/Sd60t,4,,meo,2019-11-17
+2019-12-26,Mission: Impossible – Rogue Nation,2015,https://boxd.it/UEHrX,4,,tvcine,2019-12-13
+2019-12-26,Green Book,2018,https://boxd.it/UEJS7,5,,tvcine,2019-12-21
+2019-12-26,Aquaparque,2018,https://boxd.it/UEKzP,4,,,2019-12-22
+2020-01-01,Once Upon a Time... in Hollywood,2019,https://boxd.it/Vdn2j,5,,meo,2019-12-22
+2020-01-01,The International,2009,https://boxd.it/VdozD,4,,tv,2019-12-28
+2020-01-01,Star Wars: The Rise of Skywalker,2019,https://boxd.it/VdrMl,4,,"uci, theater",2019-12-29
+2020-02-05,Angel Has Fallen,2019,https://boxd.it/Yv6x3,4,,tv,2020-01-04
+2020-02-05,Heavy Metal,1981,https://boxd.it/Yv7BZ,4,,,2020-01-16
+2020-02-05,Wizards,1977,https://boxd.it/Yv92R,4,,,2020-01-18
+2020-02-05,Escape Room,2019,https://boxd.it/Yv9o9,2,,,2020-01-19
+2020-02-05,Joker,2019,https://boxd.it/Yvaef,5,,meo,2020-02-04
+2020-03-14,Ad Astra,2019,https://boxd.it/11DCDZ,3,,meo,2020-02-08
+2020-04-14,American History X,1998,https://boxd.it/15lp4x,4,,tv,2020-04-10
+2020-05-04,The Present,2014,https://boxd.it/17PYuD,4,,youtube,2020-05-01
+2020-05-04,Hair Love,2019,https://boxd.it/17Q4WD,5,,Youtube,2020-05-01
+2020-05-04,Alternative Math,2017,https://boxd.it/17Qfc7,4,,youtube,2020-05-02
+2020-05-04,Storm,2019,https://boxd.it/17QaRJ,4,,youtube,2020-05-04
+2020-05-04,Frozen II,2019,https://boxd.it/17QgYL,5,,meo,2020-05-04
+2020-06-11,Extraction,2020,https://boxd.it/1c6EUh,2.5,,netflix,2020-06-09
+2020-06-26,365 Days,2020,https://boxd.it/1dxpmH,3,,netflix,2020-06-14
+2020-06-26,A History of Violence,2005,https://boxd.it/1dxqMB,3,,,2020-06-21
+2020-06-26,The Skin of Sorrow,2010,https://boxd.it/1dxw5t,4,,euro,2020-06-24
+2020-06-29,Wings of Steel,2018,https://boxd.it/1dVARz,4,,tv,2020-06-29
+2020-07-19,Stargate Origins,2018,https://boxd.it/1fWGbz,3,,tv,2020-07-17
+2020-09-12,Jojo Rabbit,2019,https://boxd.it/1lGrKV,5,,meo,2020-08-29
+2020-09-12,Lady Bird,2017,https://boxd.it/1lGt0Z,5,,,2020-09-05
+2020-09-25,Message in a Bottle,1999,https://boxd.it/1n0NrF,4,,,2020-09-05
+2020-10-25,"Crouching Tiger, Hidden Dragon: Sword of Destiny",2016,https://boxd.it/1qjDYf,3,,netflix,2020-10-24
+2020-11-07,The Social Dilemma,2020,https://boxd.it/1rH0dr,4.5,,netflix,2020-11-05
+2020-12-02,LEGO Star Wars Holiday Special,2020,https://boxd.it/1ujTd1,4,,disney+,2020-11-22
+2020-12-31,Wreck-It Ralph,2012,https://boxd.it/1xZNzB,,,disney+,2020-12-24
+2020-12-31,Falling Inn Love,2019,https://boxd.it/1xZPWH,3,,netflix,2020-12-25
+2020-12-31,Ralph Breaks the Internet,2018,https://boxd.it/1xZOpR,4.5,,disney+,2020-12-26
+2020-12-31,The Color Purple,1985,https://boxd.it/1xZQbd,5,,tv,2020-12-27
+2020-12-31,The Ballad of Buster Scruggs,2018,https://boxd.it/1y4VgH,5,,netflix,2020-12-30
+2021-01-01,Soul,2020,https://boxd.it/1ydDsN,5,,disney+,2020-12-31
+2021-01-07,First Man,2018,https://boxd.it/1zmfQN,4,,netflix,2021-01-04
+2021-01-07,The Midnight Sky,2020,https://boxd.it/1zmpyJ,4,,netflix,2021-01-05
+2021-01-09,Tenet,2020,https://boxd.it/1zziZz,4.5,,,2021-01-08
+2021-01-11,Wonder Woman 1984,2020,https://boxd.it/1zVOT3,3.5,,,2021-01-10
+2021-01-16,Anomalisa,2015,https://boxd.it/1AHhSx,5,,,2021-01-13
+2021-01-16,Baby Driver,2017,https://boxd.it/1AHj5n,5,,,2021-01-14
+2021-01-16,Fire and Ice,1983,https://boxd.it/1AHwR5,5,,"youtube, free",2021-01-15
+2021-01-27,Outside the Wire,2021,https://boxd.it/1CnNZt,3.5,,netflix,2021-01-23
+2021-01-27,Blade Runner 2049,2017,https://boxd.it/1CnWbR,4.5,,tv,2021-01-26
+2021-01-29,Tokyo Godfathers,2003,https://boxd.it/1CDYpj,5,,,2021-01-28
+2021-01-31,I Am Mother,2019,https://boxd.it/1CRGON,4.5,,netflix,2021-01-29
+2021-01-31,Drained,2006,https://boxd.it/1CRJUz,5,,,2021-01-30
+2021-02-01,Burn After Reading,2008,https://boxd.it/1D33vh,5,,,2021-01-31
+2021-02-02,Army of Darkness,1992,https://boxd.it/1DcTp9,5,,,2021-01-31
+2021-02-05,The Room,2003,https://boxd.it/1DEeIl,2,,,2021-02-01
+2021-02-05,The Laundromat,2019,https://boxd.it/1DEgTZ,4,,netfli,2021-02-03
+2021-02-05,Eurovision Song Contest: The Story of Fire Saga,2020,https://boxd.it/1DEkUR,4.5,,netflix,2021-02-04
+2021-02-07,Vox Lux,2018,https://boxd.it/1DTBkB,2.5,,,2021-02-06
+2021-02-08,New York Stories,1989,https://boxd.it/1E6Uwx,5,,,2021-02-06
+2021-02-08,The Secret in Their Eyes,2009,https://boxd.it/1E6WUB,5,,,2021-02-07
+2021-02-10,Tale of Tales,2015,https://boxd.it/1EngSH,4,,,2021-02-09
+2021-02-12,Boy & the World,2013,https://boxd.it/1ECR0n,5,,,2021-02-10
+2021-02-15,Men in Black: International,2019,https://boxd.it/1F5vIP,4,,,2021-02-14
+2021-02-15,BlacKkKlansman,2018,https://boxd.it/1F6ivv,5,,netflix,2021-02-14
+2021-02-16,Total Recall,2012,https://boxd.it/1FfQQF,3.5,,netflix,2021-02-15
+2021-02-18,Das Boot,1981,https://boxd.it/1Fxc4R,5,,"netflix, 1600th",2021-02-17
+2021-02-21,Annihilation,2018,https://boxd.it/1FTRRJ,2.5,,netflix,2021-02-20
+2021-02-24,News of the World,2020,https://boxd.it/1Gmr5H,5,,netflix,2021-02-21
+2021-03-05,Mank,2020,https://boxd.it/1Hx8Fn,5,,netflix,2021-03-02
+2021-03-05,The Favourite,2018,https://boxd.it/1HxhoP,5,,disney+,2021-03-04
+2021-03-16,I Care a Lot,2020,https://boxd.it/1J4Jet,4.5,,netflix,2021-03-15
+2021-03-19,Bright,2017,https://boxd.it/1Js3VX,3.5,,netflix,2021-03-18
+2021-03-20,Get the Goat,2021,https://boxd.it/1JxKzb,5,,netflix,2021-03-19
+2021-03-28,Apollo 13,1995,https://boxd.it/1KENLn,5,,netflix,2021-03-27
+2021-03-28,Space Sweepers,2021,https://boxd.it/1KEOxB,3,,netflix,2021-03-27
+2021-04-02,Cars 3,2017,https://boxd.it/1Ljw8b,4,,disney+,2021-03-28
+2021-04-02,The Trial of the Chicago 7,2020,https://boxd.it/1Ljyu9,5,,netflix,2021-03-28
+2021-04-11,Upgrade,2018,https://boxd.it/1MEMpN,2.5,,netflix,2021-03-29
+2021-04-02,Scott Pilgrim vs. the World,2010,https://boxd.it/1Ljz0T,5,,netflix,2021-03-31
+2021-04-11,Project Power,2020,https://boxd.it/1MEPQx,3.5,,netflix,2021-04-05
+2021-04-11,Isle of Dogs,2018,https://boxd.it/1MFHEb,5,,Disney+,2021-04-06
+2021-04-12,Rushmore,1998,https://boxd.it/1MTvsv,5,,disney+,2021-04-11
+2021-04-15,Monster Pets: A Hotel Transylvania Short,2021,https://boxd.it/1NnRHx,4,,youtube,2021-04-15
+2021-04-25,Road to Perdition,2002,https://boxd.it/1OJbGP,4,,disney+,2021-04-20
+2021-04-25,Jumanji: Welcome to the Jungle,2017,https://boxd.it/1OJgeh,3,,Netflix,2021-04-21
+2021-05-09,Stowaway,2021,https://boxd.it/1QEHvH,4,,netflix,2021-04-27
+2021-05-09,Love and Monsters,2020,https://boxd.it/1QEKop,2.5,,netflix,2021-04-27
+2021-05-09,The Hunt for Red October,1990,https://boxd.it/1QF5gB,4.5,,netflix,2021-05-02
+2021-05-09,Sorry to Bother You,2018,https://boxd.it/1QFNsL,5,,netflix,2021-05-06
+2021-05-18,Garden State,2004,https://boxd.it/1S0jXF,4,,disney+,2021-05-13
+2021-05-18,Oxygen,2021,https://boxd.it/1S0lcB,4.5,,netflix,2021-05-17
+2021-05-19,Another Earth,2011,https://boxd.it/1S0mND,5,,disney+,2021-05-18
+2021-05-22,Highlander,1986,https://boxd.it/1StbTN,5,,netflix,2021-05-18
+2021-05-22,Surrogates,2009,https://boxd.it/1SteM1,3,,disney+,2021-05-19
+2021-05-22,Anima,2019,https://boxd.it/1Stfmt,4,,netflix,2021-05-19
+2021-05-25,And Tomorrow the Entire World,2020,https://boxd.it/1SQaeP,3,,netflix,2021-05-22
+2021-05-25,The 13th Warrior,1999,https://boxd.it/1SQbDr,4,,disney+,2021-05-23
+2021-05-28,Cooking with Love,2018,https://boxd.it/1T9yEb,2.5,,tv,2021-05-24
+2021-05-26,Army of the Dead,2021,https://boxd.it/1SVvTf,3,,netflix,2021-05-25
+2021-06-08,Raya and the Last Dragon,2021,https://boxd.it/1UI9YJ,4,,disney+,2021-06-04
+2021-06-08,Us Again,2021,https://boxd.it/1UIahB,5,,disney+,2021-06-04
+2021-06-08,Cars 2,2011,https://boxd.it/1UIb8P,3.5,,disney+,2021-06-06
+2021-06-13,The Bélier Family,2014,https://boxd.it/1Vk8sj,4,,netflix,2021-06-08
+2021-06-21,Awake,2021,https://boxd.it/1WmVzr,3,,netflix,2021-06-20
+2021-06-27,Can't Buy Me Love,1987,https://boxd.it/1X4Y9p,5,,disney+,2021-06-21
+2021-06-26,The Disaster Artist,2017,https://boxd.it/1X38Rd,4,,,2021-06-23
+2021-06-27,Argo,2012,https://boxd.it/1X4ItN,5,,,2021-06-24
+2021-08-27,A Song of Lisbon,2016,https://boxd.it/25WDi1,3,,netflix,2021-06-28
+2021-08-27,America: The Motion Picture,2021,https://boxd.it/25WE3B,2,,netflix,2021-07-05
+2021-08-27,The Rainmaker,1997,https://boxd.it/25WEQj,5,,netflix,2021-07-07
+2021-08-27,The Color of Money,1986,https://boxd.it/25WFtZ,4,,disney+,2021-07-08
+2021-08-27,How I Became a Superhero,2020,https://boxd.it/25WGeL,3,,netflix,2021-07-16
+2021-08-27,Black Widow,2021,https://boxd.it/25WFPr,4,,,2021-07-17
+2021-08-27,The Magnificent Seven,2016,https://boxd.it/25WGNh,5,,netflix,2021-07-18
+2021-08-27,Major Grom: Plague Doctor,2021,https://boxd.it/25WH93,5,,netflix,2021-07-20
+2021-08-27,Colossal,2016,https://boxd.it/25WHrB,4,,,2021-07-24
+2021-08-27,Jackie,2016,https://boxd.it/25WHLB,4,,,2021-07-28
+2021-08-27,Mute,2018,https://boxd.it/25WIbf,4,,netflix,2021-08-01
+2021-08-27,Knives Out,2019,https://boxd.it/25WIMl,5,,,2021-08-02
+2021-08-27,Charade,1963,https://boxd.it/25WK8H,5,,youtube,2021-08-09
+2021-08-27,Wild,2014,https://boxd.it/25WKrT,5,,disney+,2021-08-10
+2021-08-27,Bloodshot,2020,https://boxd.it/25WL1x,3.5,,netflix,2021-08-10
+2021-08-27,The Suicide Squad,2021,https://boxd.it/25X7JV,5,,,2021-08-13
+2021-08-27,End of Days,1999,https://boxd.it/25X9BJ,3.5,,disney+,2021-08-14
+2021-08-27,Powder,1995,https://boxd.it/25Xb5v,5,,disney+,2021-08-15
+2021-08-27,Office Space,1999,https://boxd.it/25XbE1,5,,disney+,2021-08-17
+2021-08-27,Power of Grayskull: The Definitive History of He-Man and the Masters of the Universe,2017,https://boxd.it/25XccR,5,,netflix,2021-08-19
+2021-08-27,I'm Thinking of Ending Things,2020,https://boxd.it/25WJBj,5,,netflix,2021-08-20
+2021-08-27,Skyrunners,2009,https://boxd.it/25XdlP,3.5,,disney+,2021-08-21
+2021-08-27,The East,2013,https://boxd.it/25XkmF,5,,disney+,2021-08-22
+2021-08-27,Now You See Me 2,2016,https://boxd.it/25XkLF,3,,netflix,2021-08-22
+2021-08-27,The Rocketeer,1991,https://boxd.it/25Xlab,4,,disney+,2021-08-23
+2021-08-27,Pathfinder,2007,https://boxd.it/25XlQL,4,,,2021-08-25
+2021-09-04,Adventures in Babysitting,1987,https://boxd.it/2757bp,5,,disney+,2021-08-30
+2021-09-12,The Ridiculous 6,2015,https://boxd.it/28d5ml,1.5,,netflix,2021-09-10
+2021-09-12,Circle,2015,https://boxd.it/28cv2z,3,,netflix,2021-09-11
+2021-09-12,The Platform,2019,https://boxd.it/28lr7t,3,,netflix,2021-09-11
+2021-11-06,The Meyerowitz Stories (New and Selected),2017,https://boxd.it/2glkIJ,4,,netflix,2021-09-13
+2021-11-06,I Don't Feel at Home in This World Anymore,2017,https://boxd.it/2glmIV,5,,netflix,2021-09-14
+2021-11-06,Prisoners of the Lost Universe,1983,https://boxd.it/2gloIt,1,,netflix,2021-09-16
+2021-11-06,Raiders of Atlantis,1983,https://boxd.it/2glp7D,1,,netflix,2021-09-17
+2021-11-06,This Is Spinal Tap,1984,https://boxd.it/2glppx,5,,,2021-09-25
+2021-11-06,Hitchcock,2012,https://boxd.it/2glq6r,4,,disney+,2021-10-15
+2021-11-06,Robin Hood,1991,https://boxd.it/2glqgL,4,,disney+,2021-10-21
+2021-11-06,Books of Blood,2020,https://boxd.it/2gtv3X,4,,disney+,2021-11-06
+2021-11-08,Lucy in the Sky,2019,https://boxd.it/2gJf51,2.5,,disney+,2021-11-07
+2021-11-09,The Beach,2000,https://boxd.it/2gXZ8t,4,,disney+,2021-11-08
+2021-11-20,Shang-Chi and the Legend of the Ten Rings,2021,https://boxd.it/2ixUk1,4,,disney+,2021-11-13
+2021-11-20,Jungle Cruise,2021,https://boxd.it/2ixWfd,3.5,,disney+,2021-11-17
+2021-11-20,Sonic the Hedgehog,2020,https://boxd.it/2ixVhd,3.5,,netflix,2021-11-18
+2021-11-20,Crazy Heart,2009,https://boxd.it/2izDhN,3.5,,disney+,2021-11-19
+2021-12-02,Kung Fu Hustle,2004,https://boxd.it/2knwJf,5,,tv,2021-11-22
+2021-11-29,Morgan,2016,https://boxd.it/2jVk5L,4,,disney+,2021-11-23
+2021-12-12,Kingsman: The Golden Circle,2017,https://boxd.it/2lRoQh,3.5,,disney+,2021-12-06
+2021-12-21,Finch,2021,https://boxd.it/2nmweB,5,,appletv,2021-12-20
+2021-12-27,Far from the Tree,2021,https://boxd.it/2oEwa5,5,,disney+,2021-12-26
+2021-12-27,Don't Look Up,2021,https://boxd.it/2oO3uF,5,,netflix,2021-12-27
+2021-12-29,Lost Horizon,1973,https://boxd.it/2pcE2r,5,Yes,alternative,2021-12-28
+2022-01-02,Valerian and the City of a Thousand Planets,2017,https://boxd.it/2qf3Xb,3,,"genre:adventure, genre:sci-fi, comic-book:other, source:alternative",2022-01-01
+2022-01-03,Steve Jobs,2015,https://boxd.it/2qAcQv,5,,"genre:biography, genre:drama, source:alternative",2022-01-01
+2022-01-03,Elephant,2003,https://boxd.it/2qMDk1,5,,"source:alternative, genre:drama, genre:based_on_real_facts",2022-01-02
+2022-01-03,Overboard,2018,https://boxd.it/2qP60t,4,,"source:alternative, genre:comedy, genre:family, remake:true",2022-01-03
+2022-01-07,The Green Knight,2021,https://boxd.it/2rORLX,5,,"source:alternative, genre:adventure, genre:drama, genre:medieval, based-on-book:yes",2022-01-07
+2022-01-10,Encanto,2021,https://boxd.it/2sxKcr,4,,"source:disney+, genre:animation, genre:musical",2022-01-09
+2022-01-11,Murder on the Orient Express,2017,https://boxd.it/2sSmnx,5,,"source:disney+, genre:crime, based-on-book:yes, genre:thriller, tmdb_id:392044",2022-01-10
+2022-01-14,Underwater,2020,https://boxd.it/2tBjub,3.5,,"source:disney+, genre:sci-fi, genre:thriller, genre:acton",2022-01-12
+2022-01-14,Eternals,2021,https://boxd.it/2tBn1R,3.5,,"source:disney+, genre:adventure, genre:action, comic-book:marvel",2022-01-13
+2022-01-18,Free Guy,2021,https://boxd.it/2uz1Al,4,,"source:disney+, genre:adventure, genre:action, genre:comedy",2022-01-16
+2022-01-23,Negative Space,2017,https://boxd.it/2vEf0v,5,,"source:youtube, genre:drama, short:true",2022-01-22
+2022-01-26,The Last Duel,2021,https://boxd.it/2wkmDt,5,,"source:disney+, genre:drama, genre:historical",2022-01-24
+2022-03-20,The French Dispatch,2021,https://boxd.it/2G2Gzb,5,,disney+,2022-03-01
+2022-03-20,West Side Story,2021,https://boxd.it/2G2Y4Z,5,,disney+,2022-03-03
+2022-03-20,The King's Man,2021,https://boxd.it/2G2GRJ,4,,disney+,2022-03-06
+2022-03-20,Turning Red,2022,https://boxd.it/2G2HA5,5,,disney+,2022-03-17
+2022-03-20,Heaven Is for Real,2014,https://boxd.it/2G2HIt,5,,youtube,2022-03-19
+2022-04-11,Nightmare Alley,2021,https://boxd.it/2K1qDl,4,,disney+,2022-03-29
+2022-04-17,Fresh,2022,https://boxd.it/2L8XeV,4.5,,disney+,2022-04-03
+2022-04-17,Spider-Man: No Way Home,2021,https://boxd.it/2L8YzZ,5,,,2022-04-03
+2022-05-29,The Matrix Resurrections,2021,https://boxd.it/2SCdhd,2.5,,hbomax,2022-04-03
+2022-04-11,Death on the Nile,2022,https://boxd.it/2K1s8T,3.5,,disney+,2022-04-05
+2022-05-08,No Time to Die,2021,https://boxd.it/2ORwpz,5,,meo,2022-04-14
+2022-05-08,Dune,2021,https://boxd.it/2ORwRD,5,,meo,2022-04-18
+2022-05-29,After Hours,1985,https://boxd.it/2SCeQD,5,,hbomax,2022-05-08
+2022-05-29,Chip 'n Dale: Rescue Rangers,2022,https://boxd.it/2SChYZ,5,,disney+,2022-05-22
+2022-05-30,Frequently Asked Questions About Time Travel,2009,https://boxd.it/2SQard,5,,hbomax,2022-05-28
+2022-06-22,Doctor Strange in the Multiverse of Madness,2022,https://boxd.it/2X09WP,5,,"source:theater, genre:adventure, genre:horror, genre:action, comic-book:marvel",2022-06-04
+2022-06-22,Nausicaä of the Valley of the Wind,1984,https://boxd.it/2X0dYF,5,,"source:netflix, genre:adventure, genre:action, genre:anime, comic-book:manga",2022-06-11
+2022-06-22,Kingsglaive: Final Fantasy XV,2016,https://boxd.it/2X0ff3,3,,"videogame:final fantasy xv, source:netflix, genre:adventure, genre:action, genre:sci-fi",2022-06-21
+2022-07-01,Bigbug,2022,https://boxd.it/2YFGPj,3.5,,"source:netflix, genre:sci-fi, genre:drama, genre:comedy",2022-06-30
+2023-02-19,You People,2023,https://boxd.it/3SdzI9,4,,"source:netflix, genre:drama, genre:comedy",2023-02-18
+2023-02-19,Raw,2016,https://boxd.it/3SdAhj,5,,"source:netflix, genre:drama, genre:thriller",2023-02-18
+2023-02-21,Top Gun: Maverick,2022,https://boxd.it/3SQuZR,4,,"genre:action, genre:adventure, source:sky",2023-02-20
+2023-02-24,Sonic the Hedgehog 2,2022,https://boxd.it/3TU7uX,4,,"genre:adventure, genre:action, adaptation:game, source:sky, style:animation",2023-02-24
+2023-03-05,White Noise,2022,https://boxd.it/3WaGF7,4.5,,"source:netflix, genre:comedy, genre:drama, adaptation:book",2023-03-04
+2023-03-06,An Ostrich Told Me the World Is Fake and I Think I Believe It,2022,https://boxd.it/3WBrQt,5,,"source:internet, genre:drama, style:animation, genre:comedy",2023-03-05
+2023-03-17,The Year of the Death of Ricardo Reis,2020,https://boxd.it/3ZEaa9,4,,"source:primevideo, genre:drama, adaptation:book",2023-03-17
+2023-03-18,Monster Hunter,2020,https://boxd.it/3ZRwYr,2.5,,"source:netflix, genre:adventure, genre:action, adaptation:game",2023-03-18
+2023-03-18,Float,2019,https://boxd.it/3ZRy09,5,,"source:disney+, genre:drama, genre:family",2023-03-18
+2023-03-19,Everything Everywhere All at Once,2022,https://boxd.it/40bdCV,5,,"source:alternative, genre:sci-fi, genre:adventure, genre:action, genre:family",2023-03-19
+2023-03-25,Boston Strangler,2023,https://boxd.it/41JwYX,4,,"source:disney+, genre:drama, genre:film-noir, adaptation:facts",2023-03-25
+2023-04-03,Tetris,2023,https://boxd.it/442xC5,5,,"source:appletv, genre:drama, genre:adventure, adaptation:facts",2023-04-02
+2023-04-09,"The Boy, the Mole, the Fox and the Horse",2022,https://boxd.it/4632it,5,,"source:appletv, genre:adventure, genre:drama, adaptation:fairy-tale, style:animation",2023-04-09
+2023-04-09,Luck,2022,https://boxd.it/46335F,4,,"genre:adventure, genre:action, genre:musical, source:appletv, style:animation",2023-04-09
+2023-04-14,Vivarium,2019,https://boxd.it/47hBj9,4,,"genre:drama, genre:thriller, genre:sci-fi, source:max",2023-04-13
+2023-04-19,Old,2021,https://boxd.it/48Eki9,3,,"source:primevideo, genre:horror, genre:drama, genre:thriller",2023-04-18
+2023-04-21,Parasite,2019,https://boxd.it/495Gen,5,,"genre:comedy, genre:drama, genre:thriller, genre:horror, source:max, tmdb_id:496243",2023-04-20
+2023-04-23,The Super Mario Bros. Movie,2023,https://boxd.it/49OCAz,5,,"genre:action, genre:adventure, genre:comedy, source:theater, adaptation:game, style:animation",2023-04-23
+2023-05-05,Guardians of the Galaxy Vol. 3,2023,https://boxd.it/4cORxd,5,,"source:theater, genre:sci-fi, genre:adventure, genre:action, adaptation:comics",2023-05-04
+2023-05-07,Clock,2023,https://boxd.it/4dB40H,3,,"source:disney+, genre:thriller, genre:horror",2023-05-05
+2023-05-10,The Sea Beast,2022,https://boxd.it/4egH9v,3.5,,"source:netflix, genre:adventure, genre:action, genre:family",2023-05-08
+2023-05-16,Air,2023,https://boxd.it/4fCEf9,4,,"source:primevideo, genre:drama, genre:sports, adaptation:facts",2023-05-15
+2023-05-19,Ant-Man and the Wasp: Quantumania,2023,https://boxd.it/4gmCol,3,,"source:disney+, genre:adventure, genre:action, genre:comedy, adaptation:comics",2023-05-19
+2023-05-23,Ghosted,2023,https://boxd.it/4hwInn,4,,"source:appletv, genre:comedy, genre:adventure, genre:action",2023-05-23
+2023-05-25,"Confess, Fletch",2022,https://boxd.it/4hQQ07,3,,"genre:comedy, genre:drama, genre:detective, source:sky",2023-05-24
+2023-05-27,Shazam! Fury of the Gods,2023,https://boxd.it/4ifpfz,4,,"genre:action, genre:adventure, genre:comedy, adaptation:comics, source:max",2023-05-26
+2023-05-30,The Seventh Sign,1988,https://boxd.it/4j3TU3,3,,"source:netflix, genre:horror, genre:thriller",2023-05-29
+2023-06-02,Greenland,2020,https://boxd.it/4jT5Oj,3,,"source:primevideo, genre:drama, genre:thriller, genre:disaster",2023-06-02
+2023-06-04,The Mitchells vs. the Machines,2021,https://boxd.it/4kmTUz,5,,"source:netflix, genre:adventure, genre:action, genre:sci-fi, style:animation",2023-06-03
+2023-06-06,Dogtooth,2009,https://boxd.it/4l9h0L,5,,"source:alternative, genre:drama, genre:thriller",2023-06-06
+2023-06-09,Samson,2018,https://boxd.it/4lPBJ1,2.5,,"source:alternative, genre:action, genre:epic, adaptation:book",2023-06-09
+2023-06-11,Nope,2022,https://boxd.it/4mtzgh,4,,"genre:horror, genre:sci-fi, source:sky",2023-06-11
+2023-06-13,Confessions of a Dangerous Mind,2002,https://boxd.it/4mWL7J,4.5,,"source:alternative, genre:drama, genre:crime, adaptation:facts",2023-06-13
+2023-06-21,Raising Arizona,1987,https://boxd.it/4pieLt,5,,"source:alternative, genre:comedy, genre:crime",2023-06-21
+2023-06-27,Stan Lee,2023,https://boxd.it/4qLdFr,4,,"source:disney+, adaptation:facts, genre:documentary",2023-06-26
+2023-07-02,Flashbacks of a Fool,2008,https://boxd.it/4sdAfr,3.5,,"source:alternative, genre:drama",2023-07-01
+2023-07-02,Last Night in Soho,2021,https://boxd.it/4shXlZ,5,,"source:primevideo, genre:horror, genre:thriller, tmdb_id:576845",2023-07-02
+2023-07-03,Asteroid City,2023,https://boxd.it/4sDiqj,5,,"source:theater, genre:sci-fi, genre:romance, genre:drama, genre:metalinguistic",2023-07-03
+2023-07-08,The Vicious Kind,2009,https://boxd.it/4tWvNd,3,,"source:alternative, genre:drama",2023-07-07
+2023-07-09,God's Crooked Lines,2022,https://boxd.it/4uxAuz,5,,"source:netflix, genre:thriller, genre:drama, tmdb_id:890980",2023-07-09
+2023-07-10,Extraction 2,2023,https://boxd.it/4uLt2r,4,,"source:netflix, genre:adventure, genre:action",2023-07-10
+2023-07-13,A Simple Plan,1998,https://boxd.it/4vv8f7,4.5,,"source:alternative, genre:drama, genre:thriller",2023-07-12
+2023-07-16,The Descendants,2011,https://boxd.it/4wkDJT,5,,"source:disney+, genre:drama, genre:family",2023-07-15
+2023-07-19,Pulse,2001,https://boxd.it/4xlyr7,5,,"source:alternative, genre:horror, genre:sci-fi",2023-07-18
+2023-07-20,Nocturnal Animals,2016,https://boxd.it/4xOdUP,5,,"source:primevideo, genre:drama, genre:dark",2023-07-20
+2023-07-21,Barton Fink,1991,https://boxd.it/4yi2Qd,5,,"source:alternative, genre:comedy, genre:drama, genre:metalinguistic",2023-07-21
+2023-07-24,Planes,2013,https://boxd.it/4ztb6p,4,,"source:disney+, genre:adventure, style:animation",2023-07-23
+2023-07-24,Planes: Fire & Rescue,2014,https://boxd.it/4ztrnh,4,,"genre:adventure, source:disney+, style:animation",2023-07-23
+2023-08-12,Ghostbusters: Afterlife,2021,https://boxd.it/4GjhUN,2.5,,"source:netflix, genre:sci-fi, genre:family, genre:comedy",2023-08-11
+2023-08-13,Heart of Stone,2023,https://boxd.it/4GC8XL,3.5,,"source:netflix, genre:sci-fi, genre:action, genre:adventure",2023-08-12
+2023-08-14,Paradise,2023,https://boxd.it/4GTTgj,5,,"source:netflix, genre:sci-fi, genre:action",2023-08-13
+2023-08-15,Sing 2,2021,https://boxd.it/4Hg5Qn,4.5,,"source:primevideo, genre:musical, genre:comedy, genre:drama, style:animation",2023-08-14
+2023-08-15,Green Room,2015,https://boxd.it/4Hg6mD,3,,"source:alternative, genre:thriller, genre:action",2023-08-14
+2023-08-16,Puss in Boots: The Last Wish,2022,https://boxd.it/4Hz6Eb,5,,"source:sky, genre:adventure, genre:action, adaptation:fairy-tale, style:animation",2023-08-15
+2023-08-17,Bottle Rocket,1994,https://boxd.it/4HRntb,4,,"source:youtube, genre:action, genre:crime, genre:comedy",2023-08-16
+2023-08-17,Castello Cavalcanti,2013,https://boxd.it/4HRnXl,4,,"source:youtube, genre:sports, genre:drama, genre:comedy",2023-08-16
+2023-08-17,Come Together,2016,https://boxd.it/4HRojr,5,,"source:youtube, genre:drama, genre:family",2023-08-16
+2023-08-17,Do You Like to Read?,2012,https://boxd.it/4HRoGZ,3.5,,"source:youtube, genre:family, style:animation",2023-08-16
+2023-08-17,Cousin Ben Troop Screening,2012,https://boxd.it/4HRoTf,2.5,,"source:youtube, genre:comedy",2023-08-16
+2023-08-19,Fast X,2023,https://boxd.it/4ItX9H,4,,"source:appletv, genre:action, genre:adventure, genre:drama, genre:comedy",2023-08-18
+2023-08-20,Reminiscence,2021,https://boxd.it/4IVVkf,3.5,,"source:primevideo, genre:sci-fi, genre:adventure, genre:thriller, tmdb_id:579047",2023-08-20
+2023-08-22,Sicario,2015,https://boxd.it/4JtID7,4,,"source:alternative, genre:drama, genre:action, tmdb_id:273481",2023-08-21
+2023-08-23,Take Shelter,2011,https://boxd.it/4JMyIT,2.5,,"source:alternative, genre:drama, genre:thriller",2023-08-21
+2023-08-23,Branded,2012,https://boxd.it/4K398b,2,,"source:alternative, genre:sci-fi, genre:drama",2023-08-22
+2023-08-23,Rust and Bone,2012,https://boxd.it/4K3aun,5,,"source:alternative, genre:drama",2023-08-23
+2023-08-23,Tom and Jerry: The Lost Dragon,2014,https://boxd.it/4K3b4P,5,,"source:alternative, genre:comedy, genre:fantasy, style:animation",2023-08-23
+2023-08-28,Transformers: Rise of the Beasts,2023,https://boxd.it/4LA3hL,3.5,,"source:primevideo, genre:action, genre:adventure",2023-08-28
+2023-08-29,Gamer,2009,https://boxd.it/4LSlLb,3,,"source:alternative, genre:action, genre:sci-fi",2023-08-29
+2023-09-01,M3GAN,2022,https://boxd.it/4Ms3yF,3,,"source:sky, genre:horror, genre:sci-fi",2023-08-31
+2023-09-02,The Flash,2023,https://boxd.it/4MOLo9,2.5,,"genre:sci-fi, genre:action, genre:adventure, source:max",2023-09-01
+2023-09-02,Horns,2013,https://boxd.it/4MZCw1,2.5,,"source:alternative, genre:thriller, genre:horror, genre:fantasy",2023-09-02
+2023-09-04,Dirty Rotten Scoundrels,1988,https://boxd.it/4NyqbP,5,,"source:alternative, genre:comedy",2023-09-04
+2023-09-05,Bubba Ho-tep,2002,https://boxd.it/4NYCDN,5,,"source:alternative, genre:comedy, genre:thriller, genre:action, genre:horror, tmdb_id:9707",2023-09-05
+2023-09-09,The Lords of Flatbush,1974,https://boxd.it/4ONufP,2.5,,"source:alternative, genre:drama, genre:teen",2023-09-08
+2023-09-11,Russian Ark,2002,https://boxd.it/4PA9Pb,4.5,,"source:alternative, genre:drama, adaptation:facts, genre:fantasy",2023-09-11
+2023-09-12,Fantastic Planet,1973,https://boxd.it/4PKcbX,5,,"source:alternative, genre:sci-fi, genre:adventure, style:animation",2023-09-11
+2023-09-13,Tour de Pharmacy,2017,https://boxd.it/4Q1uUF,5,,"source:primevideo, genre:mockumentary, tmdb_id:458506",2023-09-12
+2023-09-14,Elemental,2023,https://boxd.it/4QuHnR,5,,"source:disney+, genre:romance, genre:comedy, genre:adventure, style:animation",2023-09-14
+2023-09-16,Starman,1984,https://boxd.it/4QTBzx,3.5,,"source:alternative, genre:adventure, genre:action, genre:drama",2023-09-16
+2023-09-16,Cloak & Dagger,1984,https://boxd.it/4QVzcF,4.5,,"source:alternative, genre:action, genre:thriller, genre:detective",2023-09-16
+2023-09-17,Altered States,1980,https://boxd.it/4RktWd,3,,"source:alternative, genre:thriller, genre:sci-fi, genre:horror",2023-09-17
+2023-09-18,A Monster Calls,2016,https://boxd.it/4RyCq9,5,,"source:alternative, genre:drama, genre:family, genre:fantasy",2023-09-18
+2023-09-19,The Way of the Gun,2000,https://boxd.it/4RJ8OR,2,,"source:alternative, genre:crime, genre:drama, genre:action, tmdb_id:1619",2023-09-18
+2023-09-22,The Pelican Brief,1993,https://boxd.it/4SwMa1,5,,"source:alternative, genre:thriller, genre:drama, tmdb_id:9944",2023-09-21
+2023-09-23,Shutter Island,2010,https://boxd.it/4SLBzp,5,,"source:netflix, genre:drama, genre:thriller, genre:horror, tmdb_id:11324",2023-09-22
+2023-09-25,Dungeons & Dragons: Honor Among Thieves,2023,https://boxd.it/4Twkcd,4,,"source:sky, genre:adventure, genre:comedy, genre:fantasy",2023-09-25
+2023-09-26,In a Valley of Violence,2016,https://boxd.it/4TTDZp,3,,"source:sky, genre:action, genre:western",2023-09-26
+2023-09-27,The Neon Demon,2016,https://boxd.it/4U4xbl,2.5,,"source:alternative, genre:drama, genre:thriller, tmdb_id:301365",2023-09-27
+2023-09-28,The Wonderful Story of Henry Sugar,2023,https://boxd.it/4Ud3Rz,5,,"source:netflix, genre:drama, adaptation:book, genre:comedy",2023-09-27
+2023-09-29,The Swan,2023,https://boxd.it/4UsMdJ,5,,"source:netflix, genre:drama",2023-09-28
+2023-09-30,The Rat Catcher,2023,https://boxd.it/4UK14B,5,,"source:netflix, genre:thriller, genre:comedy",2023-09-29
+2023-10-01,Poison,2023,https://boxd.it/4V48Az,4,,"source:netflix, genre:comedy, genre:thriller",2023-09-30
+2023-10-02,A Boy and His Dog,1975,https://boxd.it/4VG15F,3,,"source:youtube, genre:sci-fi, genre:adventure, genre:action, genre:thriller",2023-10-02
+2023-10-03,Bye Bye Birdie,1963,https://boxd.it/4VQCv1,3,,"source:alternative, genre:musical, genre:comedy, adaptation:play",2023-10-02
+2023-10-06,Cloak and Dagger,1946,https://boxd.it/4WVo9T,3,,"source:youtube, genre:adventure, genre:romance, genre:action, genre:thriller, tmdb_id:44043",2023-10-06
+2023-10-09,No One Will Save You,2023,https://boxd.it/4XQ1VJ,5,,"genre:drama, genre:sci-fi, source:disney+, tmdb_id:820609",2023-10-08
+2023-10-10,A Pigeon Sat on a Branch Reflecting on Existence,2014,https://boxd.it/4YluuT,3.5,,"genre:drama, genre:comedy, source:mubi, tmdb_id:110390",2023-10-10
+2023-10-15,Brotherhood of the Wolf,2001,https://boxd.it/504ZRD,4,,"source:alternative, genre:thriller, genre:action, tmdb_id:6312",2023-10-14
+2023-10-16,American Pop,1981,https://boxd.it/50kVgZ,4,,"source:alternative, genre:musical, genre:drama, style:animation",2023-10-16
+2023-10-19,Timecrimes,2007,https://boxd.it/516Xkl,5,,"source:alternative, genre:sci-fi, genre:thriller",2023-10-18
+2023-10-26,Uncharted,2022,https://boxd.it/53oDiD,4,,"source:netflix, genre:action, genre:adventure, genre:comedy, adaptation:game, tmdb_id:335787",2023-10-24
+2023-10-26,Titus,1999,https://boxd.it/53ziMT,5,,"source:alternative, genre:drama, genre:crime, adaptation:play, tmdb_id:12524",2023-10-26
+2023-10-28,Broken Flowers,2005,https://boxd.it/54gvr1,5,,"source:alternative, genre:comedy, genre:adventure, tmdb_id:308",2023-10-28
+2023-10-30,The Lost Boys,1987,https://boxd.it/5566vh,4,,"source:alternative, genre:comedy, genre:horror, tmdb_id:1547",2023-10-30
+2023-11-02,Morbius,2022,https://boxd.it/55WmZB,2,,"source:netflix, genre:sci-fi, genre:action, genre:horror, tmdb_id:526896",2023-11-01
+2023-11-04,Cocaine Bear,2023,https://boxd.it/56NwvH,2.5,,"source:sky, genre:comedy, genre:drama, genre:crime, tmdb_id:804150, adaptation:facts",2023-11-04
+2023-11-11,The After,2023,https://boxd.it/58MZnX,4,,"source:netflix, genre:drama, tmdb_id:1169455",2023-11-10
+2023-11-11,Escape from Sobibor,1987,https://boxd.it/58Zoxd,5,,"source:internet, adaptation:facts, genre:drama, genre:war, tmdb_id:25318",2023-11-11
+2023-11-12,Robin Hood: Men in Tights,1993,https://boxd.it/59mb0r,5,,"source:netflix, genre:comedy, genre:action, genre:adventure, tmdb_id:8005, genre:musical",2023-11-12
+2023-11-13,Quiz Lady,2023,https://boxd.it/59nVtr,4.5,,"source:disney+, genre:comedy, tmdb_id:787781, genre:adventure",2023-11-12
+2023-11-15,Code 8,2019,https://boxd.it/5aafe3,2.5,,"source:netflix, genre:action, genre:drama, genre:sci-fi, tmdb_id:461130",2023-11-14
+2023-11-18,The Killer,2023,https://boxd.it/5b3vWP,4.5,,"source:netflix, tmdb_id:800158, genre:drama, adaptation:comics, genre:crime",2023-11-18
+2023-11-21,Blue Beetle,2023,https://boxd.it/5bY5Gv,3.5,,"genre:action, genre:comedy, genre:drama, tmdb_id:565770, source:max",2023-11-20
+2023-11-23,Dracula: Dead and Loving It,1995,https://boxd.it/5cIjXx,4,,"source:alternative, genre:comedy, tmdb_id:12110, adaptation:movie",2023-11-22
+2023-11-26,Weird: The Al Yankovic Story,2022,https://boxd.it/5dyQgZ,4,Yes,"source:alternative, genre:comedy, genre:documentary, genre:mockumentary, genre:biography, adaptation:facts, tmdb_id:928344",2023-11-24
+2023-11-26,Once Upon a Studio,2023,https://boxd.it/5dyYK9,2.5,,"source:disney+, genre:comedy, tmdb_id:1139087, style:animation",2023-11-25
+2023-11-27,Barbie,2023,https://boxd.it/5e9PkP,5,,"source:appletv, genre:comedy, genre:drama, adaptation:toy, tmdb_id:346698",2023-11-26
+2023-11-27,The Boy and the Heron,2023,https://boxd.it/5e9S2z,5,,"source:theater, genre:adventure, genre:drama, style:animation, tmdb_id:508883",2023-11-26
+2023-11-27,A Haunting in Venice,2023,https://boxd.it/5eqgdD,4.5,,"source:disney+, genre:horror, genre:crime, tmdb_id:945729, adaptation:book, genre:thriller",2023-11-27
+2023-11-27,Venom: Let There Be Carnage,2021,https://boxd.it/5eqkhz,3,,"source:netflix, genre:action, genre:comedy, adaptation:comics, tmdb_id:580489",2023-11-27
+2023-11-30,Nimona,2023,https://boxd.it/5f6bDb,4,,"source:netflix, tmdb_id:961323, genre:action, genre:adventure, style:animation",2023-11-29
+2023-12-01,Variações: Guardian Angel,2019,https://boxd.it/5fsXMz,5,,"source:rtpplay, genre:biography, genre:drama, adaptation:facts, tmdb_id:529459",2023-11-30
+2023-12-01,American Symphony,2023,https://boxd.it/5ftv1d,4,,"source:netflix, genre:documentary, genre:drama, tmdb_id:1171816",2023-11-30
+2023-12-04,Ice Merchants,2022,https://boxd.it/5gJgsz,5,,"genre:adventure, style:animation, tmdb_id:965171, style:short, source:max",2023-12-01
+2023-12-04,The Shepherd,2023,https://boxd.it/5gJokD,4,,"source:disney+, genre:adventure, tmdb_id:1116488, genre:thriller",2023-12-03
+2023-12-08,Zero Dark Thirty,2012,https://boxd.it/5hWCeT,4.5,,"source:alternative, genre:drama, genre:action, tmdb_id:97630",2023-12-08
+2023-12-10,The King of Comedy,1982,https://boxd.it/5iiDxr,5,,"source:disney+, genre:drama, genre:comedy, tmdb_id:262",2023-12-09
+2023-12-11,Family Switch,2023,https://boxd.it/5j2qqJ,5,,"source:netflix, genre:comedy, genre:adventure, genre:family, tmdb_id:798021",2023-12-11
+2023-12-15,Merry Little Batman,2023,https://boxd.it/5kltUJ,5,,"source:primevideo, genre:action, genre:adventure, style:animation, tmdb_id:870358",2023-12-14
+2023-12-17,Leave the World Behind,2023,https://boxd.it/5kRUIJ,5,,"source:netflix, genre:sci-fi, genre:drama, tmdb_id:726209",2023-12-16
+2023-12-18,Chicken Run: Dawn of the Nugget,2023,https://boxd.it/5lBYcp,5,,"source:netflix, genre:action, genre:adventure, genre:comedy, style:animation, tmdb_id:520758",2023-12-18
+2023-12-19,Indiana Jones and the Dial of Destiny,2023,https://boxd.it/5lOX3H,5,,"source:disney+, genre:adventure, genre:action, tmdb_id:335977",2023-12-18
+2023-12-22,Maestro,2023,https://boxd.it/5mQx27,5,,"genre:biography, adaptation:facts, genre:drama, tmdb_id:523607, source:netflix",2023-12-21
+2023-12-22,Coraline,2009,https://boxd.it/5n6OYp,5,Yes,"source:alternative, genre:adventure, genre:thriller, genre:horror, style:animation, tmdb_id:14836, adaptation:book",2023-12-22
+2023-12-30,Rebel Moon – Part One: A Child of Fire,2023,https://boxd.it/5r4kT7,3.5,,"source:netflix, genre:sci-fi, genre:adventure, tmdb_id:848326, genre:action",2023-12-29
+2023-12-30,Saltburn,2023,https://boxd.it/5r4rVz,3,,"source:primevideo, tmdb_id:930564, genre:drama, genre:thriller",2023-12-29
+2023-12-31,Spider-Man: Into the Spider-Verse,2018,https://boxd.it/5rZncT,5,,"source:alternative, genre:action, genre:adventure, genre:sci-fi, adaptation:comics, style:animation, tmdb_id:324857",2023-12-31
+2023-12-31,Spider-Man: Across the Spider-Verse,2023,https://boxd.it/5rZpQh,5,,"source:alternative, genre:action, genre:adventure, style:animation, genre:comedy, genre:drama, tmdb_id:569094",2023-12-31
+2024-01-05,Oppenheimer,2023,https://boxd.it/5uYaq9,5,,"genre:biography, genre:sci-fi, genre:drama, tmdb_id:872585, adaptation:book, source:rental, adaptation:facts",2024-01-05
+2024-01-17,Strange Way of Life,2023,https://boxd.it/5C4ROD,4.5,,"genre:western, genre:drama, tmdb_id:963765, source:alternative",2024-01-16
+2024-01-18,Killers of the Flower Moon,2023,https://boxd.it/5CAzWX,5,,"source:appletv, genre:drama, genre:crime, adaptation:facts, adaptation:book, tmdb_id:466420",2024-01-18
+2024-01-19,A Swedish Love Story,1970,https://boxd.it/5CZ3Rh,5,,"source:mubi, tmdb_id:31304, genre:drama, genre:romance",2024-01-18
+2024-01-22,Pete,2022,https://boxd.it/5Eppo3,5,,"source:youtube, genre:drama, style:animation, tmdb_id:967244",2024-01-19
+2024-01-23,The Creator,2023,https://boxd.it/5FdV53,5,,"source:disney+, genre:sci-fi, genre:fantasy, genre:drama, tmdb_id:670292",2024-01-23
+2024-01-27,The Barber of Little Rock,2023,https://boxd.it/5GR4Gp,4,,"source:youtube, genre:documentary, tmdb_id:1186247",2024-01-26
+2024-01-27,Pachyderm,2022,https://boxd.it/5GV385,4.5,,"source:youtube, genre:drama, tmdb_id:950822",2024-01-26
+2024-02-03,Ninety-Five Senses,2022,https://boxd.it/5KaqPt,5,,"source:youtube, genre:drama, style:animation, tmdb_id:1040371",2024-02-02
+2024-02-03,Our Uniform,2023,https://boxd.it/5KauO5,4,,"source:youtube, genre:drama, tmdb_id:1140605",2024-02-02
+2024-02-03,"Red, White and Blue",2023,https://boxd.it/5Kea7j,5,,"source:youtube, genre:drama, tmdb_id:1194636",2024-02-02
+2024-02-05,The Holdovers,2023,https://boxd.it/5L8kzJ,4.5,,"source:alternative, genre:drama, genre:comedy, tmdb_id:840430",2024-02-04
+2024-02-05,The Last Repair Shop,2023,https://boxd.it/5L8sYd,5,,"source:youtube, genre:documentary, genre:drama, tmdb_id:1171861",2024-02-04
+2024-02-05,Island in Between,2023,https://boxd.it/5LblHF,3.5,,"source:youtube, genre:documentary, tmdb_id:1203439",2024-02-04
+2024-02-05,Society of the Snow,2023,https://boxd.it/5Lbp5F,4.5,,"source:netflix, genre:drama, adaptation:facts, adaptation:book, tmdb_id:906126",2024-02-04
+2024-02-09,The Marvels,2023,https://boxd.it/5NfUnB,4,,"source:disney+, genre:action, genre:adventure, tmdb_id:609681",2024-02-09
+2024-02-15,Mission: Impossible – Dead Reckoning,2023,https://boxd.it/5PJi6F,5,,"source:sky, genre:action, genre:adventure, tmdb_id:575264",2024-02-12
+2024-02-15,Foe,2023,https://boxd.it/5PJJff,3,,"source:primevideo, genre:sci-fi, genre:drama, tmdb_id:760245",2024-02-14
+2024-02-18,Índia,2022,https://boxd.it/5R3OBf,4,,"genre:drama, genre:comedy, tmdb_id:986695, source:max",2024-02-16
+2024-02-23,20 Days in Mariupol,2023,https://boxd.it/5Tji0h,5,,"genre:documentary, source:alternative, tmdb_id:1058616",2024-02-22
+2024-02-23,Orion and the Dark,2024,https://boxd.it/5TGdvb,3.5,,"source:netflix, genre:comedy, genre:drama, style:animation, tmdb_id:1139829",2024-02-23
+2024-02-25,Einstein and the Bomb,2024,https://boxd.it/5UF9Dd,3,,"source:netflix, genre:documentary, genre:drama, tmdb_id:1168709",2024-02-25
+2024-02-26,The Aerial,2007,https://boxd.it/5VdJyL,5,,"source:mubi, tmdb_id:13317, genre:sci-fi, genre:drama",2024-02-26
+2024-02-28,Anatomy of a Fall,2023,https://boxd.it/5W3GDn,5,,"source:alternative, genre:drama, tmdb_id:915935, genre:crime",2024-02-28
+2024-03-03,Perfect Days,2023,https://boxd.it/5XlcK9,5,,"source:alternative, genre:drama, tmdb_id:976893",2024-03-01
+2024-03-03,Aquaman and the Lost Kingdom,2023,https://boxd.it/5XlePv,3,,"genre:action, genre:adventure, tmdb_id:572802, source:max, genre:fantasy, adaptation:comics",2024-03-01
+2024-03-03,Spaceman,2024,https://boxd.it/5XlIcN,3,,"source:netflix, genre:drama, genre:sci-fi, tmdb_id:636706",2024-03-01
+2024-03-05,Bullet Train,2022,https://boxd.it/5YFy31,3,,"source:netflix, genre:action, tmdb_id:718930",2024-03-04
+2024-03-05,American Fiction,2023,https://boxd.it/5YPAOj,4,,"source:primevideo, genre:drama, tmdb_id:1056360, adaptation:book",2024-03-05
+2024-03-10,Dune: Part Two,2024,https://boxd.it/613sjX,5,,"source:theater, genre:sci-fi, genre:adventure, genre:action, tmdb_id:693134, adaptation:book",2024-03-10
+2024-03-14,Firestarter,1984,https://boxd.it/62XcHl,2.5,,"source:alternative, genre:sci-fi, genre:action, genre:drama, tmdb_id:11495, adaptation:book",2024-03-14
+2024-03-16,Damsel,2024,https://boxd.it/63yOkN,4,,"source:netflix, genre:fantasy, genre:action, tmdb_id:763215",2024-03-15
+2024-03-17,Beau Is Afraid,2023,https://boxd.it/64irDf,3,,"source:primevideo, genre:adventure, genre:drama, tmdb_id:798286",2024-03-17
+2024-03-19,Wonka,2023,https://boxd.it/65h9zV,4,,"tmdb_id:787699, genre:fantasy, genre:drama, source:max",2024-03-18
+2024-03-19,If Anything Happens I Love You,2020,https://boxd.it/65i5vd,5,,"source:netflix, genre:drama, style:animation, tmdb_id:713776",2024-03-18
+2024-03-20,Poor Things,2023,https://boxd.it/65OIh9,5,,"source:disney+, genre:sci-fi, genre:adventure, genre:drama, tmdb_id:792307, genre:comedy",2024-03-20
+2024-03-22,Shampoo,1975,https://boxd.it/66GNMz,3,,"source:alternative, genre:drama, genre:comedy, tmdb_id:31121",2024-03-22
+2024-03-23,A Simple Favor,2018,https://boxd.it/677wt5,3.5,,"source:alternative, genre:drama, genre:comedy, tmdb_id:484247",2024-03-22
+2024-03-24,Damage,1992,https://boxd.it/67Fmtn,4,,"source:alternative, genre:romance, genre:drama, tmdb_id:11012",2024-03-24
+2024-03-27,Contagion,2011,https://boxd.it/68Ien7,3,,"source:alternative, genre:drama, genre:sci-fi, tmdb_id:39538",2024-03-26
+2024-03-30,The Spider Within: A Spider-Verse Story,2023,https://boxd.it/6avuKX,4,,"source:youtube, genre:action, genre:drama, tmdb_id:1106299",2024-03-30
+2024-04-01,Road House,1989,https://boxd.it/6bg23Z,4,,"source:primevideo, genre:action, genre:drama, tmdb_id:10135",2024-03-31
+2024-04-01,Road House,2024,https://boxd.it/6bCs3b,2.5,,"source:primevideo, genre:action, genre:drama, tmdb_id:359410",2024-03-31
+2024-04-02,Shirley,2024,https://boxd.it/6c7c3L,5,,"source:netflix, genre:biography, adaptation:facts, tmdb_id:798612",2024-04-02
+2024-04-05,65,2023,https://boxd.it/6d4q8N,2.5,,"source:primevideo, genre:sci-fi, genre:action, genre:adventure, tmdb_id:700391",2024-04-02
+2024-04-08,Wish,2023,https://boxd.it/6eC6Gd,3,,"source:disney+, genre:adventure, style:animation, tmdb_id:1022796, genre:fantasy",2024-04-07
+2024-04-08,Música,2024,https://boxd.it/6eCksf,4,,"source:primevideo, genre:biography, adaptation:facts, genre:comedy, genre:drama, tmdb_id:968441",2024-04-07
+2024-04-17,Ricky Stanicky,2024,https://boxd.it/6ia2vb,4,,"source:primevideo, genre:comedy, tmdb_id:1022690",2024-04-17
+2024-04-19,Beowulf,2007,https://boxd.it/6iMHRX,3.5,,"genre:action, genre:adventure, adaptation:book, style:animation, tmdb_id:2310, source:max",2024-04-18
+2024-04-22,The Greatest Hits,2024,https://boxd.it/6k6nXb,3,,"source:disney+, genre:drama, genre:sci-fi, tmdb_id:1011082",2024-04-19
+2024-04-22,Rebel Moon – Part Two: The Scargiver,2024,https://boxd.it/6k6BRB,4,,"source:netflix, genre:action, genre:sci-fi, genre:adventure, tmdb_id:934632",2024-04-20
+2024-04-22,Civil War,2024,https://boxd.it/6k6Rj1,5,,"tmdb_id:929590, source:theater, genre:action, genre:drama",2024-04-21
+2024-04-23,Take Care of Maya,2023,https://boxd.it/6krgt1,4,,"source:netflix, genre:documentary, tmdb_id:1114901",2024-04-22
+2024-04-27,A Man Called Otto,2022,https://boxd.it/6lNvSX,4,,"source:primevideo, genre:comedy, genre:drama, tmdb_id:937278",2024-04-24
+2024-04-27,Beowulf,1999,https://boxd.it/6lQw1h,2,,"source:alternative, genre:action, tmdb_id:5470",2024-04-26
+2024-04-28,Demolition,2015,https://boxd.it/6mnYZl,4,,"source:alternative, tmdb_id:303991, genre:drama",2024-04-28
+2024-04-30,City Hunter,2024,https://boxd.it/6naegx,4.5,,"source:netflix, genre:action, adaptation:anime, tmdb_id:1061990, genre:thriller",2024-04-29
+2024-04-30,Children of Men,2006,https://boxd.it/6nwcfV,5,,"source:sky, genre:sci-fi, tmdb_id:9693, genre:action",2024-04-30
+2024-05-04,Unfrosted,2024,https://boxd.it/6pbPy9,4,,"source:netflix, genre:comedy, tmdb_id:844185",2024-05-04
+2024-05-06,Plane,2023,https://boxd.it/6q2Lft,2.5,,"source:primevideo, tmdb_id:646389, genre:action",2024-05-06
+2024-05-13,Bad Living,2023,https://boxd.it/6sykTD,5,,"genre:drama, tmdb_id:1092099, source:max",2024-05-12
+2024-05-13,Living Bad,2023,https://boxd.it/6sZxUN,5,,"genre:drama, adaptation:play, tmdb_id:1077686, source:max",2024-05-13
+2024-05-20,The Portuguese Falcon,2015,https://boxd.it/6vI1Az,5,,"genre:comedy, genre:action, tmdb_id:188621, adaptation:comics, source:max",2024-05-18
+2024-05-24,The Unbearable Weight of Massive Talent,2022,https://boxd.it/6wXL4N,4.5,,"source:alternative, genre:action, genre:adventure, tmdb_id:648579",2024-05-21
+2024-05-24,Ferrari,2023,https://boxd.it/6wXV5h,3,,"source:primevideo, genre:biography, adaptation:facts, adaptation:book, tmdb_id:365620",2024-05-23
+2024-05-24,Sisu,2022,https://boxd.it/6x60FF,5,,"genre:action, genre:adventure, tmdb_id:840326, source:max",2024-05-24
+2024-05-25,Atlas,2024,https://boxd.it/6xw4uj,2,,"source:netflix, genre:action, genre:adventure, genre:sci-fi, tmdb_id:614933",2024-05-25
+2024-06-08,Godzilla Minus One,2023,https://boxd.it/6Dq9uF,5,,"genre:sci-fi, genre:drama, tmdb_id:940721, source:netflix",2024-06-08
+2024-06-12,Dual,2022,https://boxd.it/6F0gSb,3.5,,"genre:sci-fi, genre:drama, source:netflix, tmdb_id:698128",2024-06-12
+2024-06-13,The Dollmaker,2017,https://boxd.it/6Fn7lN,4.5,,"source:youtube, genre:horror, tmdb_id:501928",2024-06-12
+2024-07-02,Trigger Warning,2024,https://boxd.it/6MIwYb,2.5,,"source:netflix, genre:action, tmdb_id:704673",2024-06-29
+2024-07-02,The Outfit,2022,https://boxd.it/6MINjz,5,,"source:netflix, genre:drama, genre:crime, tmdb_id:799876",2024-07-01
+2024-07-04,Lamborghini: The Man Behind the Legend,2022,https://boxd.it/6NuGKJ,2.5,,"source:primevideo, genre:biography, adaptation:facts, adaptation:book, tmdb_id:457232",2024-07-03
+2024-07-06,Beverly Hills Cop: Axel F,2024,https://boxd.it/6Op0Cn,5,,"source:netflix, genre:comedy, genre:action, tmdb_id:280180",2024-07-05
+2024-07-08,Pearl,2022,https://boxd.it/6P9wpH,5,,"source:sky, genre:horror, tmdb_id:949423",2024-07-07
+2024-07-11,Goyo,2024,https://boxd.it/6QyN8R,5,,"source:netflix, genre:drama, genre:comedy, tmdb_id:1191610",2024-07-10
+2024-07-11,X,2022,https://boxd.it/6QKn9X,3.5,,"genre:horror, genre:drama, tmdb_id:760104, source:primevideo",2024-07-10
+2024-07-16,I am REN,2019,https://boxd.it/6SPNvX,2.5,,"source:primevideo, tmdb_id:12123, genre:sci-fi, genre:drama",2024-07-13
+2024-07-15,A Family Affair,2024,https://boxd.it/6SuZUt,2.5,,"source:netflix, genre:comedy, genre:romance, tmdb_id:987686",2024-07-14
+2024-07-16,The Science of Sleep,2006,https://boxd.it/6SQuQJ,4,,"source:alternative, genre:sci-fi, genre:drama, genre:comedy, tmdb_id:300",2024-07-15
+2024-07-16,Silence,2016,https://boxd.it/6T0JYN,5,,"source:alternative, genre:drama, genre:historical, tmdb_id:68730",2024-07-15
+2024-07-18,Stalled,2022,https://boxd.it/6U87lD,5,,"source:youtube, genre:sci-fi, tmdb_id:1032394",2024-07-18
+2024-07-25,The Nice Guys,2016,https://boxd.it/6XjXtX,5,,"source:alternative, genre:action, genre:comedy, tmdb_id:290250",2024-07-21
+2024-07-25,Boyhood,2014,https://boxd.it/6Xk1EF,5,,"source:netflix, tmdb_id:85350, genre:drama",2024-07-23
+2024-07-31,Deadpool & Wolverine,2024,https://boxd.it/6ZPNGf,5,,"source:theater, genre:action, genre:adventure, tmdb_id:533535",2024-07-27
+2024-08-09,The Ministry of Ungentlemanly Warfare,2024,https://boxd.it/73Ef75,4,,"source:primevideo, genre:action, genre:war, genre:adventure, genre:comedy, tmdb_id:799583",2024-08-07
+2024-08-10,Beyond the Infinite Two Minutes,2020,https://boxd.it/74h2gh,5,,"source:filmin, genre:sci-fi, genre:comedy, tmdb_id:805627",2024-08-10
+2024-08-10,The Peculiar Crime of Oddball Mister Jay,2019,https://boxd.it/74h8er,5,,"source:filmin, genre:drama, genre:comedy, style:animation, tmdb_id:685136",2024-08-10
+2024-08-10,Predestination,2014,https://boxd.it/74hbHr,4,,"source:filmin, genre:sci-fi, genre:drama, tmdb_id:206487",2024-08-10
+2024-08-15,The City of Lost Children,1995,https://boxd.it/76diPn,4,,"source:filmin, genre:action, genre:adventure, genre:thriller, genre:sci-fi, tmdb_id:902",2024-08-14
+2024-08-18,Songs from the Second Floor,2000,https://boxd.it/77HN13,4,,"source:filmin, genre:drama, tmdb_id:34070",2024-08-16
+2024-08-21,Jupiter's Moon,2017,https://boxd.it/792C63,3,,"genre:sci-fi, source:filmin, genre:action, tmdb_id:444395",2024-08-18
+2024-08-21,The Union,2024,https://boxd.it/793euR,2.5,,"source:netflix, genre:action, genre:adventure, tmdb_id:704239",2024-08-19
+2024-08-21,Furiosa: A Mad Max Saga,2024,https://boxd.it/793SVj,5,,"source:max, genre:adventure, genre:action, genre:sci-fi, tmdb_id:786892",2024-08-20
+2024-08-24,Fahrenheit 451,2018,https://boxd.it/7auBzj,2,,"source:max, genre:sci-fi, genre:action, tmdb_id:401905",2024-08-22
+2024-09-09,A Stone in the Shoe,2021,https://boxd.it/7hXzrD,4,,"genre:family, style:animation, tmdb_id:771081, source:rental",2024-08-24
+2024-09-09,Challengers,2024,https://boxd.it/7hXZGz,4.5,,"genre:drama, tmdb_id:937287, source:rental",2024-08-24
+2024-09-09,The Silence of the Lambs,1991,https://boxd.it/7hWM7z,5,,"source:primevideo, genre:thriller, genre:horror, tmdb_id:274",2024-09-08
+2024-09-09,So But Not So,,https://boxd.it/7hXKHR,4,,"genre:family, style:animation, tmdb_id:1201121, source:rental",2024-09-08
+2024-09-09,Maré,,https://boxd.it/7hYg7L,4,,"genre:adventure, genre:family, tmdb_id:1227540, source:rental",2024-09-08
+2024-09-24,Pictures of Ghosts,2023,https://boxd.it/7opu3h,5,,"source:filmin, genre:documentary, tmdb_id:1112548",2024-09-23
+2024-09-28,Uglies,2024,https://boxd.it/7qmVVH,2,,"source:netflix, genre:action, genre:sci-fi, genre:adventure, tmdb_id:748167, adaptation:book",2024-09-23
+2024-09-28,Rebel Ridge,2024,https://boxd.it/7qn3iD,5,,"source:netflix, genre:action, tmdb_id:646097",2024-09-27
+2024-10-06,LOLA,2022,https://boxd.it/7tIFhH,5,,"genre:action, genre:sci-fi, source:filmin, tmdb_id:941019",2024-09-28
+2024-10-06,Joker: Folie à Deux,2024,https://boxd.it/7tIKp7,2.5,,"genre:action, genre:drama, genre:musical, source:theater, tmdb_id:889737",2024-10-05
+2024-10-06,The Platform 2,2024,https://boxd.it/7tIPkL,3.5,,"genre:action, genre:sci-fi, source:netflix, tmdb_id:1125510",2024-10-05
+2024-10-07,All Eyes Off Me,2021,https://boxd.it/7upwc5,3,,"genre:drama, source:filmin, tmdb_id:795774",2024-10-05
+2024-10-10,The Ides of March,2011,https://boxd.it/7vRbK1,5,,"source:filmin, genre:drama, adaptation:play, tmdb_id:10316",2024-10-09
+2024-10-14,It's What's Inside,2024,https://boxd.it/7xH3PZ,4.5,,"source:netflix, genre:sci-fi, genre:thriller, genre:drama, tmdb_id:1052280",2024-10-13
+2024-10-14,Cruel Intentions,1999,https://boxd.it/7xHdt5,3,,"source:filmin, genre:drama, tmdb_id:796",2024-10-13
+2024-10-14,Science Fiction Volume One: The Osiris Child,2016,https://boxd.it/7xHs1v,2.5,,"genre:sci-fi, genre:action, genre:adventure, source:filmin, tmdb_id:354282",2024-10-13
+2024-10-14,A Real Job,2023,https://boxd.it/7xHxAb,3.5,,"source:filmin, genre:drama, tmdb_id:934506",2024-10-13
+2024-10-14,Mr. Crocket,2024,https://boxd.it/7xQtsb,3.5,,"source:disney+, genre:horror, genre:thriller, tmdb_id:1317218",2024-10-13
+2024-10-17,The Most Wonderful Time of the Year,2024,https://boxd.it/7zCNYV,4,Yes,"source:disney+, genre:musical, genre:drama, genre:comedy, tmdb_id:1358947",2024-10-15
+2024-10-17,Diamonds Are Forever,1971,https://boxd.it/7zCZSF,4,Yes,"tmdb_id:681, source:primevideo, genre:action, genre:adventure, genre:comedy",2024-10-17
+2024-10-18,The Batman,2022,https://boxd.it/7A3fil,5,Yes,"source:max, genre:drama, genre:action, tmdb_id:414906",2024-10-17
+2024-10-24,Live and Let Die,1973,https://boxd.it/7CUODH,5,Yes,"genre:action, genre:adventure, source:primevideo, tmdb_id:682",2024-10-21
+2024-10-24,Sing: Thriller,2024,https://boxd.it/7CUZWv,4,,"source:netflix, genre:musical, tmdb_id:1371727, genre:horror",2024-10-21
+2024-11-01,Trap,2024,https://boxd.it/7HqZnP,4,,"source:max, genre:thriller, tmdb_id:1032823",2024-10-21
+2024-11-01,Vincent Must Die,2023,https://boxd.it/7Hr8G7,3.5,,"source:filmin, genre:comedy, genre:adventure, genre:thriller, tmdb_id:965890, genre:action",2024-10-21
+2024-10-25,The Man with the Golden Gun,1974,https://boxd.it/7Df18R,5,Yes,"source:primevideo, genre:action, genre:adventure, tmdb_id:682",2024-10-24
+2024-10-25,The Spy Who Loved Me,1977,https://boxd.it/7DFe2z,3.5,Yes,"source:primevideo, genre:action, genre:adventure, tmdb_id:691",2024-10-24
+2024-11-01,Moonraker,1979,https://boxd.it/7Hqt4h,2,Yes,"source:netflix, genre:sci-fi, genre:action, genre:adventure, tmdb_id:698",2024-10-26
+2024-11-01,Octopussy,1983,https://boxd.it/7HqEon,3,Yes,"source:primevideo, genre:action, genre:adventure, tmdb_id:700",2024-10-27
+2024-11-18,A View to a Kill,1985,https://boxd.it/7Q9L3N,4,Yes,"source:primevideo, genre:action, genre:adventure, tmdb_id:707",2024-10-27
+2024-11-18,The Living Daylights,1987,https://boxd.it/7Q9Z8x,3.5,Yes,"source:primevideo, genre:action, genre:adventure, tmdb_id:708",2024-10-27
+2024-11-18,Licence to Kill,1989,https://boxd.it/7Qa5kf,3.5,Yes,"source:primevideo, genre:action, genre:adventure, tmdb_id:709",2024-10-29
+2024-11-18,Music by John Williams,2024,https://boxd.it/7Qa9dd,5,,"source:disney+, genre:biography, tmdb_id:1076708",2024-11-01
+2024-11-19,The Wild Robot,2024,https://boxd.it/7QaZYv,5,,"source:theater, genre:sci-fi, genre:action, genre:adventure, tmdb_id:1184918",2024-11-02
+2024-11-19,GoldenEye,1995,https://boxd.it/7QeESp,4.5,Yes,"source:primevideo, genre:action, genre:adventure, tmdb_id:710",2024-11-03
+2024-11-19,Tomorrow Never Dies,1997,https://boxd.it/7QfdcX,4,Yes,"source:primevideo, genre:action, genre:adventure, tmdb_id:714",2024-11-03
+2024-11-23,Juror #2,2024,https://boxd.it/7S0AXZ,5,,"source:theater, genre:drama, tmdb_id:1106739",2024-11-03
+2024-11-23,The World Is Not Enough,1999,https://boxd.it/7S0F6L,3.5,Yes,"source:primevideo, genre:action, genre:adventure, tmdb_id:",2024-11-05
+2024-11-23,Die Another Day,2002,https://boxd.it/7S0IOV,2,Yes,"source:primevideo, genre:action, genre:adventure, tmdb_id:36669",2024-11-06
+2024-11-23,Dr. No,1962,https://boxd.it/7S1TMt,5,Yes,"source:primevideo, genre:adventure, genre:action, tmdb_id:646",2024-11-08
+2024-11-23,From Russia with Love,1963,https://boxd.it/7S1Z5l,3,Yes,"source:primevideo, genre:action, genre:adventure, tmdb_id:657",2024-11-13
+2024-11-23,Reality+,2014,https://boxd.it/7S24HT,5,,"source:mubi, genre:sci-fi, tmdb_id:367181",2024-11-16
+2024-11-23,Twisters,2024,https://boxd.it/7S2aBH,3.5,,"genre:adventure, genre:action, tmdb_id:718821, source:primevideo",2024-11-17
+2024-11-23,Lost in the Sky,2023,https://boxd.it/7S2dhF,5,,"source:youtube, genre:sci-fi, tmdb_id:1160107",2024-11-17
+2024-11-23,Goldfinger,1964,https://boxd.it/7S2l3r,5,Yes,"source:primevideo, genre:action, genre:adventure, tmdb_id:658",2024-11-19
+2024-11-23,Thunderball,1965,https://boxd.it/7S2rON,3.5,Yes,"source:primevideo, genre:adventure, genre:action, tmdb_id:660",2024-11-21
+2024-11-27,You Only Live Twice,1967,https://boxd.it/7UbD1p,3.5,Yes,"source:primevideo, genre:action, genre:adventure, tmdb_id:667",2024-11-26
+2024-12-12,On Her Majesty's Secret Service,1969,https://boxd.it/8252ap,3.5,Yes,"source:primevideo, genre:action, genre:adventure, tmdb_id:668",2024-11-28
+2024-12-21,Super/Man: The Christopher Reeve Story,2024,https://boxd.it/86BPrp,5,,"source:max, genre:biography, tmdb_id:1128559",2024-12-20
+2024-12-21,Monkey Man,2024,https://boxd.it/86BZTD,4,,"source:sky, genre:action, tmdb_id:560016",2024-12-20
+2024-12-21,Yuck!,2024,https://boxd.it/86CfDr,5,,"source:alternative, genre:drama, tmdb_id:1220646, style:animation",2024-12-20
+2024-12-22,Ostinato,2024,https://boxd.it/8724lD,4,,"source:netflix, style:animation, tmdb_id:1398283, genre:drama",2024-12-21
+2024-12-23,The Fall Guy,2024,https://boxd.it/87BRQF,4,,"source:sky, genre:action, genre:adventure, tmdb_id:746036",2024-12-22
+2025-01-06,The Scarecrow,1943,https://boxd.it/8kzvcB,3.5,,"source:netflix, style:animation, genre:comedy, tmdb_id:260480",2025-01-03
+2025-01-06,Cunk on Life,2024,https://boxd.it/8kA1Ub,4.5,,"source:netflix, genre:mockumentary, tmdb_id:1253971",2025-01-05
+2025-01-26,Ad Vitam,2025,https://boxd.it/8C63jt,3,,"source:netflix, genre:action, tmdb_id:1261501",2025-01-11
+2025-01-26,Alien: Romulus,2024,https://boxd.it/8C6neN,4,,"source:disney+, genre:sci-fi, genre:action, genre:thriller, genre:horror, tmdb_id:945961",2025-01-23
+2025-02-12,Nightbitch,2024,https://boxd.it/8O0i6b,3.5,,"source:disney+, genre:drama, tmdb_id:728949",2025-02-11
+2025-02-14,Instruments of a Beating Heart,2024,https://boxd.it/8P3YB1,4,,"source:youtube, genre:documentary, style:short, tmdb_id:1284874",2025-02-13
+2025-02-14,Incident,2023,https://boxd.it/8P44W5,4,,"source:youtube, genre:documentary, tmdb_id:1108462, style:short",2025-02-13
+2025-02-14,I'm Not a Robot,2023,https://boxd.it/8P97VJ,3.5,,"source:youtube, genre:sci-fi, genre:drama, style:short, tmdb_id:1178556",2025-02-13
+2025-02-17,The Gorge,2025,https://boxd.it/8Rtjs3,4,,"source:appletv, genre:thriller, tmdb_id:950396, genre:sci-fi, genre:horror",2025-02-16
+2025-03-05,Transformers One,2024,https://boxd.it/91XMy5,3.5,,"source:max, genre:sci-fi, genre:action, genre:adventure, tmdb_id:698687",2025-03-04
+2025-03-10,The Substance,2024,https://boxd.it/94N7ED,5,,"source:primevideo, genre:sci-fi, genre:horror, genre:drama, tmdb_id:933260",2025-03-09
+2025-03-19,The Electric State,2025,https://boxd.it/9ak24L,3,,"source:netflix, genre:sci-fi, genre:action, genre:adventure, tmdb_id:777443",2025-03-14
+2025-03-24,Moana 2,2024,https://boxd.it/9cW4tx,3,,"source:disney+, genre:adventure, genre:action, tmdb_id:1241982",2025-03-23
+2025-04-13,The Lord of the Rings: The War of the Rohirrim,2024,https://boxd.it/9o9aBR,3,,"source:primevideo, genre:action, genre:adventure, genre:fantasy, style:animation, tmdb_id:839033",2025-03-29
+2025-04-20,Subservience,2024,https://boxd.it/9sew0f,1.5,,"source:primevideo, genre:sci-fi, genre:action, genre:horror, tmdb_id:1064028",2025-04-19
+2025-04-20,Here,2024,https://boxd.it/9sWeMt,4,,"source:primevideo, genre:drama, tmdb_id:940139",2025-04-20
+2025-04-28,Ash,2025,https://boxd.it/9xxYRT,4,,"source:primevideo, genre:sci-fi, genre:horror, tmdb_id:931349",2025-04-27
+2025-05-04,Tron,1982,https://boxd.it/9B4cCf,5,Yes,"source:disney+, genre:action, genre:adventure, genre:sci-fi, tmdb_id:97630",2025-05-03
+2025-05-04,Thunderbolts*,2025,https://boxd.it/9B4z7p,4,,"source:theater, genre:action, genre:adventure, adaptation:comics, tmdb_id:986056",2025-05-04
+2025-05-27,TRON: Legacy,2010,https://boxd.it/9OAQfV,3.5,Yes,"source:disney+, genre:action, genre:adventure, tmdb_id:20526, genre:sci-fi",2025-05-10
+2025-05-27,Rogue One: A Star Wars Story,2016,https://boxd.it/9OAZyH,5,Yes,"source:disney+, genre:fantasy, genre:action, genre:adventure, tmdb_id:330459, genre:sci-fi",2025-05-16
+2025-05-27,Elevation,2024,https://boxd.it/9OCUz5,2,,"source:primevideo, genre:adventure, genre:action, tmdb_id:1035048, genre:sci-fi",2025-05-24
+2025-05-27,Star Wars,1977,https://boxd.it/9OBfoD,4.5,Yes,"source:disney+, genre:action, genre:adventure, genre:fantasy, tmdb_id:11, genre:sci-fi",2025-05-26
+2025-05-27,The Assessment,2024,https://boxd.it/9ODecb,2.5,,"source:primevideo, genre:drama, genre:sci-fi, tmdb_id:1317088",2025-05-26
+2025-06-04,Hit Man,2023,https://boxd.it/9TSKfV,4,,"source:primevideo, genre:comedy, genre:action, tmdb_id:974635",2025-05-30
+2025-06-04,Lost in Starlight,2025,https://boxd.it/9TTsZj,5,,"source:netflix, genre:romance, tmdb_id:1165642, genre:sci-fi",2025-05-31
+2025-06-04,Captain America: Brave New World,2025,https://boxd.it/9TTCfF,3,,"genre:action, genre:adventure, source:disney+, tmdb_id:822119, adaptation:comics",2025-06-04
+2025-06-05,The Brave Locomotive,2023,https://boxd.it/9U5jt3,5,,"source:youtube, genre:drama, genre:adventure, tmdb_id:1169254",2025-06-04
+2025-06-10,The Accountant,2016,https://boxd.it/9XnUpZ,3,,"source:primevideo, genre:action, tmdb_id:302946",2025-06-07
+2025-06-11,Predator: Killer of Killers,2025,https://boxd.it/9XPSwl,5,,"source:disney+, genre:action, genre:adventure, genre:sci-fi, tmdb_id:1376434",2025-06-10
+2025-06-24,Fountain of Youth,2025,https://boxd.it/a64lGJ,2,,"source:appletv, genre:adventure, genre:action, tmdb_id:1098006",2025-06-15
+2025-07-03,The Informant!,2009,https://boxd.it/acaDJR,3,,"source:netflix, genre:comedy, adaptation:facts, genre:adventure, tmdb_id:11323",2025-06-25
+2025-07-13,Brick,2025,https://boxd.it/ajLZVd,3,,"source:netflix, genre:drama, genre:sci-fi, genre:horror, genre:thriller, tmdb_id:1425045",2025-07-13
+2025-07-23,Renfield,2023,https://boxd.it/arfzJ9,4,,"source:netflix, genre:action, genre:comedy, genre:horror, tmdb_id:649609",2025-07-18
+2025-07-23,The Amateur,2025,https://boxd.it/arfVBB,3.5,,"source:disney+, genre:thriller, genre:action, genre:drama, tmdb_id:1087891",2025-07-19
+2025-07-23,The Beekeeper,2024,https://boxd.it/arg4cF,3,,"source:primevideo, genre:action, genre:drama, tmdb_id:866398",2025-07-22
+2025-08-03,Deep Cover,2025,https://boxd.it/azTQZP,3,,"source:nextflix, tmdb_id:1239193, genre:action, genre:comedy",2025-07-22
+2025-08-07,The Internship,2013,https://boxd.it/aDdymH,3.5,,"source:netflix, genre:comedy, tmdb_id:116741",2025-08-04
