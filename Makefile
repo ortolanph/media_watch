@@ -45,7 +45,7 @@ docker-build:
 		echo "Tagging media_watch:latest as old..."; \
 		docker tag media_watch:latest media_watch:old; \
 	fi
-	docker build -t resenhas_front_app:latest .
+	docker build -t media_watch:latest .
 
 docker-run: build
 	$(call check_installed,docker)
