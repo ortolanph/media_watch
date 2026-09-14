@@ -44,9 +44,9 @@ class TvShowBloc extends Bloc<TvShowEvent, TvShowState> {
   }
 
   Future<void> _onSaveTVShow(
-      TvShowSavingEvent event,
-      Emitter<TvShowState> emit,
-      ) async {
+    TvShowSavingEvent event,
+    Emitter<TvShowState> emit,
+  ) async {
     emit(TvShowLoadingState());
 
     try {

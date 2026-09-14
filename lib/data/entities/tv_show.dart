@@ -25,5 +25,13 @@ class TvShow with Equatable {
   });
 
   @override
-  List<Object?> get props => [id, show, season, yearWatched, source, tmdbId, kind];
+  List<Object?> get props => [
+    id,
+    show,
+    season,
+    yearWatched,
+    source,
+    tmdbId,
+    kind,
+  ];
 }

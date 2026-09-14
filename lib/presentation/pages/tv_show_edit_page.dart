@@ -36,40 +36,40 @@ class _TvShowEditPageState extends State<TvShowEditPage> {
     super.dispose();
   }
 
-void _save(BuildContext context) {
-  final season = int.tryParse(_seasonController.text);
-  final yearWatched = int.tryParse(_yearWatchedController.text);
-  final tmdbId = int.tryParse(_tmdbIdController.text);
+  void _save(BuildContext context) {
+    final season = int.tryParse(_seasonController.text);
+    final yearWatched = int.tryParse(_yearWatchedController.text);
+    final tmdbId = int.tryParse(_tmdbIdController.text);
 
-  if (_showController.text.isEmpty ||
-      season == null ||
-      yearWatched == null ||
-      _sourceController.text.isEmpty ||
-      tmdbId == null) {
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text("Preencha todos os campos corretamente.")),
+    if (_showController.text.isEmpty ||
+        season == null ||
+        yearWatched == null ||
+        _sourceController.text.isEmpty ||
+        tmdbId == null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text("Preencha todos os campos corretamente.")),
+      );
+      return;
+    }
+
+    final tvShow = TvShow(
+      id: _editing?.id ?? Uuid().v4(),
+      show: _showController.text,
+      season: season,
+      yearWatched: yearWatched,
+      source: _sourceController.text,
+      tmdbId: tmdbId,
+      kind: TvShowKind.values.firstWhere((e) => e.name == selected),
     );
-    return;
-  }
 
-  final tvShow = TvShow(
-    id: _editing?.id ?? Uuid().v4(),
-    show: _showController.text,
-    season: season,
-    yearWatched: yearWatched,
-    source: _sourceController.text,
-    tmdbId: tmdbId,
-    kind: TvShowKind.values.firstWhere((e) => e.name == selected),
-  );
-
-  if (_editing != null) {
-    context.read<TvShowBloc>().add(
-      TvShowUpdatingEvent(tvShowId: _editing!.id, data: tvShow),
-    );
-  } else {
-    context.read<TvShowBloc>().add(TvShowSavingEvent(data: tvShow));
+    if (_editing != null) {
+      context.read<TvShowBloc>().add(
+        TvShowUpdatingEvent(tvShowId: _editing!.id, data: tvShow),
+      );
+    } else {
+      context.read<TvShowBloc>().add(TvShowSavingEvent(data: tvShow));
+    }
   }
-}
 
   @override
   Widget build(BuildContext context) {

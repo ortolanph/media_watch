@@ -176,6 +176,4 @@ class TVShowRepository {
   Future<void> saveTvShow(TvShow data) async {
     _tvShows.add(data);
   }
-
-
 }
