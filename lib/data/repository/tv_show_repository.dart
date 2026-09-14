@@ -1,0 +1,148 @@
+import 'package:media_watch/data/entities/tv_show_kind.dart';
+
+import '../entities/tv_show.dart';
+
+class TVShowRepository {
+  final List<TvShow> _tvShows = [
+    TvShow(
+      show: "Wonderman",
+      season: 1,
+      yearWatched: 2026,
+      source: "Disney+",
+      tmdbId: 198178,
+      kind: TvShowKind.limited,
+    ),
+    TvShow(
+      show: "The Office",
+      season: 1,
+      yearWatched: 2026,
+      source: "SkyShowTime",
+      tmdbId: 2316,
+      kind: TvShowKind.regular,
+    ),
+    TvShow(
+      show: "The Office",
+      season: 2,
+      yearWatched: 2026,
+      source: "SkyShowTime",
+      tmdbId: 2316,
+      kind: TvShowKind.regular,
+    ),
+    TvShow(
+      show: "The Office",
+      season: 3,
+      yearWatched: 2026,
+      source: "Disney+",
+      tmdbId: 2316,
+      kind: TvShowKind.regular,
+    ),
+    TvShow(
+      show: "The Office",
+      season: 4,
+      yearWatched: 2026,
+      source: "Disney+",
+      tmdbId: 2316,
+      kind: TvShowKind.regular,
+    ),
+    TvShow(
+      show: "The Office",
+      season: 5,
+      yearWatched: 2026,
+      source: "Disney+",
+      tmdbId: 2316,
+      kind: TvShowKind.regular,
+    ),
+    TvShow(
+      show: "The Office",
+      season: 6,
+      yearWatched: 2026,
+      source: "Disney+",
+      tmdbId: 2316,
+      kind: TvShowKind.regular,
+    ),
+    TvShow(
+      show: "The Office",
+      season: 7,
+      yearWatched: 2026,
+      source: "Disney+",
+      tmdbId: 2316,
+      kind: TvShowKind.regular,
+    ),
+    TvShow(
+      show: "The Office",
+      season: 8,
+      yearWatched: 2026,
+      source: "Disney+",
+      tmdbId: 2316,
+      kind: TvShowKind.regular,
+    ),
+    TvShow(
+      show: "The Office",
+      season: 9,
+      yearWatched: 2026,
+      source: "Disney+",
+      tmdbId: 2316,
+      kind: TvShowKind.regular,
+    ),
+    TvShow(
+      show: "Star Wars: Maul - Shadow Lord",
+      season: 1,
+      yearWatched: 2026,
+      source: "Disney+",
+      tmdbId: 289219,
+      kind: TvShowKind.regular,
+    ),
+    TvShow(
+      show: "Daredevil: Born Again",
+      season: 2,
+      yearWatched: 2026,
+      source: "Disney+",
+      tmdbId: 202555,
+      kind: TvShowKind.regular,
+    ),
+    TvShow(
+      show: "X-Men'97",
+      season: 2,
+      yearWatched: 2026,
+      source: "Disney+",
+      tmdbId: 138502,
+      kind: TvShowKind.regular,
+    ),
+    TvShow(
+      show: "Silo",
+      season: 3,
+      yearWatched: 2026,
+      source: "AppleTV+",
+      tmdbId: 125988,
+      kind: TvShowKind.regular,
+    ),
+    TvShow(
+      show: "Batman: Caped Crusader",
+      season: 2,
+      yearWatched: 2026,
+      source: "Amazon Prime Video",
+      tmdbId: 125909,
+      kind: TvShowKind.regular,
+    ),
+    TvShow(
+      show: "Star Wars: Visions Presents - The Ninth Jedi",
+      season: 1,
+      yearWatched: 2026,
+      source: "Disney+",
+      tmdbId: 289324,
+      kind: TvShowKind.regular,
+    ),
+    TvShow(
+      show: "Star Trek: Strange New Worlds",
+      season: 4,
+      yearWatched: 2026,
+      source: "SkyShowTime",
+      tmdbId: 103516,
+      kind: TvShowKind.regular,
+    ),
+  ];
+
+  Future<List<TvShow>> loadTvShows() async {
+    return _tvShows;
+  }
+}
