@@ -163,4 +163,19 @@ class TVShowRepository {
   Future<List<TvShow>> loadTvShows() async {
     return _tvShows;
   }
+
+  Future<void> updateTvShow(String tvShowId, TvShow data) async {
+    int index = _tvShows.indexWhere((tvShow) => tvShow.id == tvShowId);
+    if (index != -1) {
+      _tvShows[index] = data;
+    } else {
+      throw Exception("TV Show not found");
+    }
+  }
+
+  Future<void> saveTvShow(TvShow data) async {
+    _tvShows.add(data);
+  }
+
+
 }

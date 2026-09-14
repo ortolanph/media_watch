@@ -30,3 +30,7 @@ class TvShowErrorState extends TvShowState {
   @override
   List<Object?> get props => [message];
 }
+
+class TvShowUpdatedState extends TvShowState {}
+
+class TvShowSavedState extends TvShowState {}
