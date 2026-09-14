@@ -6,6 +6,7 @@ part 'tv_show.g.dart';
 
 @JsonSerializable()
 class TvShow with Equatable {
+  final String id;
   final String show;
   final int season;
   final int yearWatched;
@@ -14,6 +15,7 @@ class TvShow with Equatable {
   final TvShowKind kind;
 
   TvShow({
+    required this.id,
     required this.show,
     required this.season,
     required this.yearWatched,
@@ -23,5 +25,5 @@ class TvShow with Equatable {
   });
 
   @override
-  List<Object?> get props => throw UnimplementedError();
+  List<Object?> get props => [id, show, season, yearWatched, source, tmdbId, kind];
 }

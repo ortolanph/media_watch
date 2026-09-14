@@ -17,8 +17,14 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            PosterButton(asset: "assets/images/movie_icon.png", targetRoute: "/movies",),
-            PosterButton(asset: "assets/images/tv_show_icon.png", targetRoute: "/shows",),
+            PosterButton(
+              asset: "assets/images/movie_icon.png",
+              targetRoute: "/movies",
+            ),
+            PosterButton(
+              asset: "assets/images/tv_show_icon.png",
+              targetRoute: "/shows",
+            ),
           ],
         ),
       ),

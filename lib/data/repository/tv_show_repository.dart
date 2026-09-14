@@ -1,10 +1,12 @@
 import 'package:media_watch/data/entities/tv_show_kind.dart';
+import 'package:uuid/uuid.dart';
 
 import '../entities/tv_show.dart';
 
 class TVShowRepository {
   final List<TvShow> _tvShows = [
     TvShow(
+      id: Uuid().v4(),
       show: "Wonderman",
       season: 1,
       yearWatched: 2026,
@@ -13,6 +15,7 @@ class TVShowRepository {
       kind: TvShowKind.limited,
     ),
     TvShow(
+      id: Uuid().v4(),
       show: "The Office",
       season: 1,
       yearWatched: 2026,
@@ -21,6 +24,7 @@ class TVShowRepository {
       kind: TvShowKind.regular,
     ),
     TvShow(
+      id: Uuid().v4(),
       show: "The Office",
       season: 2,
       yearWatched: 2026,
@@ -29,6 +33,7 @@ class TVShowRepository {
       kind: TvShowKind.regular,
     ),
     TvShow(
+      id: Uuid().v4(),
       show: "The Office",
       season: 3,
       yearWatched: 2026,
@@ -37,6 +42,7 @@ class TVShowRepository {
       kind: TvShowKind.regular,
     ),
     TvShow(
+      id: Uuid().v4(),
       show: "The Office",
       season: 4,
       yearWatched: 2026,
@@ -45,6 +51,7 @@ class TVShowRepository {
       kind: TvShowKind.regular,
     ),
     TvShow(
+      id: Uuid().v4(),
       show: "The Office",
       season: 5,
       yearWatched: 2026,
@@ -53,6 +60,7 @@ class TVShowRepository {
       kind: TvShowKind.regular,
     ),
     TvShow(
+      id: Uuid().v4(),
       show: "The Office",
       season: 6,
       yearWatched: 2026,
@@ -61,6 +69,7 @@ class TVShowRepository {
       kind: TvShowKind.regular,
     ),
     TvShow(
+      id: Uuid().v4(),
       show: "The Office",
       season: 7,
       yearWatched: 2026,
@@ -69,6 +78,7 @@ class TVShowRepository {
       kind: TvShowKind.regular,
     ),
     TvShow(
+      id: Uuid().v4(),
       show: "The Office",
       season: 8,
       yearWatched: 2026,
@@ -77,6 +87,7 @@ class TVShowRepository {
       kind: TvShowKind.regular,
     ),
     TvShow(
+      id: Uuid().v4(),
       show: "The Office",
       season: 9,
       yearWatched: 2026,
@@ -85,6 +96,7 @@ class TVShowRepository {
       kind: TvShowKind.regular,
     ),
     TvShow(
+      id: Uuid().v4(),
       show: "Star Wars: Maul - Shadow Lord",
       season: 1,
       yearWatched: 2026,
@@ -93,6 +105,7 @@ class TVShowRepository {
       kind: TvShowKind.regular,
     ),
     TvShow(
+      id: Uuid().v4(),
       show: "Daredevil: Born Again",
       season: 2,
       yearWatched: 2026,
@@ -101,6 +114,7 @@ class TVShowRepository {
       kind: TvShowKind.regular,
     ),
     TvShow(
+      id: Uuid().v4(),
       show: "X-Men'97",
       season: 2,
       yearWatched: 2026,
@@ -109,6 +123,7 @@ class TVShowRepository {
       kind: TvShowKind.regular,
     ),
     TvShow(
+      id: Uuid().v4(),
       show: "Silo",
       season: 3,
       yearWatched: 2026,
@@ -117,6 +132,7 @@ class TVShowRepository {
       kind: TvShowKind.regular,
     ),
     TvShow(
+      id: Uuid().v4(),
       show: "Batman: Caped Crusader",
       season: 2,
       yearWatched: 2026,
@@ -125,6 +141,7 @@ class TVShowRepository {
       kind: TvShowKind.regular,
     ),
     TvShow(
+      id: Uuid().v4(),
       show: "Star Wars: Visions Presents - The Ninth Jedi",
       season: 1,
       yearWatched: 2026,
@@ -133,6 +150,7 @@ class TVShowRepository {
       kind: TvShowKind.regular,
     ),
     TvShow(
+      id: Uuid().v4(),
       show: "Star Trek: Strange New Worlds",
       season: 4,
       yearWatched: 2026,

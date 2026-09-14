@@ -16,7 +16,13 @@ void main() {
         "/home": (context) => HomePage(),
         "/shows": (context) => BlocProvider(
           create: (context) =>
-              TVShowBloc(repository: TVShowRepository())
+              TvShowBloc(repository: TVShowRepository())
+                ..add(TVShowLoadingEvent()),
+          child: TvShowPage(),
+        ),
+        "/shows/edit": (context) => BlocProvider(
+          create: (context) =>
+              TvShowBloc(repository: TVShowRepository())
                 ..add(TVShowLoadingEvent()),
           child: TvShowPage(),
         ),

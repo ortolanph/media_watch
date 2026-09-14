@@ -5,16 +5,16 @@ import 'package:media_watch/bloc/tvshow/tv_show_state.dart';
 import '../../data/entities/tv_show.dart';
 import '../../data/repository/tv_show_repository.dart';
 
-class TVShowBloc extends Bloc<TvShowEvent, TvShowState> {
+class TvShowBloc extends Bloc<TvShowEvent, TvShowState> {
   final TVShowRepository repository;
 
-  TVShowBloc({required this.repository}) : super(TvShowInitialState()) {
+  TvShowBloc({required this.repository}) : super(TvShowInitialState()) {
     on<TVShowLoadingEvent>(_onLoadTVShows);
   }
 
   Future<void> _onLoadTVShows(
-      TVShowLoadingEvent event,
-      Emitter<TvShowState> emit,
+    TVShowLoadingEvent event,
+    Emitter<TvShowState> emit,
   ) async {
     emit(TvShowLoadingState());
 
@@ -26,5 +26,4 @@ class TVShowBloc extends Bloc<TvShowEvent, TvShowState> {
       emit(TvShowErrorState(message: error.toString()));
     }
   }
-
 }
