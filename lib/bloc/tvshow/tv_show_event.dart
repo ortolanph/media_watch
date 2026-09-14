@@ -23,3 +23,9 @@ class TvShowSavingEvent extends TvShowEvent {
 
   const TvShowSavingEvent({required this.data});
 }
+
+class TvShowDeleteEvent extends TvShowEvent {
+  final String id;
+
+  const TvShowDeleteEvent({required this.id});
+}

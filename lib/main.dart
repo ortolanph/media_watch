@@ -9,6 +9,8 @@ import 'bloc/tvshow/tv_show_event.dart';
 import 'data/repository/tv_show_repository.dart';
 
 void main() {
+  TVShowRepository tvShowRepository = TVShowRepository();
+
   runApp(
     MaterialApp(
       title: "Media Watch",
@@ -17,13 +19,13 @@ void main() {
         "/home": (context) => HomePage(),
         "/shows": (context) => BlocProvider(
           create: (context) =>
-              TvShowBloc(repository: TVShowRepository())
+              TvShowBloc(repository: tvShowRepository)
                 ..add(TvShowLoadingEvent()),
           child: TvShowPage(),
         ),
         "/shows/edit": (context) => BlocProvider(
           create: (context) =>
-              TvShowBloc(repository: TVShowRepository())
+              TvShowBloc(repository: tvShowRepository)
                 ..add(TvShowLoadingEvent()),
           child: TvShowEditPage(),
         ),

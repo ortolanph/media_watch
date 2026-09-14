@@ -12,6 +12,7 @@ class TvShowBloc extends Bloc<TvShowEvent, TvShowState> {
     on<TvShowLoadingEvent>(_onLoadTVShows);
     on<TvShowUpdatingEvent>(_onUpdateTVShow);
     on<TvShowSavingEvent>(_onSaveTVShow);
+    on<TvShowDeleteEvent>(_onDeleteTVShow);
   }
 
   Future<void> _onLoadTVShows(
@@ -22,7 +23,6 @@ class TvShowBloc extends Bloc<TvShowEvent, TvShowState> {
 
     try {
       List<TvShow> tvShows = await repository.loadTvShows();
-
       emit(TvShowLoadedState(tvShows: tvShows));
     } catch (error) {
       emit(TvShowErrorState(message: error.toString()));
@@ -48,6 +48,20 @@ class TvShowBloc extends Bloc<TvShowEvent, TvShowState> {
     try {
       await repository.saveTvShow(event.data);
       emit(TvShowSavedState());
+    } catch (error) {
+      emit(TvShowErrorState(message: error.toString()));
+    }
+  }
+
+  Future<void> _onDeleteTVShow(
+    TvShowDeleteEvent event,
+    Emitter<TvShowState> emit,
+  ) async {
+    try {
+      emit(TvShowLoadingState());
+      await repository.deleteTVShow(event.id);
+      List<TvShow> tvShows = await repository.loadTvShows();
+      emit(TvShowLoadedState(tvShows: tvShows));
     } catch (error) {
       emit(TvShowErrorState(message: error.toString()));
     }

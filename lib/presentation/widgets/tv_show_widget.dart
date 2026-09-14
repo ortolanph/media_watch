@@ -1,7 +1,10 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:media_watch/bloc/tvshow/tv_show_bloc.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
+import '../../bloc/tvshow/tv_show_event.dart';
 import '../../data/entities/tv_show.dart';
 
 class TvShowWidget extends StatelessWidget {
@@ -38,6 +41,49 @@ class TvShowWidget extends StatelessWidget {
                     ),
                   ],
                 ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  IconButton(
+                    onPressed: () async {
+                      await Navigator.pushNamed(
+                        context,
+                        "/shows/edit",
+                        arguments: tvShow,
+                      );
+                      if (context.mounted) {
+                        context.read<TvShowBloc>().add(TvShowLoadingEvent());
+                      }
+                    },
+                    icon: Icon(Icons.edit),
+                    tooltip: "Editar TVShow",
+                  ),
+
+                  // IconButton(
+                  //   onPressed: () {
+                  //     context.read<ResenhaBloc>().add(
+                  //       ResenhaCopyToClipboardEvent(
+                  //         resenhaId: resenha.id,
+                  //         target: "wpp",
+                  //       ),
+                  //     );
+                  //   },
+                  //   icon: Icon(FontAwesomeIcons.whatsapp.data),
+                  //   tooltip: "Exportar para Whatsapp",
+                  // ),
+                  IconButton(
+                    onPressed: () {
+                      context.read<TvShowBloc>().add(
+                        TvShowDeleteEvent(id: tvShow.id),
+                      );
+                    },
+                    icon: Icon(Icons.delete, color: Colors.red),
+                    tooltip: "Apagar TVShow",
+                  ),
+                ],
               ),
             ),
           ],

@@ -184,4 +184,8 @@ class TVShowRepository {
   Future<void> saveTvShow(TvShow data) async {
     _tvShows.add(data);
   }
+
+  Future<void> deleteTVShow(String id) async {
+    _tvShows.retainWhere((s) => s.id != id);
+  }
 }
