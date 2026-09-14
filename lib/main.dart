@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:media_watch/bloc/tvshow/tv_show_bloc.dart';
 import 'package:media_watch/presentation/pages/home_page.dart';
+import 'package:media_watch/presentation/pages/tv_show_edit_page.dart';
 import 'package:media_watch/presentation/pages/tv_show_page.dart';
 
 import 'bloc/tvshow/tv_show_event.dart';
@@ -17,14 +18,14 @@ void main() {
         "/shows": (context) => BlocProvider(
           create: (context) =>
               TvShowBloc(repository: TVShowRepository())
-                ..add(TVShowLoadingEvent()),
+                ..add(TvShowLoadingEvent()),
           child: TvShowPage(),
         ),
         "/shows/edit": (context) => BlocProvider(
           create: (context) =>
               TvShowBloc(repository: TVShowRepository())
-                ..add(TVShowLoadingEvent()),
-          child: TvShowPage(),
+                ..add(TvShowLoadingEvent()),
+          child: TvShowEditPage(),
         ),
       },
     ),

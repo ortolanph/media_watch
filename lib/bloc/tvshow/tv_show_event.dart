@@ -9,7 +9,7 @@ abstract class TvShowEvent extends Equatable {
   List<Object?> get props => [];
 }
 
-class TVShowLoadingEvent extends TvShowEvent {}
+class TvShowLoadingEvent extends TvShowEvent {}
 
 class TvShowUpdatingEvent extends TvShowEvent {
   final String tvShowId;

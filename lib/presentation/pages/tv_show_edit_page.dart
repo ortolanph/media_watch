@@ -22,9 +22,26 @@ class _TvShowEditPageState extends State<TvShowEditPage> {
   final _yearWatchedController = TextEditingController();
   final _sourceController = TextEditingController();
   final _tmdbIdController = TextEditingController();
-  final String selected = TvShowKind.values.first.name;
+  late String selected = TvShowKind.values.first.name;
 
   TvShow? _editing;
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    if (_editing == null) {
+      final arg = ModalRoute.of(context)?.settings.arguments;
+      if (arg is TvShow) {
+        _editing = arg;
+        _showController.text = arg.show;
+        _seasonController.text = arg.season.toString();
+        _yearWatchedController.text = arg.yearWatched.toString();
+        _sourceController.text = arg.source;
+        _tmdbIdController.text = arg.tmdbId.toString();
+        selected = arg.kind.name;
+      }
+    }
+  }
 
   @override
   void dispose() {
@@ -84,7 +101,17 @@ class _TvShowEditPageState extends State<TvShowEditPage> {
         ],
       ),
       body: BlocListener<TvShowBloc, TvShowState>(
-        listener: (context, state) {},
+        listener: (context, state) {
+          if (state is TvShowSavedState || state is TvShowUpdatedState) {
+            Navigator.pop(context);
+          }
+
+          if (state is TvShowErrorState) {
+            ScaffoldMessenger.of(
+              context,
+            ).showSnackBar(SnackBar(content: Text(state.message)));
+          }
+        },
         child: TvShowEditView(
           showController: _showController,
           seasonController: _seasonController,

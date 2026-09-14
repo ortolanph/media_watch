@@ -165,12 +165,20 @@ class TVShowRepository {
   }
 
   Future<void> updateTvShow(String tvShowId, TvShow data) async {
-    int index = _tvShows.indexWhere((tvShow) => tvShow.id == tvShowId);
-    if (index != -1) {
-      _tvShows[index] = data;
-    } else {
-      throw Exception("TV Show not found");
-    }
+    TvShow tvShow = _tvShows.where((tvShow) => tvShow.id == tvShowId).first;
+
+    TvShow updated = TvShow(
+      id: tvShow.id,
+      show: data.show,
+      season: data.season,
+      yearWatched: data.yearWatched,
+      source: data.source,
+      tmdbId: data.tmdbId,
+      kind: data.kind,
+    );
+
+    _tvShows.remove(tvShow);
+    _tvShows.add(updated);
   }
 
   Future<void> saveTvShow(TvShow data) async {

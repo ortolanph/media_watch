@@ -9,13 +9,13 @@ class TvShowBloc extends Bloc<TvShowEvent, TvShowState> {
   final TVShowRepository repository;
 
   TvShowBloc({required this.repository}) : super(TvShowInitialState()) {
-    on<TVShowLoadingEvent>(_onLoadTVShows);
+    on<TvShowLoadingEvent>(_onLoadTVShows);
     on<TvShowUpdatingEvent>(_onUpdateTVShow);
     on<TvShowSavingEvent>(_onSaveTVShow);
   }
 
   Future<void> _onLoadTVShows(
-    TVShowLoadingEvent event,
+    TvShowLoadingEvent event,
     Emitter<TvShowState> emit,
   ) async {
     emit(TvShowLoadingState());
@@ -33,8 +33,6 @@ class TvShowBloc extends Bloc<TvShowEvent, TvShowState> {
     TvShowUpdatingEvent event,
     Emitter<TvShowState> emit,
   ) async {
-    emit(TvShowLoadingState());
-
     try {
       await repository.updateTvShow(event.tvShowId, event.data);
       emit(TvShowUpdatedState());
@@ -47,8 +45,6 @@ class TvShowBloc extends Bloc<TvShowEvent, TvShowState> {
     TvShowSavingEvent event,
     Emitter<TvShowState> emit,
   ) async {
-    emit(TvShowLoadingState());
-
     try {
       await repository.saveTvShow(event.data);
       emit(TvShowSavedState());

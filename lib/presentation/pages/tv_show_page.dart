@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:media_watch/bloc/tvshow/tv_show_bloc.dart';
+import 'package:media_watch/bloc/tvshow/tv_show_event.dart';
 import 'package:media_watch/bloc/tvshow/tv_show_state.dart';
 import 'package:media_watch/presentation/views/loading_view.dart';
 import 'package:media_watch/presentation/views/tv_show_view.dart';
@@ -18,7 +19,20 @@ class _TvShowPageState extends State<TvShowPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('TV Show')),
+      appBar: AppBar(
+        title: const Text('TV Show'),
+        actions: [
+          IconButton(
+            onPressed: () async {
+              await Navigator.pushNamed(context, "/shows/edit");
+              if (context.mounted) {
+                context.read<TvShowBloc>().add(TvShowLoadingEvent());
+              }
+            },
+            icon: Icon(Icons.add),
+          ),
+        ],
+      ),
       body: Column(
         children: [
           Expanded(
