@@ -1,7 +1,6 @@
 import 'dart:convert';
 import 'dart:js_interop';
 
-import 'package:csv/csv.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:web/web.dart' as web;
 
@@ -26,8 +25,6 @@ class FileCSVDataService implements CSVDataService {
 
     final bytes = result.files.first.bytes;
     if (bytes == null) return "";
-
-    ListToCsvConverter csv = ListToCsvConverter();
 
     try {
       return utf8.decode(bytes);
