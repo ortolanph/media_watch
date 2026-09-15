@@ -16,6 +16,15 @@ class TvShowPage extends StatefulWidget {
 }
 
 class _TvShowPageState extends State<TvShowPage> {
+  final _searchController = TextEditingController();
+  String _searchQuery = '';
+
+  @override
+  void dispose() {
+    _searchController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,6 +63,26 @@ class _TvShowPageState extends State<TvShowPage> {
       ),
       body: Column(
         children: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextField(
+              controller: _searchController,
+              decoration: InputDecoration(
+                labelText: "Buscar TV Show",
+                prefixIcon: const Icon(Icons.search),
+                suffixIcon: _searchQuery.isNotEmpty
+                    ? IconButton(
+                        icon: const Icon(Icons.clear),
+                        onPressed: () {
+                          _searchController.clear();
+                          setState(() => _searchQuery = '');
+                        },
+                      )
+                    : null,
+              ),
+              onChanged: (value) => setState(() => _searchQuery = value),
+            ),
+          ),
           Expanded(
             child: BlocConsumer<TvShowBloc, TvShowState>(
               listener: (context, state) {},
@@ -63,7 +92,19 @@ class _TvShowPageState extends State<TvShowPage> {
                 }
 
                 if (state is TvShowLoadedState) {
-                  return TvShowView(tvShows: state.tvShows);
+                  final query = _searchQuery.toLowerCase();
+                  final filtered = query.isEmpty
+                      ? state.tvShows
+                      : state.tvShows
+                            .where(
+                              (r) =>
+                                  r.show.toLowerCase().contains(query) ||
+                                  r.source.toLowerCase().contains(query) ||
+                                  r.yearWatched.toString().contains(query) ||
+                                  r.kind.name.toLowerCase().contains(query),
+                            )
+                            .toList();
+                  return TvShowView(tvShows: filtered);
                 }
 
                 if (state is TvShowErrorState) {
