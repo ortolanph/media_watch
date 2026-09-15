@@ -44,3 +44,7 @@ class TvShowCopyToClipboardEvent extends TvShowEvent {
   @override
   List<Object?> get props => [id];
 }
+
+class TvShowExportDataEvent extends TvShowEvent {
+  const TvShowExportDataEvent();
+}

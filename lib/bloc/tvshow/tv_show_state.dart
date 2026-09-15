@@ -47,3 +47,5 @@ class TvShowCopiedToClipboardState extends TvShowState {
   @override
   List<Object?> get props => [content, showData];
 }
+
+class TvShowExportedState extends TvShowState {}

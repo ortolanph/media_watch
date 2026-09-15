@@ -15,6 +15,7 @@ class TvShowBloc extends Bloc<TvShowEvent, TvShowState> {
     on<TvShowSavingEvent>(_onSaveTvShow);
     on<TvShowDeleteEvent>(_onDeleteTvShow);
     on<TvShowCopyToClipboardEvent>(_onCopyToClipboardTvShow);
+    on<TvShowExportDataEvent>(_onExportDataTvShow);
   }
 
   Future<void> _onLoadTvShows(
@@ -84,6 +85,18 @@ class TvShowBloc extends Bloc<TvShowEvent, TvShowState> {
         ),
       );
     } catch (error) {
+      emit(TvShowErrorState(message: error.toString()));
+    }
+  }
+
+  Future<void> _onExportDataTvShow(
+    TvShowExportDataEvent event,
+    Emitter<TvShowState> emit,
+  ) async {
+    try {
+      await repository.exportData();
+      emit(TvShowExportedState());
+    } catch(error) {
       emit(TvShowErrorState(message: error.toString()));
     }
   }

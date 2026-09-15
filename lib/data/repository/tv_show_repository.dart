@@ -1,11 +1,14 @@
 import 'package:csv/csv.dart';
 import 'package:media_watch/data/entities/tv_show_export.dart';
 import 'package:media_watch/data/entities/tv_show_kind.dart';
+import 'package:media_watch/services/data_service.dart';
 import 'package:uuid/uuid.dart';
 
 import '../entities/tv_show.dart';
 
 class TVShowRepository {
+  final CSVDataService _csvDataService = FileCSVDataService();
+
   final List<TvShow> _tvShows = [
     TvShow(
       id: Uuid().v4(),
@@ -211,5 +214,33 @@ class TVShowRepository {
         "${tvShow.show} - S${tvShow.season.toString().padLeft(2, '0')}";
 
     return TvShowExport(content: csv.convert(data), showData: showData);
+  }
+
+  Future<void> exportData() async {
+    List<List<Object>> data = _tvShows
+        .map(
+          (tvShow) => [
+            tvShow.show,
+            tvShow.season,
+            tvShow.yearWatched,
+            tvShow.source,
+            tvShow.tmdbId,
+            tvShow.kind.name,
+          ],
+        )
+        .toList();
+
+    data.insert(0, [
+      "show",
+      "season",
+      "yearWatched",
+      "source",
+      "tmdb_id",
+      "kind",
+    ]);
+
+    ListToCsvConverter csv = ListToCsvConverter();
+
+    await _csvDataService.exportData(csv.convert(data));
   }
 }
