@@ -34,3 +34,16 @@ class TvShowErrorState extends TvShowState {
 class TvShowUpdatedState extends TvShowState {}
 
 class TvShowSavedState extends TvShowState {}
+
+class TvShowCopiedToClipboardState extends TvShowState {
+  final String content;
+  final String showData;
+
+  const TvShowCopiedToClipboardState({
+    required this.content,
+    required this.showData,
+  });
+
+  @override
+  List<Object?> get props => [content, showData];
+}

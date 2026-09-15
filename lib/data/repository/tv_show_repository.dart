@@ -1,3 +1,5 @@
+import 'package:csv/csv.dart';
+import 'package:media_watch/data/entities/tv_show_export.dart';
 import 'package:media_watch/data/entities/tv_show_kind.dart';
 import 'package:uuid/uuid.dart';
 
@@ -188,4 +190,26 @@ class TVShowRepository {
   Future<void> deleteTVShow(String id) async {
     _tvShows.retainWhere((s) => s.id != id);
   }
+
+  Future<TvShowExport> generateContentToClipboard(String id) async {
+    TvShow tvShow = _tvShows.where((s) => s.id == id).first;
+
+    final data = [
+      [
+        tvShow.show,
+        tvShow.season,
+        tvShow.yearWatched,
+        tvShow.source,
+        tvShow.tmdbId,
+        tvShow.kind.name,
+      ],
+    ];
+
+    ListToCsvConverter csv = ListToCsvConverter();
+
+    final showData = "${tvShow.show} - S${tvShow.season.toString().padLeft(2, '0')}";
+
+    return TvShowExport(content: csv.convert(data), showData: showData);
+  }
 }
+

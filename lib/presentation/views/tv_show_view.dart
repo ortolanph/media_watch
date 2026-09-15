@@ -1,6 +1,11 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:media_watch/bloc/tvshow/tv_show_bloc.dart';
 import 'package:media_watch/presentation/widgets/tv_show_widget.dart';
 
+import '../../bloc/tvshow/tv_show_event.dart';
+import '../../bloc/tvshow/tv_show_state.dart';
 import '../../data/entities/tv_show.dart';
 
 class TvShowView extends StatefulWidget {
@@ -19,6 +24,25 @@ class _TvShowViewState extends State<TvShowView> {
       crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisSize: MainAxisSize.max,
       children: [
+        BlocListener(
+          listener: (context, state) {
+            if (state is TvShowCopiedToClipboardState) {
+              Clipboard.setData(ClipboardData(text: state.content));
+
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text(
+                    "Conteúdo de ${state.showData} copiado para a área de transferência!",
+                  ),
+                ),
+              );
+
+              context.read<TvShowBloc>().add(TvShowLoadingEvent());
+            }
+          },
+          bloc: context.read<TvShowBloc>(),
+          child: Container(),
+        ),
         Expanded(
           child: ListView.builder(
             itemCount: widget.tvShows.length,

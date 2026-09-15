@@ -61,19 +61,15 @@ class TvShowWidget extends StatelessWidget {
                     icon: Icon(Icons.edit),
                     tooltip: "Editar TVShow",
                   ),
-
-                  // IconButton(
-                  //   onPressed: () {
-                  //     context.read<ResenhaBloc>().add(
-                  //       ResenhaCopyToClipboardEvent(
-                  //         resenhaId: resenha.id,
-                  //         target: "wpp",
-                  //       ),
-                  //     );
-                  //   },
-                  //   icon: Icon(FontAwesomeIcons.whatsapp.data),
-                  //   tooltip: "Exportar para Whatsapp",
-                  // ),
+                  IconButton(
+                    onPressed: () {
+                      context.read<TvShowBloc>().add(
+                        TvShowCopyToClipboardEvent(id: tvShow.id),
+                      );
+                    },
+                    icon: Icon(Icons.copy),
+                    tooltip: "Exportar para CSV",
+                  ),
                   IconButton(
                     onPressed: () {
                       context.read<TvShowBloc>().add(
