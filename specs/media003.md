@@ -29,6 +29,10 @@ User must be able to export data to CSV in the same format.
 
 If there are previous data inputted, all the data must be deleted.
 
+## Secondary feature
+
+User must be able to copy a show to clipboard into CSV format.
+
 ## Acceptance Criteria
 
 1. Code is clean
