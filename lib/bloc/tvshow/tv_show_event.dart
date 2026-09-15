@@ -48,3 +48,7 @@ class TvShowCopyToClipboardEvent extends TvShowEvent {
 class TvShowExportDataEvent extends TvShowEvent {
   const TvShowExportDataEvent();
 }
+
+class TvShowImportDataEvent extends TvShowEvent {
+  const TvShowImportDataEvent();
+}

@@ -16,6 +16,7 @@ class TvShowBloc extends Bloc<TvShowEvent, TvShowState> {
     on<TvShowDeleteEvent>(_onDeleteTvShow);
     on<TvShowCopyToClipboardEvent>(_onCopyToClipboardTvShow);
     on<TvShowExportDataEvent>(_onExportDataTvShow);
+    on<TvShowImportDataEvent>(_onImportDataTvShow);
   }
 
   Future<void> _onLoadTvShows(
@@ -96,7 +97,19 @@ class TvShowBloc extends Bloc<TvShowEvent, TvShowState> {
     try {
       await repository.exportData();
       emit(TvShowExportedState());
-    } catch(error) {
+    } catch (error) {
+      emit(TvShowErrorState(message: error.toString()));
+    }
+  }
+
+  Future<void> _onImportDataTvShow(
+    TvShowImportDataEvent event,
+    Emitter<TvShowState> emit,
+  ) async {
+    try {
+      await repository.importData();
+      emit(TvShowImportedState());
+    } catch (error) {
       emit(TvShowErrorState(message: error.toString()));
     }
   }

@@ -39,6 +39,22 @@ class _TvShowViewState extends State<TvShowView> {
 
               context.read<TvShowBloc>().add(TvShowLoadingEvent());
             }
+
+            if (state is TvShowExportedState) {
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(content: Text("Dados exportados com sucesso!")),
+              );
+
+              context.read<TvShowBloc>().add(TvShowLoadingEvent());
+            }
+
+            if (state is TvShowImportedState) {
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(content: Text("Dados importados com sucesso!")),
+              );
+
+              context.read<TvShowBloc>().add(TvShowLoadingEvent());
+            }
           },
           bloc: context.read<TvShowBloc>(),
           child: Container(),

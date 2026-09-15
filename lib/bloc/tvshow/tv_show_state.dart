@@ -49,3 +49,5 @@ class TvShowCopiedToClipboardState extends TvShowState {
 }
 
 class TvShowExportedState extends TvShowState {}
+
+class TvShowImportedState extends TvShowState {}

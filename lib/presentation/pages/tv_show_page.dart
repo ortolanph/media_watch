@@ -29,7 +29,7 @@ class _TvShowPageState extends State<TvShowPage> {
                 context.read<TvShowBloc>().add(TvShowLoadingEvent());
               }
             },
-            tooltip: "Add TV Show",
+            tooltip: "Adicionar TV Show",
             icon: Icon(Icons.add),
           ),
           IconButton(
@@ -38,8 +38,17 @@ class _TvShowPageState extends State<TvShowPage> {
                 context.read<TvShowBloc>().add(TvShowExportDataEvent());
               }
             },
-            tooltip: "Download TV Shows",
+            tooltip: "Exportar data",
             icon: Icon(Icons.download),
+          ),
+          IconButton(
+            onPressed: () async {
+              if (context.mounted) {
+                context.read<TvShowBloc>().add(TvShowImportDataEvent());
+              }
+            },
+            tooltip: "Importar arquivo",
+            icon: Icon(Icons.upload),
           ),
         ],
       ),
