@@ -6,6 +6,7 @@ import 'package:media_watch/bloc/tvshow/tv_show_state.dart';
 import 'package:media_watch/presentation/views/loading_view.dart';
 import 'package:media_watch/presentation/views/tv_show_view.dart';
 
+import '../views/empty_tv_show_view.dart';
 import '../views/error_view.dart';
 
 class TvShowPage extends StatefulWidget {
@@ -104,7 +105,12 @@ class _TvShowPageState extends State<TvShowPage> {
                                   r.kind.name.toLowerCase().contains(query),
                             )
                             .toList();
-                  return TvShowView(tvShows: filtered);
+
+                  if (filtered.isEmpty) {
+                    return EmptyTvShowView();
+                  } else {
+                    return TvShowView(tvShows: filtered);
+                  }
                 }
 
                 if (state is TvShowErrorState) {

@@ -7,6 +7,7 @@ class LoadingView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [const Text("NOW LOADING"), CircularProgressIndicator()],
       ),
     );
