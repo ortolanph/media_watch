@@ -207,9 +207,9 @@ class TVShowRepository {
 
     ListToCsvConverter csv = ListToCsvConverter();
 
-    final showData = "${tvShow.show} - S${tvShow.season.toString().padLeft(2, '0')}";
+    final showData =
+        "${tvShow.show} - S${tvShow.season.toString().padLeft(2, '0')}";
 
     return TvShowExport(content: csv.convert(data), showData: showData);
   }
 }
-

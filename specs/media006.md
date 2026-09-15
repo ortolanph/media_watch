@@ -4,22 +4,22 @@
 
 System must show checks for the imported movies:
 
-1. `CHECK_EMPTY_TAGS` 
-   1. Empty `Tags` field
-   2. Symbol: Stop Sign 🛑
-   3. When the `Tags` field is empty
+1. `CHECK_EMPTY_TAGS`
+    1. Empty `Tags` field
+    2. Symbol: Stop Sign 🛑
+    3. When the `Tags` field is empty
 2. `CHECK_TAGS_FORMAT`
-   1. `Tags` field is not on format
-   2. Symbol: YELLOW 🟡
-   3. `Tags` format is: `key1:value1, key2:value2`
+    1. `Tags` field is not on format
+    2. Symbol: YELLOW 🟡
+    3. `Tags` format is: `key1:value1, key2:value2`
 3. `CHECK_UNIQUE_SOURCE_TAG`
-   1. `Tags` field should contain and should contain only one `source` tag
-   2. Symbol: ORANGE 🟠
-   3. `Tags` invalid example: `source:stream1, source:stream2`
+    1. `Tags` field should contain and should contain only one `source` tag
+    2. Symbol: ORANGE 🟠
+    3. `Tags` invalid example: `source:stream1, source:stream2`
 4. `CHECK_UNIQUE_TMDB_ID_TAG`
-   1. `Tags` field should contain and should contain only one `tmdb_id` tag
-   2. Symbol: PURPLE 🟣
-   3. `Tags` invalid example: `tmdb_id:123, tmdb_id:456`
+    1. `Tags` field should contain and should contain only one `tmdb_id` tag
+    2. Symbol: PURPLE 🟣
+    3. `Tags` invalid example: `tmdb_id:123, tmdb_id:456`
 5. `CHECK_NO_GENRE_TAG`
     1. `Tags` field should contain at least one `genre` tag
     2. Symbol: RED Exclamation ❗

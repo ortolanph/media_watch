@@ -74,8 +74,15 @@ class TvShowBloc extends Bloc<TvShowEvent, TvShowState> {
     Emitter<TvShowState> emit,
   ) async {
     try {
-      TvShowExport export = await repository.generateContentToClipboard(event.id);
-      emit(TvShowCopiedToClipboardState(content: export.content, showData: export.showData));
+      TvShowExport export = await repository.generateContentToClipboard(
+        event.id,
+      );
+      emit(
+        TvShowCopiedToClipboardState(
+          content: export.content,
+          showData: export.showData,
+        ),
+      );
     } catch (error) {
       emit(TvShowErrorState(message: error.toString()));
     }
