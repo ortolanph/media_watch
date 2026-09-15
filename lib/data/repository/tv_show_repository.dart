@@ -247,7 +247,9 @@ class TVShowRepository {
   Future<void> importData() async {
     final csvData = await _csvDataService.importData();
 
-    List<List<dynamic>> rows = const CsvToListConverter().convert(csvData as String?);
+    List<List<dynamic>> rows = const CsvToListConverter().convert(
+      csvData as String?,
+    );
 
     // Remove the header row
     rows.removeAt(0);
