@@ -17,6 +17,7 @@ final DateFormat dateFormat = DateFormat("yyyyddMM_HHmmss");
 
 void main() {
   TVShowRepository tvShowRepository = TVShowRepository();
+  TvShowBloc tvShowBloc = TvShowBloc(repository: tvShowRepository);
   MovieRepository movieRepository = MovieRepository();
 
   runApp(
@@ -27,14 +28,12 @@ void main() {
         "/home": (context) => HomePage(),
         "/shows": (context) => BlocProvider(
           create: (context) =>
-              TvShowBloc(repository: tvShowRepository)
-                ..add(TvShowLoadingEvent()),
+              tvShowBloc..add(TvShowLoadingEvent()),
           child: TvShowPage(),
         ),
         "/shows/edit": (context) => BlocProvider(
           create: (context) =>
-              TvShowBloc(repository: tvShowRepository)
-                ..add(TvShowLoadingEvent()),
+              tvShowBloc..add(TvShowLoadingEvent()),
           child: TvShowEditPage(),
         ),
         "/movies": (context) => BlocProvider(

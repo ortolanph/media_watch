@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:media_watch/bloc/tvshow/tv_show_bloc.dart';
 import 'package:media_watch/bloc/tvshow/tv_show_event.dart';
@@ -86,7 +87,37 @@ class _TvShowPageState extends State<TvShowPage> {
           ),
           Expanded(
             child: BlocConsumer<TvShowBloc, TvShowState>(
-              listener: (context, state) {},
+              listener: (context, state) {
+                if (state is TvShowCopiedToClipboardState) {
+                  Clipboard.setData(ClipboardData(text: state.content));
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text(
+                        "Conteúdo de ${state.showData} copiado para a área de transferência!",
+                      ),
+                    ),
+                  );
+                  context.read<TvShowBloc>().add(TvShowLoadingEvent());
+                }
+
+                if (state is TvShowExportedState) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text("Dados exportados com sucesso!"),
+                    ),
+                  );
+                  context.read<TvShowBloc>().add(TvShowLoadingEvent());
+                }
+
+                if (state is TvShowImportedState) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text("Dados importados com sucesso!"),
+                    ),
+                  );
+                  context.read<TvShowBloc>().add(TvShowLoadingEvent());
+                }
+              },
               builder: (context, state) {
                 if (state is TvShowLoadingState) {
                   return LoadingView();
