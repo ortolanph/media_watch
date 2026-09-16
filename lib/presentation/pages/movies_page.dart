@@ -38,21 +38,24 @@ class _MoviesPageState extends State<MoviesPage> {
         children: [
           Expanded(
             child: BlocConsumer<MovieBloc, MovieState>(
-              listener: (context, state) {},
+              listener: (context, state) {
+                if (state is MovieImportedState) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text("Dados importados com sucesso!")),
+                  );
+                  context.read<MovieBloc>().add(MovieLoadingEvent());
+                }
+              },
               builder: (context, state) {
-                if (state is MovieLoadingState) {
+                if (state is MovieLoadingState || state is MovieImportedState) {
                   return LoadingView();
                 }
 
-                if(state is MovieLoadedState) {
-                  if (state.movies.isEmpty) {
-                    return EmptyMovieView();
-                  } else {
-                    return MovieView(movies: state.movies);
-                  }
+                if (state is MovieLoadedState) {
+                  return state.movies.isEmpty ? EmptyMovieView() : MovieView(movies: state.movies);
                 }
 
-                if(state is MovieErrorState) {
+                if (state is MovieErrorState) {
                   return ErrorView(error: state.message);
                 }
 
