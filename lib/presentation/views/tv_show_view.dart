@@ -24,7 +24,7 @@ class _TvShowViewState extends State<TvShowView> {
       crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisSize: MainAxisSize.max,
       children: [
-        BlocListener(
+        BlocListener<TvShowBloc, TvShowState>(
           listener: (context, state) {
             if (state is TvShowCopiedToClipboardState) {
               Clipboard.setData(ClipboardData(text: state.content));
