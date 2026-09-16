@@ -118,6 +118,8 @@ class TVShowRepository {
 
         _tvShows.add(tvShow);
       }
+    } else {
+      throw Exception("No file selected");
     }
   }
 }
