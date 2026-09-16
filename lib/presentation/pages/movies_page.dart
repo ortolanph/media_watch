@@ -48,7 +48,7 @@ class _MoviesPageState extends State<MoviesPage> {
                   if (state.movies.isEmpty) {
                     return EmptyMovieView();
                   } else {
-                    return MovieView();
+                    return MovieView(movies: state.movies);
                   }
                 }
 

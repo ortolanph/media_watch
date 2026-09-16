@@ -9,6 +9,10 @@ class MovieRepository {
 
   final List<Movie> _movies = [];
 
+  Future<List<Movie>> getMovies() async {
+    return _movies;
+  }
+
   Future<void> importData() async {
     final csvData = await _csvDataService.importData();
 
@@ -24,14 +28,14 @@ class MovieRepository {
       for (var row in rows) {
         Movie movie = Movie(
           id: Uuid().v4(),
-          entryDate: row[0] as String,
-          movieName: row[1] as String,
-          year: row[2] as int,
-          letterboxURI: row[3],
-          rating: row[4] as double,
-          rewatch: parseRewatch(row[5]),
-          tags: row[6] as String,
-          watchedDate: row[7] as String,
+          entryDate: _asString(row[0]),
+          movieName: _asString(row[1]),
+          year: _asInt(row[2]),
+          letterboxURI: _asString(row[3]),
+          rating: _asDouble(row[4]),
+          rewatch: _parseRewatch(row[5]),
+          tags: _asString(row[6]),
+          watchedDate: _asString(row[7]),
         );
 
         _movies.add(movie);
@@ -41,7 +45,26 @@ class MovieRepository {
     }
   }
 
-  bool parseRewatch(String row) {
-    return (row == "Yes") ? true : false;
+  bool _parseRewatch(dynamic row) {
+    return _asString(row) == "Yes";
+  }
+
+  String _asString(dynamic value) {
+    if (value == null) return '';
+    return value.toString();
+  }
+
+  int _asInt(dynamic value) {
+    if (value == null) return 0;
+    if (value is int) return value;
+    if (value is double) return value.toInt();
+    return int.tryParse(value.toString()) ?? 0;
+  }
+
+  double _asDouble(dynamic value) {
+    if (value == null) return 0.0;
+    if (value is double) return value;
+    if (value is int) return value.toDouble();
+    return double.tryParse(value.toString()) ?? 0.0;
   }
 }

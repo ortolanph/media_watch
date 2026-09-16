@@ -2,11 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:media_watch/bloc/movies/movies_bloc.dart';
 import 'package:media_watch/bloc/movies/movies_event.dart';
+import 'package:media_watch/presentation/widgets/movie_widget.dart';
 
 import '../../bloc/movies/movies_state.dart';
+import '../../data/entities/movie.dart';
 
 class MovieView extends StatefulWidget {
-  const MovieView({super.key});
+  const MovieView({super.key, required this.movies});
+
+  final List<Movie> movies;
 
   @override
   State<MovieView> createState() => _MovieViewState();
@@ -32,7 +36,13 @@ class _MovieViewState extends State<MovieView> {
           bloc: context.read<MovieBloc>(),
           child: Container(),
         ),
-        //Expanded(child: )
+        Expanded(
+          child: ListView.builder(
+            itemCount: widget.movies.length,
+            itemBuilder: (context, index) =>
+                MovieWidget(movie: widget.movies[index]),
+          ),
+        ),
       ],
     );
   }
