@@ -1,19 +1,35 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:media_watch/data/entities/validation_result.dart';
+import 'package:media_watch/services/tag_validation_service.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 import '../../data/entities/movie.dart';
 
 class MovieWidget extends StatelessWidget {
-  const MovieWidget({super.key, required this.movie});
+  MovieWidget({super.key, required this.movie});
 
   final Movie movie;
+
+  final TagValidationService _tagValidationService = TagValidationService();
+  late TagsValidationResult _validationResult;
+
+  @override
+  StatelessElement createElement() {
+    _validationResult = _tagValidationService.checkMovieTags(movie.tags);
+    return super.createElement();
+  }
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Card(
+        color: _validationResult.background,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(8.0),
+          side: BorderSide(color: _validationResult.foreground, width: 4.0),
+        ),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
@@ -40,6 +56,13 @@ class MovieWidget extends StatelessWidget {
                     Row(children: [_formatTags(movie.tags)]),
                   ],
                 ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                _validationResult.description,
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
               ),
             ),
           ],

@@ -7,4 +7,5 @@
 | `media002` | Paulo Ortolan  | 15/09/2026       | TV Show CRUD                                                                                    |
 | `media003` | Paulo Ortolan  | 15/09/2026       | Export and Import functions                                                                     |
 | `media004` | Paulo Ortolan  | 15/09/2026       | Search functionality                                                                            |
-|  `bug001`  | Paulo Ortolan  | 16/09/2026       | Fixing cancelled import bug                                                                     | 
+|  `bug001`  | Paulo Ortolan  | 16/09/2026       | Fixing cancelled import bug                                                                     |
+| `media005` | Paulo Ortolan  | 16/09/2026       | Movie import and some fixes                                                                     |
