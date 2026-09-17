@@ -6,7 +6,7 @@ enum TagsValidationResult {
     background: Color(0xFFEF9A9A),
     foreground: Colors.red,
   ),
-  invalidTagsFormat(
+  invalidFormatTagsFormat(
     description: "Tags field has invalid format",
     background: Color(0xFFFFF59D),
     foreground: Colors.yellow,

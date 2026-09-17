@@ -27,19 +27,16 @@ void main() {
       routes: {
         "/home": (context) => HomePage(),
         "/shows": (context) => BlocProvider(
-          create: (context) =>
-              tvShowBloc..add(TvShowLoadingEvent()),
+          create: (context) => tvShowBloc..add(TvShowLoadingEvent()),
           child: TvShowPage(),
         ),
         "/shows/edit": (context) => BlocProvider(
-          create: (context) =>
-              tvShowBloc..add(TvShowLoadingEvent()),
+          create: (context) => tvShowBloc..add(TvShowLoadingEvent()),
           child: TvShowEditPage(),
         ),
         "/movies": (context) => BlocProvider(
           create: (context) =>
-          MovieBloc(repository: movieRepository)
-            ..add(MovieLoadingEvent()),
+              MovieBloc(repository: movieRepository)..add(MovieLoadingEvent()),
           child: MoviesPage(),
         ),
       },

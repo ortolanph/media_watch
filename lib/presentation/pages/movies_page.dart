@@ -52,7 +52,9 @@ class _MoviesPageState extends State<MoviesPage> {
                 }
 
                 if (state is MovieLoadedState) {
-                  return state.movies.isEmpty ? EmptyMovieView() : MovieView(movies: state.movies);
+                  return state.movies.isEmpty
+                      ? EmptyMovieView()
+                      : MovieView(movies: state.movies);
                 }
 
                 if (state is MovieErrorState) {

@@ -22,7 +22,7 @@ abstract class TagsValidator {
   TagsValidationResult? check(String? tags);
 }
 
-class NullTagsValidator extends TagsValidator {
+class EmptyTagsValidator extends TagsValidator {
   @override
   TagsValidationResult? check(String? tags) {
     if (tags == null || tags.isEmpty) {
@@ -32,24 +32,31 @@ class NullTagsValidator extends TagsValidator {
   }
 }
 
-class InvalidTagsValidator extends TagsValidator {
+class FormatTagsValidator extends TagsValidator {
   final String _tagSplit = ",";
   final String _valueSplit = ":";
 
-
   @override
   TagsValidationResult? check(String? tags) {
-    if (!tags!.contains(_tagSplit)) return TagsValidationResult.invalidTagsFormat;
-    if (!tags.contains(_valueSplit)) return TagsValidationResult.invalidTagsFormat;
+    if (!tags!.contains(_tagSplit)) {
+      return TagsValidationResult.invalidFormatTagsFormat;
+    }
+    if (!tags.contains(_valueSplit)) {
+      return TagsValidationResult.invalidFormatTagsFormat;
+    }
 
-    var tagData = tags.split(_tagSplit).map((tag) => tag.trim().split(_valueSplit)).toList();
-    if (!tagData.every((tag) => tag.length == 2 && tag[0].isNotEmpty && tag[1].isNotEmpty)) {
-      return TagsValidationResult.invalidTagsFormat;
+    var tagData = tags
+        .split(_tagSplit)
+        .map((tag) => tag.trim().split(_valueSplit))
+        .toList();
+    if (!tagData.every(
+      (tag) => tag.length == 2 && tag[0].isNotEmpty && tag[1].isNotEmpty,
+    )) {
+      return TagsValidationResult.invalidFormatTagsFormat;
     }
 
     return null;
   }
-
 }
 
 class UniqueSourceTagValidator extends TagsValidator {
@@ -89,15 +96,13 @@ class ContainsGenreTagValidator extends TagsValidator {
 }
 
 class TagValidationService {
-
-  final _validationChain = NullTagsValidator()
-      ..setNext(InvalidTagsValidator())
-      ..setNext(UniqueSourceTagValidator())
-      ..setNext(UniqueTmdbIdTagValidator())
-      ..setNext(ContainsGenreTagValidator());
+  final _validationChain = EmptyTagsValidator()
+    ..setNext(FormatTagsValidator())
+    ..setNext(UniqueSourceTagValidator())
+    ..setNext(UniqueTmdbIdTagValidator())
+    ..setNext(ContainsGenreTagValidator());
 
   TagsValidationResult checkMovieTags(String? tags) {
     return _validationChain.validate(tags);
   }
-
 }

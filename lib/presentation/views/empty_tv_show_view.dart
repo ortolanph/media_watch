@@ -7,7 +7,9 @@ class EmptyTvShowView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Center(
-        child: const Text("Nenhum TV Show aqui, adicione ou importe alguns ou redefina sua busca!"),
+        child: const Text(
+          "Nenhum TV Show aqui, adicione ou importe alguns ou redefina sua busca!",
+        ),
       ),
     );
   }

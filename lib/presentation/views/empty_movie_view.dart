@@ -7,7 +7,9 @@ class EmptyMovieView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Center(
-        child: const Text("Nenhum Filme aqui! Importe o arquivo para visualizar a sua jornada!"),
+        child: const Text(
+          "Nenhum Filme aqui! Importe o arquivo para visualizar a sua jornada!",
+        ),
       ),
     );
   }

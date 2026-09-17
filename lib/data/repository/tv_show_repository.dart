@@ -111,7 +111,7 @@ class TVShowRepository {
           source: row[3] as String,
           tmdbId: row[4] as int,
           kind: TvShowKind.values.firstWhere(
-                (k) => k.name == (row[5] as String),
+            (k) => k.name == (row[5] as String),
             orElse: () => TvShowKind.regular,
           ),
         );

@@ -17,8 +17,7 @@ class _MovieViewState extends State<MovieView> {
   Widget build(BuildContext context) {
     return ListView.builder(
       itemCount: widget.movies.length,
-      itemBuilder: (context, index) =>
-          MovieWidget(movie: widget.movies[index]),
+      itemBuilder: (context, index) => MovieWidget(movie: widget.movies[index]),
     );
   }
 }
