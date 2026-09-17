@@ -6,9 +6,8 @@ User must be able to filter TV Show data.
 
 Filters:
 
-1. Year
+1. Entry Date year
 2. Movie Name
-3. Rewatch
 
 User must be able to export filtered data to CSV.
 
