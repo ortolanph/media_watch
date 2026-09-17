@@ -124,10 +124,10 @@ void main() {
   });
 
   group("Chain Testing", () {
+    TagValidationService validationService = TagValidationService();
+
     test('Must result in Empty Tags Validation - null String', () {
       // GIVEN
-      TagValidationService validationService = TagValidationService();
-
       String? tags;
 
       // WHEN
@@ -139,8 +139,6 @@ void main() {
 
     test('Must result in Empty Tags Validation - empty String', () {
       // GIVEN
-      TagValidationService validationService = TagValidationService();
-
       String? tags = '';
 
       // WHEN
@@ -152,12 +150,10 @@ void main() {
 
     test('Must result in FormatTags Validation - single value', () {
       // GIVEN
-      TagsValidator tagsValidator = FormatTagsValidator();
-
       String? tags = "value";
 
       // WHEN
-      TagsValidationResult result = tagsValidator.validate(tags);
+      TagsValidationResult result = validationService.checkMovieTags(tags);
 
       // THEN
       expect(result, TagsValidationResult.invalidFormatTagsFormat);
