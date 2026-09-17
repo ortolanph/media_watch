@@ -7,12 +7,12 @@ void main() {
   group('Single Tags Validator', () {
     test('Must result in Empty Tags Validation - null String', () {
       // GIVEN
-      TagValidationService service = TagValidationService();
+      TagsValidator tagsValidator = EmptyTagsValidator();
 
       String? tags;
 
       // WHEN
-      TagsValidationResult result = service.checkMovieTags(tags);
+      TagsValidationResult result = tagsValidator.validate(tags);
 
       // THEN
       expect(result, TagsValidationResult.emptyTags);
@@ -126,12 +126,12 @@ void main() {
   group("Chain Testing", () {
     test('Must result in Empty Tags Validation - null String', () {
       // GIVEN
-      TagsValidator tagsValidator = EmptyTagsValidator();
+      TagValidationService validationService = TagValidationService();
 
       String? tags;
 
       // WHEN
-      TagsValidationResult result = tagsValidator.validate(tags);
+      TagsValidationResult result = validationService.checkMovieTags(tags);
 
       // THEN
       expect(result, TagsValidationResult.emptyTags);
@@ -139,12 +139,12 @@ void main() {
 
     test('Must result in Empty Tags Validation - empty String', () {
       // GIVEN
-      TagsValidator tagsValidator = EmptyTagsValidator();
+      TagValidationService validationService = TagValidationService();
 
       String? tags = '';
 
       // WHEN
-      TagsValidationResult result = tagsValidator.validate(tags);
+      TagsValidationResult result = validationService.checkMovieTags(tags);
 
       // THEN
       expect(result, TagsValidationResult.emptyTags);
