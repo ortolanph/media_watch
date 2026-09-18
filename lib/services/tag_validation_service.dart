@@ -96,11 +96,22 @@ class ContainsGenreTagValidator extends TagsValidator {
 }
 
 class TagValidationService {
-  final _validationChain = EmptyTagsValidator()
-    ..setNext(FormatTagsValidator())
-    ..setNext(UniqueSourceTagValidator())
-    ..setNext(UniqueTmdbIdTagValidator())
-    ..setNext(ContainsGenreTagValidator());
+  late final TagsValidator _validationChain;
+
+  TagValidationService() {
+    final empty = EmptyTagsValidator();
+    final format = FormatTagsValidator();
+    final uniqueSource = UniqueSourceTagValidator();
+    final uniqueTmdbId = UniqueTmdbIdTagValidator();
+    final genre = ContainsGenreTagValidator();
+
+    empty.setNext(format);
+    format.setNext(uniqueSource);
+    uniqueSource.setNext(uniqueTmdbId);
+    uniqueTmdbId.setNext(genre);
+
+    _validationChain = empty;
+  }
 
   TagsValidationResult checkMovieTags(String? tags) {
     return _validationChain.validate(tags);
