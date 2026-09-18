@@ -161,25 +161,20 @@ void main() {
 
     test('Must result in FormatTags Validation - value separated by commas', () {
       // GIVEN
-      TagsValidator tagsValidator = FormatTagsValidator();
-
       String? tags = "value, value";
 
       // WHEN
-      TagsValidationResult result = tagsValidator.validate(tags);
-
+      TagsValidationResult result = validationService.checkMovieTags(tags);
       // THEN
       expect(result, TagsValidationResult.invalidFormatTagsFormat);
     });
 
     test('Must result in FormatTags Validation - key with : but no value', () {
       // GIVEN
-      TagsValidator tagsValidator = FormatTagsValidator();
-
       String? tags = "key1:value,key2:";
 
       // WHEN
-      TagsValidationResult result = tagsValidator.validate(tags);
+      TagsValidationResult result = validationService.checkMovieTags(tags);
 
       // THEN
       expect(result, TagsValidationResult.invalidFormatTagsFormat);
@@ -187,12 +182,10 @@ void main() {
 
     test('Must result in FormatTags Validation - mixed values', () {
       // GIVEN
-      TagsValidator tagsValidator = FormatTagsValidator();
-
       String? tags = "key:value,";
 
       // WHEN
-      TagsValidationResult result = tagsValidator.validate(tags);
+      TagsValidationResult result = validationService.checkMovieTags(tags);
 
       // THEN
       expect(result, TagsValidationResult.invalidFormatTagsFormat);
@@ -200,12 +193,10 @@ void main() {
 
     test('Multiple sources tags', () {
       // GIVEN
-      TagsValidator tagsValidator = UniqueSourceTagValidator();
-
       String? tags = "source:source1, source:source2";
 
       // WHEN
-      TagsValidationResult result = tagsValidator.validate(tags);
+      TagsValidationResult result = validationService.checkMovieTags(tags);
 
       // THEN
       expect(result, TagsValidationResult.nonUniqueSourceTag);
@@ -213,12 +204,10 @@ void main() {
 
     test('Multiple tmdb_id tags', () {
       // GIVEN
-      TagsValidator tagsValidator = UniqueTmdbIdTagValidator();
-
       String? tags = "tmdb_id:12345, tmdb_id:67890";
 
       // WHEN
-      TagsValidationResult result = tagsValidator.validate(tags);
+      TagsValidationResult result = validationService.checkMovieTags(tags);
 
       // THEN
       expect(result, TagsValidationResult.nonUniqueTmdbIdTag);
@@ -226,12 +215,10 @@ void main() {
 
     test('Missing genre tag', () {
       // GIVEN
-      TagsValidator tagsValidator = ContainsGenreTagValidator();
-
       String? tags = "source:12345, tmdb_id:67890";
 
       // WHEN
-      TagsValidationResult result = tagsValidator.validate(tags);
+      TagsValidationResult result = validationService.checkMovieTags(tags);
 
       // THEN
       expect(result, TagsValidationResult.missingGenreTag);
