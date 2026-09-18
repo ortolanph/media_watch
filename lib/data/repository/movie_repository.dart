@@ -41,7 +41,7 @@ class MovieRepository {
         rewatch: _parseRewatch(row[5]),
         tags: _asString(row[6]),
         watchedDate: _asString(row[7]),
-        validationResult: _validationService.checkMovieTags(_asString(row[7])),
+        validationResult: _validationService.checkMovieTags(_asString(row[6])),
       );
 
       _movies.add(movie);

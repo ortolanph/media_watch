@@ -223,5 +223,16 @@ void main() {
       // THEN
       expect(result, TagsValidationResult.missingGenreTag);
     });
+
+    test('Everything is alright', () {
+      // GIVEN
+      String? tags = "source:12345, genre:some, genre:other, tmdb_id:67890, adaption:external, style:full";
+
+      // WHEN
+      TagsValidationResult result = validationService.checkMovieTags(tags);
+
+      // THEN
+      expect(result, TagsValidationResult.validTagsField);
+    });
   });
 }

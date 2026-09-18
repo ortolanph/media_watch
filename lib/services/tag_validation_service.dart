@@ -38,14 +38,15 @@ class FormatTagsValidator extends TagsValidator {
 
   @override
   TagsValidationResult? check(String? tags) {
-    if (!tags!.contains(_tagSplit)) {
+    var myTags = tags!.trim();
+    if (!myTags.contains(_tagSplit)) {
       return TagsValidationResult.invalidFormatTagsFormat;
     }
-    if (!tags.contains(_valueSplit)) {
+    if (!myTags.contains(_valueSplit)) {
       return TagsValidationResult.invalidFormatTagsFormat;
     }
 
-    var tagData = tags
+    var tagData = myTags
         .split(_tagSplit)
         .map((tag) => tag.trim().split(_valueSplit))
         .toList();
@@ -99,18 +100,18 @@ class TagValidationService {
   late final TagsValidator _validationChain;
 
   TagValidationService() {
-    final empty = EmptyTagsValidator();
-    final format = FormatTagsValidator();
-    final uniqueSource = UniqueSourceTagValidator();
-    final uniqueTmdbId = UniqueTmdbIdTagValidator();
-    final genre = ContainsGenreTagValidator();
+    final emptyValidator = EmptyTagsValidator();
+    final formatValidator = FormatTagsValidator();
+    final uniqueSourceValidator = UniqueSourceTagValidator();
+    final uniqueTmdbIdValidator = UniqueTmdbIdTagValidator();
+    final genreValidator = ContainsGenreTagValidator();
 
-    empty.setNext(format);
-    format.setNext(uniqueSource);
-    uniqueSource.setNext(uniqueTmdbId);
-    uniqueTmdbId.setNext(genre);
+    emptyValidator.setNext(formatValidator);
+    formatValidator.setNext(uniqueSourceValidator);
+    uniqueSourceValidator.setNext(uniqueTmdbIdValidator);
+    uniqueTmdbIdValidator.setNext(genreValidator);
 
-    _validationChain = empty;
+    _validationChain = emptyValidator;
   }
 
   TagsValidationResult checkMovieTags(String? tags) {
