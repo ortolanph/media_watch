@@ -8,4 +8,4 @@ Assert-CommandExists -Name "dart"
 & "$PSScriptRoot\clean.ps1"
 & "$PSScriptRoot\dependencies.ps1"
 
-dart run build_runner build -d
+dart run build_runner build

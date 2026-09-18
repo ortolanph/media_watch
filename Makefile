@@ -32,7 +32,7 @@ dependencies:
 compile: clean dependencies
 	$(call check_installed,flutter)
 	$(call check_installed,dart)
-	dart run build_runner build -d
+	dart run build_runner build
 
 analyze:
 	$(call check_installed,dart)
