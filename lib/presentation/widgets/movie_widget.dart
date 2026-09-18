@@ -6,38 +6,34 @@ import 'package:url_launcher/url_launcher_string.dart';
 
 import '../../data/entities/movie.dart';
 
-class MovieWidget extends StatelessWidget {
+class MovieWidget extends StatefulWidget {
   MovieWidget({super.key, required this.movie});
 
   final Movie movie;
 
-  final TagValidationService _tagValidationService = TagValidationService();
-  late TagsValidationResult _validationResult;
-
   @override
-  StatelessElement createElement() {
-    _validationResult = _tagValidationService.checkMovieTags(movie.tags);
-    return super.createElement();
-  }
+  State<MovieWidget> createState() => _MovieWidgetState();
+}
 
+class _MovieWidgetState extends State<MovieWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Card(
-        color: _validationResult.background,
+        color: widget.movie.validationResult.background,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8.0),
-          side: BorderSide(color: _validationResult.foreground, width: 4.0),
+          side: BorderSide(color: widget.movie.validationResult.foreground, width: 4.0),
         ),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
             ListTile(
               title: _formatTitle(
-                movie.movieName,
-                movie.year,
-                movie.letterboxURI,
+                widget.movie.movieName,
+                widget.movie.year,
+                widget.movie.letterboxURI,
               ),
               subtitle: Padding(
                 padding: EdgeInsets.all(8.0),
@@ -47,13 +43,13 @@ class MovieWidget extends StatelessWidget {
                       children: [
                         _formatDate(
                           Icons.calendar_today_outlined,
-                          movie.entryDate,
+                          widget.movie.entryDate,
                         ),
-                        _formatDate(Icons.remove_red_eye, movie.watchedDate),
-                        _formatRewatch(movie.rewatch),
+                        _formatDate(Icons.remove_red_eye, widget.movie.watchedDate),
+                        _formatRewatch(widget.movie.rewatch),
                       ],
                     ),
-                    Row(children: [_formatTags(movie.tags)]),
+                    Row(children: [_formatTags(widget.movie.tags)]),
                   ],
                 ),
               ),
@@ -61,7 +57,7 @@ class MovieWidget extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                _validationResult.description,
+                widget.movie.validationResult.description,
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
               ),
             ),

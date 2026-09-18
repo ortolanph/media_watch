@@ -1,4 +1,5 @@
 import 'package:csv/csv.dart';
+import 'package:media_watch/services/tag_validation_service.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../services/data_service.dart';
@@ -6,6 +7,7 @@ import '../entities/movie.dart';
 
 class MovieRepository {
   final CSVDataService _csvDataService = FileCSVDataService();
+  final TagValidationService _validationService = TagValidationService();
 
   final List<Movie> _movies = [];
 
@@ -39,6 +41,7 @@ class MovieRepository {
         rewatch: _parseRewatch(row[5]),
         tags: _asString(row[6]),
         watchedDate: _asString(row[7]),
+        validationResult: _validationService.checkMovieTags(_asString(row[7])),
       );
 
       _movies.add(movie);

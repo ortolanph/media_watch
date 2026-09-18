@@ -1,5 +1,6 @@
 import 'package:equatable/equatable.dart';
 import 'package:json_annotation/json_annotation.dart';
+import 'package:media_watch/data/entities/validation_result.dart';
 
 part 'movie.g.dart';
 
@@ -14,6 +15,7 @@ class Movie with Equatable {
   final bool rewatch;
   final String tags;
   final String watchedDate;
+  final TagsValidationResult validationResult;
 
   Movie({
     required this.id,
@@ -25,6 +27,7 @@ class Movie with Equatable {
     required this.rewatch,
     required this.tags,
     required this.watchedDate,
+    required this.validationResult,
   });
 
   @override
@@ -39,5 +42,6 @@ class Movie with Equatable {
     rewatch,
     tags,
     watchedDate,
+    validationResult,
   ];
 }

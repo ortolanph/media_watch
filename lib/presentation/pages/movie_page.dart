@@ -17,6 +17,15 @@ class MoviesPage extends StatefulWidget {
 }
 
 class _MoviesPageState extends State<MoviesPage> {
+  final _searchController = TextEditingController();
+  String _searchQuery = '';
+
+  @override
+  void dispose() {
+    _searchController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,6 +45,26 @@ class _MoviesPageState extends State<MoviesPage> {
       ),
       body: Column(
         children: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextField(
+              controller: _searchController,
+              decoration: InputDecoration(
+                labelText: "Buscar Filme",
+                prefixIcon: const Icon(Icons.search),
+                suffixIcon: _searchQuery.isNotEmpty
+                    ? IconButton(
+                        icon: const Icon(Icons.clear),
+                        onPressed: () {
+                          _searchController.clear();
+                          setState(() => _searchQuery = '');
+                        },
+                      )
+                    : null,
+              ),
+              onChanged: (value) => setState(() => _searchQuery = value),
+            ),
+          ),
           Expanded(
             child: BlocConsumer<MovieBloc, MovieState>(
               listener: (context, state) {
@@ -52,9 +81,20 @@ class _MoviesPageState extends State<MoviesPage> {
                 }
 
                 if (state is MovieLoadedState) {
-                  return state.movies.isEmpty
+                  final query = _searchQuery.toLowerCase();
+                  final filtered = query.isEmpty
+                      ? state.movies
+                      : state.movies
+                            .where(
+                              (r) =>
+                                  r.movieName.toLowerCase().contains(query) ||
+                                  r.entryDate.toLowerCase().contains(query),
+                            )
+                            .toList();
+
+                  return filtered.isEmpty
                       ? EmptyMovieView()
-                      : MovieView(movies: state.movies);
+                      : MovieView(movies: filtered);
                 }
 
                 if (state is MovieErrorState) {

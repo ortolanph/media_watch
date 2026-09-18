@@ -137,11 +137,9 @@ class _TvShowPageState extends State<TvShowPage> {
                             )
                             .toList();
 
-                  if (filtered.isEmpty) {
-                    return EmptyTvShowView();
-                  } else {
-                    return TvShowView(tvShows: filtered);
-                  }
+                  return (filtered.isEmpty)
+                      ? EmptyTvShowView()
+                      : TvShowView(tvShows: filtered);
                 }
 
                 if (state is TvShowErrorState) {

@@ -5,7 +5,7 @@ import 'package:media_watch/bloc/movies/movies_bloc.dart';
 import 'package:media_watch/bloc/tvshow/tv_show_bloc.dart';
 import 'package:media_watch/data/repository/movie_repository.dart';
 import 'package:media_watch/presentation/pages/home_page.dart';
-import 'package:media_watch/presentation/pages/movies_page.dart';
+import 'package:media_watch/presentation/pages/movie_page.dart';
 import 'package:media_watch/presentation/pages/tv_show_edit_page.dart';
 import 'package:media_watch/presentation/pages/tv_show_page.dart';
 
