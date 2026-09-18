@@ -16,32 +16,32 @@ class MovieRepository {
   Future<void> importData() async {
     final csvData = await _csvDataService.importData();
 
-    if (csvData != "") {
-      List<List<dynamic>> rows = const CsvToListConverter().convert(
-        csvData as String?,
+    if (csvData == "") {
+      throw Exception("Arquivo inválido");
+    }
+
+    List<List<dynamic>> rows = const CsvToListConverter().convert(
+      csvData as String?,
+    );
+
+    rows.removeAt(0);
+
+    _movies.clear();
+
+    for (var row in rows) {
+      Movie movie = Movie(
+        id: Uuid().v4(),
+        entryDate: _asString(row[0]),
+        movieName: _asString(row[1]),
+        year: _asInt(row[2]),
+        letterboxURI: _asString(row[3]),
+        rating: _asDouble(row[4]),
+        rewatch: _parseRewatch(row[5]),
+        tags: _asString(row[6]),
+        watchedDate: _asString(row[7]),
       );
 
-      rows.removeAt(0);
-
-      _movies.clear();
-
-      for (var row in rows) {
-        Movie movie = Movie(
-          id: Uuid().v4(),
-          entryDate: _asString(row[0]),
-          movieName: _asString(row[1]),
-          year: _asInt(row[2]),
-          letterboxURI: _asString(row[3]),
-          rating: _asDouble(row[4]),
-          rewatch: _parseRewatch(row[5]),
-          tags: _asString(row[6]),
-          watchedDate: _asString(row[7]),
-        );
-
-        _movies.add(movie);
-      }
-    } else {
-      throw Exception("Arquivo não selecionado");
+      _movies.add(movie);
     }
   }
 

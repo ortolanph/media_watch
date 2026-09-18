@@ -26,12 +26,12 @@ void main() {
       initialRoute: "/home",
       routes: {
         "/home": (context) => HomePage(),
-        "/shows": (context) => BlocProvider(
-          create: (context) => tvShowBloc..add(TvShowLoadingEvent()),
+        "/shows": (context) => BlocProvider.value(
+          value: tvShowBloc..add(TvShowLoadingEvent()),
           child: TvShowPage(),
         ),
-        "/shows/edit": (context) => BlocProvider(
-          create: (context) => tvShowBloc..add(TvShowLoadingEvent()),
+        "/shows/edit": (context) => BlocProvider.value(
+          value: tvShowBloc..add(TvShowLoadingEvent()),
           child: TvShowEditPage(),
         ),
         "/movies": (context) => BlocProvider(

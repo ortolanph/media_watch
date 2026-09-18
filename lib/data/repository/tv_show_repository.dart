@@ -93,33 +93,44 @@ class TVShowRepository {
   Future<void> importData() async {
     final csvData = await _csvDataService.importData();
 
-    if (csvData != "") {
-      List<List<dynamic>> rows = const CsvToListConverter().convert(
-        csvData as String?,
-      );
-
-      rows.removeAt(0);
-
-      _tvShows.clear();
-
-      for (var row in rows) {
-        TvShow tvShow = TvShow(
-          id: Uuid().v4(),
-          show: row[0] as String,
-          season: row[1] as int,
-          yearWatched: row[2] as int,
-          source: row[3] as String,
-          tmdbId: row[4] as int,
-          kind: TvShowKind.values.firstWhere(
-            (k) => k.name == (row[5] as String),
-            orElse: () => TvShowKind.regular,
-          ),
-        );
-
-        _tvShows.add(tvShow);
-      }
-    } else {
+    if (csvData == "") {
       throw Exception("Arquivo não selecionado");
     }
+
+    List<List<dynamic>> rows = const CsvToListConverter().convert(
+      csvData as String?,
+    );
+
+    if (rows.isNotEmpty) {
+      rows.removeAt(0); // header
+    }
+
+    final List<TvShow> parsed = [];
+
+    for (var row in rows) {
+      if (row.isEmpty ||
+          row.every((v) => v == null || v.toString().trim().isEmpty)) {
+        continue;
+      }
+
+      parsed.add(
+        TvShow(
+          id: Uuid().v4(),
+          show: row[0].toString(),
+          season: num.parse(row[1].toString()).toInt(),
+          yearWatched: num.parse(row[2].toString()).toInt(),
+          source: row[3].toString(),
+          tmdbId: num.parse(row[4].toString()).toInt(),
+          kind: TvShowKind.values.firstWhere(
+            (k) => k.name == row[5].toString(),
+            orElse: () => TvShowKind.regular,
+          ),
+        ),
+      );
+    }
+
+    _tvShows
+      ..clear()
+      ..addAll(parsed);
   }
 }
