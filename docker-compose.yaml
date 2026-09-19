@@ -6,7 +6,7 @@ services:
     image: media_watch:latest
     pull_policy: never
     ports:
-      - "10038:8080"
+      - "10035:8080"
     networks:
       - media_watch_net
 

@@ -88,7 +88,8 @@ class _MoviesPageState extends State<MoviesPage> {
                             .where(
                               (r) =>
                                   r.movieName.toLowerCase().contains(query) ||
-                                  r.entryDate.toLowerCase().contains(query),
+                                  r.entryDate.toLowerCase().contains(query) ||
+                                  r.tags.toLowerCase().contains(query),
                             )
                             .toList();
 
