@@ -2,18 +2,17 @@
 
 ## Description
 
-Create a bar on the movie screen that shows the statistics.
+Create a button bar on the movie screen that shows the statistics.
 
 Example:
 
 ```
-9999 EMPTY TAGS
-9999 INVALID FORMAT
-9999 NON UNIQUE SOURCE TAG
-9999 NON UNIQUE TMDB_ID TAG
-9999 MISSING GENRE TAG
-9999 VALID TAGS
+(EMPTY TAGS COUNT) (INVALID FORMAT) (NON UNIQUE SOURCE TAG) (NON UNIQUE TMDB_ID TAG) (MISSING GENRE TAG) (VALID TAGS)
 ```
+
+If the user clicks a button, the program filter by results.
+
+If one validations is zero, disable the button.
 
 ## Acceptance Criteria
 
