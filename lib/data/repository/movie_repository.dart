@@ -31,6 +31,10 @@ class MovieRepository {
     _movies.clear();
 
     for (var row in rows) {
+      var validationResult = _validationService.checkMovieTags(
+        _asString(row[6]),
+      );
+
       Movie movie = Movie(
         id: Uuid().v4(),
         entryDate: _asString(row[0]),
@@ -41,7 +45,7 @@ class MovieRepository {
         rewatch: _parseRewatch(row[5]),
         tags: _asString(row[6]),
         watchedDate: _asString(row[7]),
-        validationResult: _validationService.checkMovieTags(_asString(row[6])),
+        validationResult: validationResult,
       );
 
       _movies.add(movie);

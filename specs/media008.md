@@ -10,10 +10,6 @@ Example:
 (EMPTY TAGS COUNT) (INVALID FORMAT) (NON UNIQUE SOURCE TAG) (NON UNIQUE TMDB_ID TAG) (MISSING GENRE TAG) (VALID TAGS)
 ```
 
-If the user clicks a button, the program filter by results.
-
-If one validations is zero, disable the button.
-
 ## Acceptance Criteria
 
 1. Code is clean

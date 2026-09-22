@@ -6,9 +6,11 @@ import '../../data/entities/movie.dart';
 import 'movies_state.dart';
 
 class MovieBloc extends Bloc<MovieEvent, MovieState> {
-  final MovieRepository repository;
+  final MovieRepository _repository;
 
-  MovieBloc({required this.repository}) : super(MovieInitialState()) {
+  MovieBloc({required MovieRepository repository})
+    : _repository = repository,
+      super(MovieInitialState()) {
     on<MovieLoadingEvent>(_onLoadMovies);
     on<MovieImportDataEvent>(_onImportData);
   }
@@ -17,7 +19,7 @@ class MovieBloc extends Bloc<MovieEvent, MovieState> {
     MovieLoadingEvent event,
     Emitter<MovieState> emit,
   ) async {
-    List<Movie> movies = await repository.getMovies();
+    List<Movie> movies = await _repository.getMovies();
     emit(MovieLoadingState());
     emit(MovieLoadedState(movies: movies));
   }
@@ -27,7 +29,7 @@ class MovieBloc extends Bloc<MovieEvent, MovieState> {
     Emitter<MovieState> emit,
   ) async {
     try {
-      await repository.importData();
+      await _repository.importData();
       emit(MovieImportedState());
     } catch (e) {
       emit(MovieErrorState(message: e.toString()));
