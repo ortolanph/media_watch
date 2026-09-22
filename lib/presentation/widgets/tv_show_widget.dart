@@ -89,16 +89,16 @@ class TvShowWidget extends StatelessWidget {
   }
 
   Widget _formatTvShowName(String show, int season, int tmdbId) {
-    return new RichText(
+    return RichText(
       text: TextSpan(
         text: "$show - S${season.toString().padLeft(2, '0')}",
-        style: new TextStyle(
+        style: TextStyle(
           color: Colors.blue,
           decoration: TextDecoration.underline,
           fontSize: 18,
           fontWeight: FontWeight.bold,
         ),
-        recognizer: new TapGestureRecognizer()
+        recognizer: TapGestureRecognizer()
           ..onTap = () {
             launchUrlString("https://www.themoviedb.org/tv/$tmdbId");
           },

@@ -1,13 +1,11 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:media_watch/data/entities/validation_result.dart';
-import 'package:media_watch/services/tag_validation_service.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 import '../../data/entities/movie.dart';
 
 class MovieWidget extends StatefulWidget {
-  MovieWidget({super.key, required this.movie});
+  const MovieWidget({super.key, required this.movie});
 
   final Movie movie;
 
@@ -71,13 +69,13 @@ class _MovieWidgetState extends State<MovieWidget> {
     return RichText(
       text: TextSpan(
         text: "$name ($year)",
-        style: new TextStyle(
+        style: TextStyle(
           color: Colors.blue,
           decoration: TextDecoration.underline,
           fontSize: 18,
           fontWeight: FontWeight.bold,
         ),
-        recognizer: new TapGestureRecognizer()
+        recognizer: TapGestureRecognizer()
           ..onTap = () {
             launchUrlString(tmdbURI);
           },
