@@ -1,10 +1,6 @@
 import 'package:equatable/equatable.dart';
-import 'package:json_annotation/json_annotation.dart';
 import 'package:media_watch/data/entities/validation_result.dart';
 
-part 'movie.g.dart';
-
-@JsonSerializable()
 class Movie with Equatable {
   final String id;
   final String entryDate;

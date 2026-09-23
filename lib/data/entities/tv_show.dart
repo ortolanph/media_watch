@@ -1,10 +1,6 @@
 import 'package:equatable/equatable.dart';
-import 'package:json_annotation/json_annotation.dart';
 import 'package:media_watch/data/entities/tv_show_kind.dart';
 
-part 'tv_show.g.dart';
-
-@JsonSerializable()
 class TvShow with Equatable {
   final String id;
   final String show;
