@@ -11,3 +11,4 @@
 | `media005` | Paulo Ortolan  | 16/09/2026       | Movie import and some fixes                                                                     |
 | `media006` | Paulo Ortolan  | 17/09/2026       | Validation Service                                                                              |
 | `media007` | Paulo Ortolan  | 18/09/2026       | Filters working                                                                                 |
+| `media008` | Paulo Ortolan  | 23/09/2026       | Tags Validation Bar implementation                                                              |
