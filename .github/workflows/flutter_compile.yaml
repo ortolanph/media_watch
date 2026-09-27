@@ -19,5 +19,17 @@ jobs:
           channel: stable
           cache: true
 
-      - name: Run compile task
-        run: make compile
+      - name: Run CLEAN CACHE
+        run: flutter clean cache
+
+      - name: Run CLEAN
+        run: flutter clean
+
+      - name: Run DEPENDENCIES
+        run: dart pub get
+
+      - name: Run TEST
+        run: flutter test -r github
+
+      - name: Run COMPILE
+        run: dart run build_runner build
