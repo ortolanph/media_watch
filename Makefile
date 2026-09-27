@@ -29,7 +29,7 @@ dependencies:
 	$(call check_installed,dart)
 	dart pub get
 
-compile: clean dependencies
+compile: clean dependencies test
 	$(call check_installed,flutter)
 	$(call check_installed,dart)
 	dart run build_runner build

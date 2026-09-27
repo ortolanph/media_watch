@@ -1,8 +1,8 @@
-# Filtered records count
+# Movie Tags Summary
 
 ## Description
 
-Create a counter of filtered records.
+Create a summary screen for movie tags. Accept only valid ones.
 
 ## Acceptance Criteria
 

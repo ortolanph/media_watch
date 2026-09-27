@@ -1,8 +1,8 @@
-# Filtered records count
+# Clickable and Filterable Movie Tag Statistics
 
 ## Description
 
-Create a counter of filtered records.
+The movie Tags Statistics are clickable and filterable.
 
 ## Acceptance Criteria
 

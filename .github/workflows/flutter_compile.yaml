@@ -1,0 +1,23 @@
+name: Flutter Compile
+
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Run compile task
+        run: make compile
