@@ -66,13 +66,13 @@ class _MoviesPageState extends State<MoviesPage> {
             final filtered = query.isEmpty
                 ? state.movies
                 : state.movies
-                .where(
-                  (r) =>
-              r.movieName.toLowerCase().contains(query) ||
-                  r.entryDate.toLowerCase().contains(query) ||
-                  r.tags.toLowerCase().contains(query),
-            )
-                .toList();
+                      .where(
+                        (r) =>
+                            r.movieName.toLowerCase().contains(query) ||
+                            r.entryDate.toLowerCase().contains(query) ||
+                            r.tags.toLowerCase().contains(query),
+                      )
+                      .toList();
 
             histogram = _buildHistogram(filtered);
             content = filtered.isEmpty
@@ -96,12 +96,12 @@ class _MoviesPageState extends State<MoviesPage> {
                     prefixIcon: const Icon(Icons.search),
                     suffixIcon: _searchQuery.isNotEmpty
                         ? IconButton(
-                      icon: const Icon(Icons.clear),
-                      onPressed: () {
-                        _searchController.clear();
-                        setState(() => _searchQuery = '');
-                      },
-                    )
+                            icon: const Icon(Icons.clear),
+                            onPressed: () {
+                              _searchController.clear();
+                              setState(() => _searchQuery = '');
+                            },
+                          )
                         : null,
                   ),
                   onChanged: (value) => setState(() => _searchQuery = value),
@@ -118,7 +118,7 @@ class _MoviesPageState extends State<MoviesPage> {
   Map<TagsValidationResult, int> _emptyHistogram() {
     return {
       TagsValidationResult.emptyTags: 0,
-      TagsValidationResult.invalidFormatTagsFormat: 0,
+      TagsValidationResult.invalidTagsFormat: 0,
       TagsValidationResult.nonUniqueSourceTag: 0,
       TagsValidationResult.nonUniqueTmdbIdTag: 0,
       TagsValidationResult.missingGenreTag: 0,
@@ -131,7 +131,7 @@ class _MoviesPageState extends State<MoviesPage> {
     for (var movie in data) {
       histogram.update(
         movie.validationResult,
-            (count) => count + 1,
+        (count) => count + 1,
         ifAbsent: () => 1,
       );
     }

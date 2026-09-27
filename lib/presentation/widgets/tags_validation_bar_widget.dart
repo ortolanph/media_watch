@@ -27,8 +27,8 @@ class _TagsValidationBarWidgetState extends State<TagsValidationBarWidget> {
             ),
             _divider(),
             _createTag(
-              TagsValidationResult.invalidFormatTagsFormat,
-              widget.histogram[TagsValidationResult.invalidFormatTagsFormat] ?? 0,
+              TagsValidationResult.invalidTagsFormat,
+              widget.histogram[TagsValidationResult.invalidTagsFormat] ?? 0,
             ),
             _divider(),
             _createTag(
@@ -65,11 +65,9 @@ class _TagsValidationBarWidgetState extends State<TagsValidationBarWidget> {
       padding: EdgeInsets.symmetric(vertical: 2, horizontal: 4),
       child: Container(
         decoration: BoxDecoration(
-            border: Border.all(
-              color: Colors.black,
-            ),
-            color: result.background,
-            borderRadius: BorderRadius.circular(20)
+          border: Border.all(color: Colors.black),
+          color: result.background,
+          borderRadius: BorderRadius.circular(20),
         ),
         child: Padding(
           padding: const EdgeInsets.all(12.0),

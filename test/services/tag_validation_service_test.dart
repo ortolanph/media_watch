@@ -2,7 +2,6 @@ import 'package:media_watch/data/entities/validation_result.dart';
 import 'package:media_watch/services/tag_validation_service.dart';
 import 'package:test/test.dart';
 
-
 void main() {
   group('Single Tags Validator', () {
     test('Must result in Empty Tags Validation - null String', () {
@@ -41,21 +40,24 @@ void main() {
       TagsValidationResult result = tagsValidator.validate(tags);
 
       // THEN
-      expect(result, TagsValidationResult.invalidFormatTagsFormat);
+      expect(result, TagsValidationResult.invalidTagsFormat);
     });
 
-    test('Must result in FormatTags Validation - value separated by commas', () {
-      // GIVEN
-      TagsValidator tagsValidator = FormatTagsValidator();
+    test(
+      'Must result in FormatTags Validation - value separated by commas',
+      () {
+        // GIVEN
+        TagsValidator tagsValidator = FormatTagsValidator();
 
-      String? tags = "value, value";
+        String? tags = "value, value";
 
-      // WHEN
-      TagsValidationResult result = tagsValidator.validate(tags);
+        // WHEN
+        TagsValidationResult result = tagsValidator.validate(tags);
 
-      // THEN
-      expect(result, TagsValidationResult.invalidFormatTagsFormat);
-    });
+        // THEN
+        expect(result, TagsValidationResult.invalidTagsFormat);
+      },
+    );
 
     test('Must result in FormatTags Validation - key with : but no value', () {
       // GIVEN
@@ -67,7 +69,7 @@ void main() {
       TagsValidationResult result = tagsValidator.validate(tags);
 
       // THEN
-      expect(result, TagsValidationResult.invalidFormatTagsFormat);
+      expect(result, TagsValidationResult.invalidTagsFormat);
     });
 
     test('Must result in FormatTags Validation - mixed values', () {
@@ -80,7 +82,7 @@ void main() {
       TagsValidationResult result = tagsValidator.validate(tags);
 
       // THEN
-      expect(result, TagsValidationResult.invalidFormatTagsFormat);
+      expect(result, TagsValidationResult.invalidTagsFormat);
     });
 
     test('Multiple sources tags', () {
@@ -156,18 +158,21 @@ void main() {
       TagsValidationResult result = validationService.checkMovieTags(tags);
 
       // THEN
-      expect(result, TagsValidationResult.invalidFormatTagsFormat);
+      expect(result, TagsValidationResult.invalidTagsFormat);
     });
 
-    test('Must result in FormatTags Validation - value separated by commas', () {
-      // GIVEN
-      String? tags = "value, value";
+    test(
+      'Must result in FormatTags Validation - value separated by commas',
+      () {
+        // GIVEN
+        String? tags = "value, value";
 
-      // WHEN
-      TagsValidationResult result = validationService.checkMovieTags(tags);
-      // THEN
-      expect(result, TagsValidationResult.invalidFormatTagsFormat);
-    });
+        // WHEN
+        TagsValidationResult result = validationService.checkMovieTags(tags);
+        // THEN
+        expect(result, TagsValidationResult.invalidTagsFormat);
+      },
+    );
 
     test('Must result in FormatTags Validation - key with : but no value', () {
       // GIVEN
@@ -177,7 +182,7 @@ void main() {
       TagsValidationResult result = validationService.checkMovieTags(tags);
 
       // THEN
-      expect(result, TagsValidationResult.invalidFormatTagsFormat);
+      expect(result, TagsValidationResult.invalidTagsFormat);
     });
 
     test('Must result in FormatTags Validation - mixed values', () {
@@ -188,7 +193,7 @@ void main() {
       TagsValidationResult result = validationService.checkMovieTags(tags);
 
       // THEN
-      expect(result, TagsValidationResult.invalidFormatTagsFormat);
+      expect(result, TagsValidationResult.invalidTagsFormat);
     });
 
     test('Multiple sources tags', () {
@@ -204,7 +209,7 @@ void main() {
 
     test('Multiple tmdb_id tags', () {
       // GIVEN
-      String? tags = "tmdb_id:12345, tmdb_id:67890";
+      String? tags = "source:mySource, tmdb_id:12345, tmdb_id:67890";
 
       // WHEN
       TagsValidationResult result = validationService.checkMovieTags(tags);
@@ -226,7 +231,8 @@ void main() {
 
     test('Everything is alright', () {
       // GIVEN
-      String? tags = "source:12345, genre:some, genre:other, tmdb_id:67890, adaption:external, style:full";
+      String? tags =
+          "source:12345, genre:some, genre:other, tmdb_id:67890, adaption:external, style:full";
 
       // WHEN
       TagsValidationResult result = validationService.checkMovieTags(tags);

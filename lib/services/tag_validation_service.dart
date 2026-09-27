@@ -40,10 +40,10 @@ class FormatTagsValidator extends TagsValidator {
   TagsValidationResult? check(String? tags) {
     var myTags = tags!.trim();
     if (!myTags.contains(_tagSplit)) {
-      return TagsValidationResult.invalidFormatTagsFormat;
+      return TagsValidationResult.invalidTagsFormat;
     }
     if (!myTags.contains(_valueSplit)) {
-      return TagsValidationResult.invalidFormatTagsFormat;
+      return TagsValidationResult.invalidTagsFormat;
     }
 
     var tagData = myTags
@@ -53,18 +53,28 @@ class FormatTagsValidator extends TagsValidator {
     if (!tagData.every(
       (tag) => tag.length == 2 && tag[0].isNotEmpty && tag[1].isNotEmpty,
     )) {
-      return TagsValidationResult.invalidFormatTagsFormat;
+      return TagsValidationResult.invalidTagsFormat;
     }
 
     return null;
   }
 }
 
+// New check ....: SourceTagValidator
+// Predecessor ..: FormatTagsValidator
+// Successor ....: UniqueSourceTagValidator
+// Checks if source tag exists
+// Returns TagsValidationResult.noSourceTag
+
 class UniqueSourceTagValidator extends TagsValidator {
+  final String _tagName = "source";
   @override
   TagsValidationResult? check(String? tags) {
-    var tagData = tags!.split(",").map((tag) => tag.trim().split(":")).toList();
-    var sourceTags = tagData.where((tag) => tag[0] == "source").toList();
+    if (!tags!.contains(_tagName)) {
+      return TagsValidationResult.nonUniqueSourceTag;
+    }
+    var tagData = tags.split(",").map((tag) => tag.trim().split(":")).toList();
+    var sourceTags = tagData.where((tag) => tag[0] == _tagName).toList();
     if (sourceTags.length > 1) {
       return TagsValidationResult.nonUniqueSourceTag;
     }
@@ -72,11 +82,22 @@ class UniqueSourceTagValidator extends TagsValidator {
   }
 }
 
+// New check ....: TmdbIdTagValidator
+// Predecessor ..: UniqueSourceTagValidator
+// Successor ....: UniqueTmdbIdTagValidator
+// Checks if tmdb_id tag exists
+// Returns TagsValidationResult.noTmdbIdTag
+
 class UniqueTmdbIdTagValidator extends TagsValidator {
+  final String _tagName = "tmdb_id";
+
   @override
   TagsValidationResult? check(String? tags) {
-    var tagData = tags!.split(",").map((tag) => tag.trim().split(":")).toList();
-    var tmdbIdTags = tagData.where((tag) => tag[0] == "tmdb_id").toList();
+    if (!tags!.contains(_tagName)) {
+      return TagsValidationResult.nonUniqueSourceTag;
+    }
+    var tagData = tags.split(",").map((tag) => tag.trim().split(":")).toList();
+    var tmdbIdTags = tagData.where((tag) => tag[0] == _tagName).toList();
     if (tmdbIdTags.length > 1) {
       return TagsValidationResult.nonUniqueTmdbIdTag;
     }
