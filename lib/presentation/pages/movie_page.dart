@@ -7,6 +7,7 @@ import 'package:media_watch/presentation/views/empty_movie_view.dart';
 import 'package:media_watch/presentation/views/error_view.dart';
 import 'package:media_watch/presentation/views/loading_view.dart';
 import 'package:media_watch/presentation/views/movie_view.dart';
+import 'package:media_watch/presentation/widgets/record_counter.dart';
 
 import '../../bloc/movies/movies_event.dart';
 import '../../bloc/movies/movies_state.dart';
@@ -22,6 +23,7 @@ class MoviesPage extends StatefulWidget {
 class _MoviesPageState extends State<MoviesPage> {
   final _searchController = TextEditingController();
   String _searchQuery = '';
+  late List<Movie> filtered = [];
 
   @override
   void dispose() {
@@ -63,7 +65,7 @@ class _MoviesPageState extends State<MoviesPage> {
             content = LoadingView();
           } else if (state is MovieLoadedState) {
             final query = _searchQuery.toLowerCase();
-            final filtered = query.isEmpty
+            filtered = query.isEmpty
                 ? state.movies
                 : state.movies
                       .where(
@@ -89,22 +91,31 @@ class _MoviesPageState extends State<MoviesPage> {
               TagsValidationBarWidget(histogram: histogram),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: TextField(
-                  controller: _searchController,
-                  decoration: InputDecoration(
-                    labelText: "Buscar Filme",
-                    prefixIcon: const Icon(Icons.search),
-                    suffixIcon: _searchQuery.isNotEmpty
-                        ? IconButton(
-                            icon: const Icon(Icons.clear),
-                            onPressed: () {
-                              _searchController.clear();
-                              setState(() => _searchQuery = '');
-                            },
-                          )
-                        : null,
-                  ),
-                  onChanged: (value) => setState(() => _searchQuery = value),
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Expanded(
+                      child: TextField(
+                        controller: _searchController,
+                        decoration: InputDecoration(
+                          labelText: "Buscar Filme",
+                          prefixIcon: const Icon(Icons.search),
+                          suffixIcon: _searchQuery.isNotEmpty
+                              ? IconButton(
+                                  icon: const Icon(Icons.clear),
+                                  onPressed: () {
+                                    _searchController.clear();
+                                    setState(() => _searchQuery = '');
+                                  },
+                                )
+                              : null,
+                        ),
+                        onChanged: (value) =>
+                            setState(() => _searchQuery = value),
+                      ),
+                    ),
+                    RecordCounter(recordCount: filtered.length),
+                  ],
                 ),
               ),
               Expanded(child: content),

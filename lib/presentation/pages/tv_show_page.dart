@@ -6,7 +6,9 @@ import 'package:media_watch/bloc/tvshow/tv_show_event.dart';
 import 'package:media_watch/bloc/tvshow/tv_show_state.dart';
 import 'package:media_watch/presentation/views/loading_view.dart';
 import 'package:media_watch/presentation/views/tv_show_view.dart';
+import 'package:media_watch/presentation/widgets/record_counter.dart';
 
+import '../../data/entities/tv_show.dart';
 import '../views/empty_tv_show_view.dart';
 import '../views/error_view.dart';
 
@@ -20,6 +22,7 @@ class TvShowPage extends StatefulWidget {
 class _TvShowPageState extends State<TvShowPage> {
   final _searchController = TextEditingController();
   String _searchQuery = '';
+  late List<TvShow> filtered = [];
 
   @override
   void dispose() {
@@ -67,22 +70,30 @@ class _TvShowPageState extends State<TvShowPage> {
         children: [
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: TextField(
-              controller: _searchController,
-              decoration: InputDecoration(
-                labelText: "Buscar TV Show",
-                prefixIcon: const Icon(Icons.search),
-                suffixIcon: _searchQuery.isNotEmpty
-                    ? IconButton(
-                        icon: const Icon(Icons.clear),
-                        onPressed: () {
-                          _searchController.clear();
-                          setState(() => _searchQuery = '');
-                        },
-                      )
-                    : null,
-              ),
-              onChanged: (value) => setState(() => _searchQuery = value),
+            child: Row(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Expanded(
+                  child: TextField(
+                    controller: _searchController,
+                    decoration: InputDecoration(
+                      labelText: "Buscar TV Show",
+                      prefixIcon: const Icon(Icons.search),
+                      suffixIcon: _searchQuery.isNotEmpty
+                          ? IconButton(
+                              icon: const Icon(Icons.clear),
+                              onPressed: () {
+                                _searchController.clear();
+                                setState(() => _searchQuery = '');
+                              },
+                            )
+                          : null,
+                    ),
+                    onChanged: (value) => setState(() => _searchQuery = value),
+                  ),
+                ),
+                RecordCounter(recordCount: filtered.length),
+              ],
             ),
           ),
           Expanded(
@@ -125,7 +136,7 @@ class _TvShowPageState extends State<TvShowPage> {
 
                 if (state is TvShowLoadedState) {
                   final query = _searchQuery.toLowerCase();
-                  final filtered = query.isEmpty
+                  filtered = query.isEmpty
                       ? state.tvShows
                       : state.tvShows
                             .where(
