@@ -2,7 +2,7 @@
 
 ## Description
 
-Create a counter of filtered records.
+Create a counter of filtered records. Movies and TVShows.
 
 ## Acceptance Criteria
 
