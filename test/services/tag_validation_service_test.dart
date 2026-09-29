@@ -85,6 +85,19 @@ void main() {
       expect(result, TagsValidationResult.invalidTagsFormat);
     });
 
+    test('No source tag', () {
+      // GIVEN
+      TagsValidator tagsValidator = MissingSourceTagValidator();
+
+      String? tags = "key:value";
+
+      // WHEN
+      TagsValidationResult result = tagsValidator.validate(tags);
+
+      // THEN
+      expect(result, TagsValidationResult.missingSourceTag);
+    });
+
     test('Multiple sources tags', () {
       // GIVEN
       TagsValidator tagsValidator = UniqueSourceTagValidator();

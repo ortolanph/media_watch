@@ -60,20 +60,25 @@ class FormatTagsValidator extends TagsValidator {
   }
 }
 
-// New check ....: SourceTagValidator
-// Predecessor ..: FormatTagsValidator
-// Successor ....: UniqueSourceTagValidator
-// Checks if source tag exists
-// Returns TagsValidationResult.noSourceTag
+class MissingSourceTagValidator extends TagsValidator {
+  final String _tagName = "source:";
 
-class UniqueSourceTagValidator extends TagsValidator {
-  final String _tagName = "source";
   @override
   TagsValidationResult? check(String? tags) {
     if (!tags!.contains(_tagName)) {
-      return TagsValidationResult.nonUniqueSourceTag;
+      return TagsValidationResult.missingSourceTag;
     }
-    var tagData = tags.split(",").map((tag) => tag.trim().split(":")).toList();
+
+    return null;
+  }
+}
+
+class UniqueSourceTagValidator extends TagsValidator {
+  final String _tagName = "source";
+
+  @override
+  TagsValidationResult? check(String? tags) {
+    var tagData = tags!.split(",").map((tag) => tag.trim().split(":")).toList();
     var sourceTags = tagData.where((tag) => tag[0] == _tagName).toList();
     if (sourceTags.length > 1) {
       return TagsValidationResult.nonUniqueSourceTag;
@@ -82,11 +87,18 @@ class UniqueSourceTagValidator extends TagsValidator {
   }
 }
 
-// New check ....: TmdbIdTagValidator
-// Predecessor ..: UniqueSourceTagValidator
-// Successor ....: UniqueTmdbIdTagValidator
-// Checks if tmdb_id tag exists
-// Returns TagsValidationResult.noTmdbIdTag
+class MissingTmdbIdTagValidator extends TagsValidator {
+  final String _tagName = "tmdb_id:";
+
+  @override
+  TagsValidationResult? check(String? tags) {
+    if (!tags!.contains(_tagName)) {
+      return TagsValidationResult.missingTMDBIDTag;
+    }
+
+    return null;
+  }
+}
 
 class UniqueTmdbIdTagValidator extends TagsValidator {
   final String _tagName = "tmdb_id";
@@ -123,13 +135,17 @@ class TagValidationService {
   TagValidationService() {
     final emptyValidator = EmptyTagsValidator();
     final formatValidator = FormatTagsValidator();
+    final missingSourceValidator = MissingSourceTagValidator();
     final uniqueSourceValidator = UniqueSourceTagValidator();
+    final missingTmdbIdValidator = MissingTmdbIdTagValidator();
     final uniqueTmdbIdValidator = UniqueTmdbIdTagValidator();
     final genreValidator = ContainsGenreTagValidator();
 
     emptyValidator.setNext(formatValidator);
-    formatValidator.setNext(uniqueSourceValidator);
-    uniqueSourceValidator.setNext(uniqueTmdbIdValidator);
+    formatValidator.setNext(missingSourceValidator);
+    missingSourceValidator.setNext(uniqueSourceValidator);
+    uniqueSourceValidator.setNext(missingTmdbIdValidator);
+    missingTmdbIdValidator.setNext(uniqueTmdbIdValidator);
     uniqueTmdbIdValidator.setNext(genreValidator);
 
     _validationChain = emptyValidator;
