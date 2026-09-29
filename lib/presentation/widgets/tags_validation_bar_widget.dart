@@ -82,7 +82,10 @@ class _TagsValidationBarWidgetState extends State<TagsValidationBarWidget> {
           padding: const EdgeInsets.all(12.0),
           child: Text(
             "${result.label}: ${quantity.toString()}",
-            style: TextStyle(backgroundColor: result.background),
+            style: TextStyle(
+              backgroundColor: result.background,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
       ),

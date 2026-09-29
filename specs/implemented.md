@@ -12,3 +12,4 @@
 | `media006` | Paulo Ortolan  | 17/09/2026       | Validation Service                                                                              |
 | `media007` | Paulo Ortolan  | 18/09/2026       | Filters working                                                                                 |
 | `media008` | Paulo Ortolan  | 23/09/2026       | Tags Validation Bar implementation                                                              |
+|  `bug002`  | Paulo Ortolan  | 29/09/2026       | New Validations                                                                                 |
