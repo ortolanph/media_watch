@@ -9,7 +9,7 @@ enum TagsValidationResult {
   ),
   invalidTagsFormat(
     description: "Tags field has invalid format",
-    label: "INVALID",
+    label: "INVALID FORMAT",
     background: Color(0xFFFFF59D),
     foreground: Colors.yellow,
   ),

@@ -32,8 +32,17 @@ class _TagsValidationBarWidgetState extends State<TagsValidationBarWidget> {
             ),
             _divider(),
             _createTag(
+              TagsValidationResult.missingSourceTag,
+              widget.histogram[TagsValidationResult.missingSourceTag] ?? 0,
+            ),
+            _divider(),
+            _createTag(
               TagsValidationResult.nonUniqueSourceTag,
               widget.histogram[TagsValidationResult.nonUniqueSourceTag] ?? 0,
+            ),
+            _createTag(
+              TagsValidationResult.missingTMDBIDTag,
+              widget.histogram[TagsValidationResult.missingTMDBIDTag] ?? 0,
             ),
             _divider(),
             _createTag(
@@ -72,7 +81,7 @@ class _TagsValidationBarWidgetState extends State<TagsValidationBarWidget> {
         child: Padding(
           padding: const EdgeInsets.all(12.0),
           child: Text(
-            "${result.name}: ${quantity.toString()}",
+            "${result.label}: ${quantity.toString()}",
             style: TextStyle(backgroundColor: result.background),
           ),
         ),
