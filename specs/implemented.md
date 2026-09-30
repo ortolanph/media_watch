@@ -15,4 +15,3 @@
 |   `bug002`    | Paulo Ortolan  | 29/09/2026       | New Validations                                                                                 |
 |  `media009`   | Paulo Ortolan  | 29/09/2026       | Record counter implemented                                                                      |
 | `refactor001` | Paulo Ortolan  | 30/09/2026       | TVShow page refactor                                                                            |
-

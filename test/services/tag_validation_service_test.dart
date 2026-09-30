@@ -12,10 +12,10 @@ void main() {
         String? tags;
 
         // WHEN
-        TagsValidationResult result = tagsValidator.validate(tags);
+        TagValidationResult result = tagsValidator.validate(tags);
 
         // THEN
-        expect(result, TagsValidationResult.emptyTags);
+        expect(result, TagValidationResult.emptyTags);
       });
 
       test('Must result in Empty Tags Validation - empty String', () {
@@ -25,10 +25,10 @@ void main() {
         String? tags = '';
 
         // WHEN
-        TagsValidationResult result = tagsValidator.validate(tags);
+        TagValidationResult result = tagsValidator.validate(tags);
 
         // THEN
-        expect(result, TagsValidationResult.emptyTags);
+        expect(result, TagValidationResult.emptyTags);
       });
 
       test('Must result in FormatTags Validation - single value', () {
@@ -38,10 +38,10 @@ void main() {
         String? tags = "value";
 
         // WHEN
-        TagsValidationResult result = tagsValidator.validate(tags);
+        TagValidationResult result = tagsValidator.validate(tags);
 
         // THEN
-        expect(result, TagsValidationResult.invalidTagsFormat);
+        expect(result, TagValidationResult.invalidTagsFormat);
       });
 
       test(
@@ -53,10 +53,10 @@ void main() {
           String? tags = "value, value";
 
           // WHEN
-          TagsValidationResult result = tagsValidator.validate(tags);
+          TagValidationResult result = tagsValidator.validate(tags);
 
           // THEN
-          expect(result, TagsValidationResult.invalidTagsFormat);
+          expect(result, TagValidationResult.invalidTagsFormat);
         },
       );
 
@@ -67,10 +67,10 @@ void main() {
         String? tags = "key1:value,key2:";
 
         // WHEN
-        TagsValidationResult result = tagsValidator.validate(tags);
+        TagValidationResult result = tagsValidator.validate(tags);
 
         // THEN
-        expect(result, TagsValidationResult.invalidTagsFormat);
+        expect(result, TagValidationResult.invalidTagsFormat);
       });
 
       test('Must result in FormatTags Validation - mixed values', () {
@@ -80,10 +80,10 @@ void main() {
         String? tags = "key:value,";
 
         // WHEN
-        TagsValidationResult result = tagsValidator.validate(tags);
+        TagValidationResult result = tagsValidator.validate(tags);
 
         // THEN
-        expect(result, TagsValidationResult.invalidTagsFormat);
+        expect(result, TagValidationResult.invalidTagsFormat);
       });
 
       test('No source tag', () {
@@ -93,10 +93,10 @@ void main() {
         String? tags = "key:value";
 
         // WHEN
-        TagsValidationResult result = tagsValidator.validate(tags);
+        TagValidationResult result = tagsValidator.validate(tags);
 
         // THEN
-        expect(result, TagsValidationResult.missingSourceTag);
+        expect(result, TagValidationResult.missingSourceTag);
       });
 
       test('Multiple sources tags', () {
@@ -106,10 +106,10 @@ void main() {
         String? tags = "source:source1, source:source2";
 
         // WHEN
-        TagsValidationResult result = tagsValidator.validate(tags);
+        TagValidationResult result = tagsValidator.validate(tags);
 
         // THEN
-        expect(result, TagsValidationResult.nonUniqueSourceTag);
+        expect(result, TagValidationResult.nonUniqueSourceTag);
       });
 
       test('No tmdb_id tag', () {
@@ -119,10 +119,10 @@ void main() {
         String? tags = "key:value";
 
         // WHEN
-        TagsValidationResult result = tagsValidator.validate(tags);
+        TagValidationResult result = tagsValidator.validate(tags);
 
         // THEN
-        expect(result, TagsValidationResult.missingTMDBIDTag);
+        expect(result, TagValidationResult.missingTMDBIDTag);
       });
 
       test('Multiple tmdb_id tags', () {
@@ -132,10 +132,10 @@ void main() {
         String? tags = "tmdb_id:12345, tmdb_id:67890";
 
         // WHEN
-        TagsValidationResult result = tagsValidator.validate(tags);
+        TagValidationResult result = tagsValidator.validate(tags);
 
         // THEN
-        expect(result, TagsValidationResult.nonUniqueTmdbIdTag);
+        expect(result, TagValidationResult.nonUniqueTmdbIdTag);
       });
 
       test('Missing genre tag', () {
@@ -145,10 +145,10 @@ void main() {
         String? tags = "source:12345, tmdb_id:67890";
 
         // WHEN
-        TagsValidationResult result = tagsValidator.validate(tags);
+        TagValidationResult result = tagsValidator.validate(tags);
 
         // THEN
-        expect(result, TagsValidationResult.missingGenreTag);
+        expect(result, TagValidationResult.missingGenreTag);
       });
     });
 
@@ -160,10 +160,10 @@ void main() {
         String? tags;
 
         // WHEN
-        TagsValidationResult result = validationService.checkMovieTags(tags);
+        TagValidationResult result = validationService.checkMovieTags(tags);
 
         // THEN
-        expect(result, TagsValidationResult.emptyTags);
+        expect(result, TagValidationResult.emptyTags);
       });
 
       test('Must result in Empty Tags Validation - empty String', () {
@@ -171,10 +171,10 @@ void main() {
         String? tags = '';
 
         // WHEN
-        TagsValidationResult result = validationService.checkMovieTags(tags);
+        TagValidationResult result = validationService.checkMovieTags(tags);
 
         // THEN
-        expect(result, TagsValidationResult.emptyTags);
+        expect(result, TagValidationResult.emptyTags);
       });
 
       test('Must result in FormatTags Validation - single value', () {
@@ -182,10 +182,10 @@ void main() {
         String? tags = "value";
 
         // WHEN
-        TagsValidationResult result = validationService.checkMovieTags(tags);
+        TagValidationResult result = validationService.checkMovieTags(tags);
 
         // THEN
-        expect(result, TagsValidationResult.invalidTagsFormat);
+        expect(result, TagValidationResult.invalidTagsFormat);
       });
 
       test(
@@ -195,9 +195,9 @@ void main() {
           String? tags = "value, value";
 
           // WHEN
-          TagsValidationResult result = validationService.checkMovieTags(tags);
+          TagValidationResult result = validationService.checkMovieTags(tags);
           // THEN
-          expect(result, TagsValidationResult.invalidTagsFormat);
+          expect(result, TagValidationResult.invalidTagsFormat);
         },
       );
 
@@ -206,10 +206,10 @@ void main() {
         String? tags = "key1:value,key2:";
 
         // WHEN
-        TagsValidationResult result = validationService.checkMovieTags(tags);
+        TagValidationResult result = validationService.checkMovieTags(tags);
 
         // THEN
-        expect(result, TagsValidationResult.invalidTagsFormat);
+        expect(result, TagValidationResult.invalidTagsFormat);
       });
 
       test('Must result in FormatTags Validation - mixed values', () {
@@ -217,10 +217,10 @@ void main() {
         String? tags = "key:value,";
 
         // WHEN
-        TagsValidationResult result = validationService.checkMovieTags(tags);
+        TagValidationResult result = validationService.checkMovieTags(tags);
 
         // THEN
-        expect(result, TagsValidationResult.invalidTagsFormat);
+        expect(result, TagValidationResult.invalidTagsFormat);
       });
 
       test('No source tag', () {
@@ -228,10 +228,10 @@ void main() {
         String? tags = "genre:action, tmdb_id:12255";
 
         // WHEN
-        TagsValidationResult result = validationService.checkMovieTags(tags);
+        TagValidationResult result = validationService.checkMovieTags(tags);
 
         // THEN
-        expect(result, TagsValidationResult.missingSourceTag);
+        expect(result, TagValidationResult.missingSourceTag);
       });
 
       test('Multiple sources tags', () {
@@ -239,10 +239,10 @@ void main() {
         String? tags = "source:source1, source:source2";
 
         // WHEN
-        TagsValidationResult result = validationService.checkMovieTags(tags);
+        TagValidationResult result = validationService.checkMovieTags(tags);
 
         // THEN
-        expect(result, TagsValidationResult.nonUniqueSourceTag);
+        expect(result, TagValidationResult.nonUniqueSourceTag);
       });
 
       test('No tmdb_id tag', () {
@@ -250,10 +250,10 @@ void main() {
         String? tags = "source:any, genre:action";
 
         // WHEN
-        TagsValidationResult result = validationService.checkMovieTags(tags);
+        TagValidationResult result = validationService.checkMovieTags(tags);
 
         // THEN
-        expect(result, TagsValidationResult.missingTMDBIDTag);
+        expect(result, TagValidationResult.missingTMDBIDTag);
       });
 
       test('Multiple tmdb_id tags', () {
@@ -261,10 +261,10 @@ void main() {
         String? tags = "source:mySource, tmdb_id:12345, tmdb_id:67890";
 
         // WHEN
-        TagsValidationResult result = validationService.checkMovieTags(tags);
+        TagValidationResult result = validationService.checkMovieTags(tags);
 
         // THEN
-        expect(result, TagsValidationResult.nonUniqueTmdbIdTag);
+        expect(result, TagValidationResult.nonUniqueTmdbIdTag);
       });
 
       test('Missing genre tag', () {
@@ -272,10 +272,10 @@ void main() {
         String? tags = "source:12345, tmdb_id:67890";
 
         // WHEN
-        TagsValidationResult result = validationService.checkMovieTags(tags);
+        TagValidationResult result = validationService.checkMovieTags(tags);
 
         // THEN
-        expect(result, TagsValidationResult.missingGenreTag);
+        expect(result, TagValidationResult.missingGenreTag);
       });
 
       test('Everything is alright', () {
@@ -284,10 +284,10 @@ void main() {
             "source:12345, genre:some, genre:other, tmdb_id:67890, adaption:external, style:full";
 
         // WHEN
-        TagsValidationResult result = validationService.checkMovieTags(tags);
+        TagValidationResult result = validationService.checkMovieTags(tags);
 
         // THEN
-        expect(result, TagsValidationResult.validTagsField);
+        expect(result, TagValidationResult.validTagsField);
       });
     });
   });

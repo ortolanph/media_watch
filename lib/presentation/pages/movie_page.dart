@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:media_watch/bloc/movies/movies_bloc.dart';
+import 'package:media_watch/bloc/movies/movie_bloc.dart';
 import 'package:media_watch/data/entities/movie.dart';
 import 'package:media_watch/data/entities/validation_result.dart';
 import 'package:media_watch/presentation/views/empty_movie_view.dart';
@@ -9,8 +9,8 @@ import 'package:media_watch/presentation/views/loading_view.dart';
 import 'package:media_watch/presentation/views/movie_view.dart';
 import 'package:media_watch/presentation/widgets/record_counter.dart';
 
-import '../../bloc/movies/movies_event.dart';
-import '../../bloc/movies/movies_state.dart';
+import '../../bloc/movies/movie_event.dart';
+import '../../bloc/movies/movie_state.dart';
 import '../widgets/tags_validation_bar_widget.dart';
 
 class MoviesPage extends StatefulWidget {
@@ -45,6 +45,16 @@ class _MoviesPageState extends State<MoviesPage> {
             },
             tooltip: "Importar arquivo",
             icon: Icon(Icons.upload),
+          ),
+          IconButton(
+            onPressed: () async {
+              await Navigator.pushNamed(context, "/tags");
+              if (context.mounted) {
+                context.read<MovieBloc>().add(MovieLoadingEvent());
+              }
+            },
+            tooltip: "Visualizar Tags",
+            icon: Icon(Icons.label),
           ),
         ],
       ),
@@ -126,18 +136,20 @@ class _MoviesPageState extends State<MoviesPage> {
     );
   }
 
-  Map<TagsValidationResult, int> _emptyHistogram() {
+  Map<TagValidationResult, int> _emptyHistogram() {
     return {
-      TagsValidationResult.emptyTags: 0,
-      TagsValidationResult.invalidTagsFormat: 0,
-      TagsValidationResult.nonUniqueSourceTag: 0,
-      TagsValidationResult.nonUniqueTmdbIdTag: 0,
-      TagsValidationResult.missingGenreTag: 0,
-      TagsValidationResult.validTagsField: 0,
+      TagValidationResult.emptyTags: 0,
+      TagValidationResult.invalidTagsFormat: 0,
+      TagValidationResult.missingSourceTag: 0,
+      TagValidationResult.nonUniqueSourceTag: 0,
+      TagValidationResult.missingTMDBIDTag: 0,
+      TagValidationResult.nonUniqueTmdbIdTag: 0,
+      TagValidationResult.missingGenreTag: 0,
+      TagValidationResult.validTagsField: 0,
     };
   }
 
-  Map<TagsValidationResult, int> _buildHistogram(List<Movie> data) {
+  Map<TagValidationResult, int> _buildHistogram(List<Movie> data) {
     final histogram = _emptyHistogram();
     for (var movie in data) {
       histogram.update(

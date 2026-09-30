@@ -73,8 +73,7 @@ class _TvShowPageState extends State<TvShowPage> {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
                 content: Text(
-                  "Conteúdo de ${state
-                      .showData} copiado para a área de transferência!",
+                  "Conteúdo de ${state.showData} copiado para a área de transferência!",
                 ),
               ),
             );
@@ -98,22 +97,21 @@ class _TvShowPageState extends State<TvShowPage> {
         builder: (context, state) {
           Widget content;
 
-
           if (state is TvShowLoadingState || state is TvShowImportedState) {
             content = LoadingView();
-          }  else  if (state is TvShowLoadedState) {
+          } else if (state is TvShowLoadedState) {
             final query = _searchQuery.toLowerCase();
             filtered = query.isEmpty
                 ? state.tvShows
                 : state.tvShows
-                .where(
-                  (r) =>
-              r.show.toLowerCase().contains(query) ||
-                  r.source.toLowerCase().contains(query) ||
-                  r.yearWatched.toString().contains(query) ||
-                  r.kind.name.toLowerCase().contains(query),
-            )
-                .toList();
+                      .where(
+                        (r) =>
+                            r.show.toLowerCase().contains(query) ||
+                            r.source.toLowerCase().contains(query) ||
+                            r.yearWatched.toString().contains(query) ||
+                            r.kind.name.toLowerCase().contains(query),
+                      )
+                      .toList();
 
             content = (filtered.isEmpty)
                 ? EmptyTvShowView()
@@ -139,12 +137,12 @@ class _TvShowPageState extends State<TvShowPage> {
                           prefixIcon: const Icon(Icons.search),
                           suffixIcon: _searchQuery.isNotEmpty
                               ? IconButton(
-                            icon: const Icon(Icons.clear),
-                            onPressed: () {
-                              _searchController.clear();
-                              setState(() => _searchQuery = '');
-                            },
-                          )
+                                  icon: const Icon(Icons.clear),
+                                  onPressed: () {
+                                    _searchController.clear();
+                                    setState(() => _searchQuery = '');
+                                  },
+                                )
                               : null,
                         ),
                         onChanged: (value) =>

@@ -11,7 +11,7 @@ class Movie with Equatable {
   final bool rewatch;
   final String tags;
   final String watchedDate;
-  final TagsValidationResult validationResult;
+  final TagValidationResult validationResult;
 
   Movie({
     required this.id,

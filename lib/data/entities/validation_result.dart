@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-enum TagsValidationResult {
+enum TagValidationResult {
   emptyTags(
     description: "Tags field is empty",
     label: "EMPTY",
@@ -55,7 +55,7 @@ enum TagsValidationResult {
   final Color? background;
   final Color foreground;
 
-  const TagsValidationResult({
+  const TagValidationResult({
     required this.description,
     required this.label,
     required this.background,

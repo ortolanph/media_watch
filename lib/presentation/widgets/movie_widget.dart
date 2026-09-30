@@ -1,5 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:media_watch/presentation/widgets/star_rating.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 import '../../data/entities/movie.dart';
@@ -22,7 +23,10 @@ class _MovieWidgetState extends State<MovieWidget> {
         color: widget.movie.validationResult.background,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8.0),
-          side: BorderSide(color: widget.movie.validationResult.foreground, width: 4.0),
+          side: BorderSide(
+            color: widget.movie.validationResult.foreground,
+            width: 4.0,
+          ),
         ),
         child: Column(
           mainAxisSize: MainAxisSize.max,
@@ -43,8 +47,12 @@ class _MovieWidgetState extends State<MovieWidget> {
                           Icons.calendar_today_outlined,
                           widget.movie.entryDate,
                         ),
-                        _formatDate(Icons.remove_red_eye, widget.movie.watchedDate),
+                        _formatDate(
+                          Icons.remove_red_eye,
+                          widget.movie.watchedDate,
+                        ),
                         _formatRewatch(widget.movie.rewatch),
+                        StarRating(rating: widget.movie.rating),
                       ],
                     ),
                     Row(children: [_formatTags(widget.movie.tags)]),
@@ -104,9 +112,7 @@ class _MovieWidgetState extends State<MovieWidget> {
   Widget _formatRewatch(bool rewatch) {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 8.0),
-      child: Icon(
-        rewatch ? Icons.thumb_up_alt_outlined : Icons.thumb_down_alt_outlined,
-      ),
+      child: Icon(rewatch ? Icons.visibility : Icons.visibility_off),
     );
   }
 
