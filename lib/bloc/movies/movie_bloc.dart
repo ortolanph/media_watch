@@ -1,9 +1,9 @@
 import 'package:bloc/bloc.dart';
-import 'package:media_watch/bloc/movies/movies_event.dart';
+import 'package:media_watch/bloc/movies/movie_event.dart';
 import 'package:media_watch/data/repository/movie_repository.dart';
 
 import '../../data/entities/movie.dart';
-import 'movies_state.dart';
+import 'movie_state.dart';
 
 class MovieBloc extends Bloc<MovieEvent, MovieState> {
   final MovieRepository _repository;
@@ -19,8 +19,8 @@ class MovieBloc extends Bloc<MovieEvent, MovieState> {
     MovieLoadingEvent event,
     Emitter<MovieState> emit,
   ) async {
-    List<Movie> movies = await _repository.getMovies();
     emit(MovieLoadingState());
+    List<Movie> movies = await _repository.getMovies();
     emit(MovieLoadedState(movies: movies));
   }
 

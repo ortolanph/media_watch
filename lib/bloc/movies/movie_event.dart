@@ -5,12 +5,7 @@ abstract class MovieEvent extends Equatable {
   List<Object?> get props => [];
 }
 
-class MovieLoadingEvent extends MovieEvent {
-  MovieLoadingEvent();
-
-  @override
-  List<Object?> get props => [];
-}
+class MovieLoadingEvent extends MovieEvent {}
 
 class MovieImportDataEvent extends MovieEvent {
   MovieImportDataEvent();

@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:media_watch/data/entities/validation_result.dart';
+import 'package:media_watch/main.dart';
 
 class TagsValidationBarWidget extends StatefulWidget {
   const TagsValidationBarWidget({super.key, required this.histogram});
 
-  final Map<TagsValidationResult, int> histogram;
+  final Map<TagValidationResult, int> histogram;
 
   @override
   State<TagsValidationBarWidget> createState() =>
@@ -22,42 +24,67 @@ class _TagsValidationBarWidgetState extends State<TagsValidationBarWidget> {
           mainAxisSize: MainAxisSize.min,
           children: [
             _createTag(
-              TagsValidationResult.emptyTags,
-              widget.histogram[TagsValidationResult.emptyTags] ?? 0,
+              TagValidationResult.emptyTags,
+              widget.histogram[TagValidationResult.emptyTags] ?? 0,
             ),
             _divider(),
             _createTag(
-              TagsValidationResult.invalidTagsFormat,
-              widget.histogram[TagsValidationResult.invalidTagsFormat] ?? 0,
+              TagValidationResult.invalidTagsFormat,
+              widget.histogram[TagValidationResult.invalidTagsFormat] ?? 0,
             ),
             _divider(),
             _createTag(
-              TagsValidationResult.missingSourceTag,
-              widget.histogram[TagsValidationResult.missingSourceTag] ?? 0,
+              TagValidationResult.missingSourceTag,
+              widget.histogram[TagValidationResult.missingSourceTag] ?? 0,
             ),
             _divider(),
             _createTag(
-              TagsValidationResult.nonUniqueSourceTag,
-              widget.histogram[TagsValidationResult.nonUniqueSourceTag] ?? 0,
+              TagValidationResult.nonUniqueSourceTag,
+              widget.histogram[TagValidationResult.nonUniqueSourceTag] ?? 0,
             ),
             _createTag(
-              TagsValidationResult.missingTMDBIDTag,
-              widget.histogram[TagsValidationResult.missingTMDBIDTag] ?? 0,
-            ),
-            _divider(),
-            _createTag(
-              TagsValidationResult.nonUniqueTmdbIdTag,
-              widget.histogram[TagsValidationResult.nonUniqueTmdbIdTag] ?? 0,
+              TagValidationResult.missingTMDBIDTag,
+              widget.histogram[TagValidationResult.missingTMDBIDTag] ?? 0,
             ),
             _divider(),
             _createTag(
-              TagsValidationResult.missingGenreTag,
-              widget.histogram[TagsValidationResult.missingGenreTag] ?? 0,
+              TagValidationResult.nonUniqueTmdbIdTag,
+              widget.histogram[TagValidationResult.nonUniqueTmdbIdTag] ?? 0,
             ),
             _divider(),
             _createTag(
-              TagsValidationResult.validTagsField,
-              widget.histogram[TagsValidationResult.validTagsField] ?? 0,
+              TagValidationResult.missingGenreTag,
+              widget.histogram[TagValidationResult.missingGenreTag] ?? 0,
+            ),
+            _divider(),
+            _createTag(
+              TagValidationResult.validTagsField,
+              widget.histogram[TagValidationResult.validTagsField] ?? 0,
+            ),
+            _divider(),
+            IconButton(
+              onPressed: () {
+                String tableData =
+                    "label,description,${dateFormat.format(DateTime.now())}\n";
+
+                for (var histData in widget.histogram.entries) {
+                  tableData =
+                      "$tableData${histData.key.label},$tableData${histData.key.description},${histData.value}\n";
+                }
+
+                var clipData = ClipboardData(text: tableData);
+                Clipboard.setData(clipData);
+
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text(
+                      "Dados de validação de tags copiados para a Área de Transferência!",
+                    ),
+                  ),
+                );
+              },
+              tooltip: "Copiar para Clipboard",
+              icon: Icon(Icons.copy),
             ),
           ],
         ),
@@ -69,7 +96,7 @@ class _TagsValidationBarWidgetState extends State<TagsValidationBarWidget> {
     return VerticalDivider(width: 10, thickness: 2, color: Colors.black);
   }
 
-  Widget _createTag(TagsValidationResult result, int? quantity) {
+  Widget _createTag(TagValidationResult result, int? quantity) {
     return Padding(
       padding: EdgeInsets.symmetric(vertical: 2, horizontal: 4),
       child: Container(
