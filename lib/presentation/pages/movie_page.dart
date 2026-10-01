@@ -8,6 +8,7 @@ import 'package:media_watch/presentation/views/error_view.dart';
 import 'package:media_watch/presentation/views/loading_view.dart';
 import 'package:media_watch/presentation/views/movie_view.dart';
 import 'package:media_watch/presentation/widgets/record_counter.dart';
+import 'package:media_watch/presentation/widgets/toggled_tags_validation_bar_widget.dart';
 
 import '../../bloc/movies/movie_event.dart';
 import '../../bloc/movies/movie_state.dart';
@@ -99,6 +100,7 @@ class _MoviesPageState extends State<MoviesPage> {
           return Column(
             children: [
               TagsValidationBarWidget(histogram: histogram),
+              ToggledTagsValidationBarWidget(histogram: histogram),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Row(
