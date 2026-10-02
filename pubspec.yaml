@@ -32,6 +32,7 @@ dependencies:
   pdf: ^3.11.3
 
   web: any
+  mustache_template: ^2.0.6
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -42,6 +43,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
+    - assets/templates/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

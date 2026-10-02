@@ -1,0 +1,21 @@
+# genre
+
+* action
+* western
+* adventure
+* comedy
+* drama
+* horror
+* thriller
+* musical
+* sci-fi
+* war
+* fantasy
+* romance
+* mockumentary
+* crime
+* biography
+* historical
+* family
+* sports
+* documentary
