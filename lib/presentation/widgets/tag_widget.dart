@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:media_watch/data/enums/report_template_names.dart';
+import 'package:media_watch/services/template_service.dart';
 
 import '../../data/entities/tag_data.dart';
 
 class TagWidget extends StatelessWidget {
-  const TagWidget({super.key, required this.tagData});
+  TagWidget({super.key, required this.tagData});
 
   final TagData tagData;
+  final TemplateService _templateService = TemplateService();
 
   @override
   Widget build(BuildContext context) {
@@ -23,15 +26,18 @@ class TagWidget extends StatelessWidget {
               ),
               subtitle: _formatValues(tagData.values),
               trailing: IconButton(
-                onPressed: () {
-                  String document = "# ${tagData.label}\n\n";
+                onPressed: () async {
+                  var templateFile = ReportTemplateNames.tag_report.prefix;
 
-                  for (var value in tagData.values) {
-                    document = "$document * $value\n";
-                  }
+                  Map<String, Object> data = {
+                    'label': tagData.label,
+                    'values': tagData.values.toList(),
+                  };
 
-                  ClipboardData data = ClipboardData(text: document);
-                  Clipboard.setData(data);
+                  ClipboardData clipData = ClipboardData(
+                    text: await _templateService.render(templateFile, data),
+                  );
+                  Clipboard.setData(clipData);
 
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(

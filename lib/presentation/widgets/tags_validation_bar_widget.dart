@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:media_watch/data/entities/validation_result.dart';
+import 'package:media_watch/data/enums/report_template_names.dart';
 import 'package:media_watch/main.dart';
+import 'package:media_watch/services/template_service.dart';
 
 class TagsValidationBarWidget extends StatefulWidget {
   const TagsValidationBarWidget({super.key, required this.histogram});
@@ -14,6 +16,8 @@ class TagsValidationBarWidget extends StatefulWidget {
 }
 
 class _TagsValidationBarWidgetState extends State<TagsValidationBarWidget> {
+  final TemplateService _templateService = TemplateService();
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -63,16 +67,24 @@ class _TagsValidationBarWidgetState extends State<TagsValidationBarWidget> {
             ),
             _divider(),
             IconButton(
-              onPressed: () {
-                String tableData =
-                    "label,description,${dateFormat.format(DateTime.now())}\n";
+              onPressed: () async {
+                var templateFile = ReportTemplateNames.tag_validation.prefix;
+                Map<String, Object> data = {
+                  'timestamp': dateFormat.format(DateTime.now()).toString(),
+                  'validations': widget.histogram.entries
+                      .map(
+                        (h) => {
+                          'label': h.key.label,
+                          'description': h.key.description,
+                          'quantity': h.value,
+                        },
+                      )
+                      .toList(),
+                };
 
-                for (var histData in widget.histogram.entries) {
-                  tableData =
-                      "$tableData${histData.key.label},$tableData${histData.key.description},${histData.value}\n";
-                }
-
-                var clipData = ClipboardData(text: tableData);
+                var clipData = ClipboardData(
+                  text: await _templateService.render(templateFile, data),
+                );
                 Clipboard.setData(clipData);
 
                 ScaffoldMessenger.of(context).showSnackBar(

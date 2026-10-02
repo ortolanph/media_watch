@@ -1,0 +1,9 @@
+label,description,20260210_114100
+EMPTY,Tags field is empty,221
+INVALID FORMAT,Tags field has invalid format,126
+NO SOURCE,`source` tag is missing,0
+SOURCE NOT UNIQUE,Source tag must be unique,0
+NO TMDB_ID,`tmdb_id` tag is missing,101
+TMDB_ID NOT UNIQUE,TMDB ID tag must be unique,0
+NO GENRE,No genre tag found,0
+VALID,Tags are valid,626
