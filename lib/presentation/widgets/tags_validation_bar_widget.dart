@@ -68,7 +68,7 @@ class _TagsValidationBarWidgetState extends State<TagsValidationBarWidget> {
             _divider(),
             IconButton(
               onPressed: () async {
-                var templateFile = ReportTemplateNames.tag_validation.prefix;
+                var templateFile = ReportTemplateNames.tagValidation.prefix;
                 Map<String, Object> data = {
                   'timestamp': dateFormat.format(DateTime.now()).toString(),
                   'validations': widget.histogram.entries
@@ -85,15 +85,17 @@ class _TagsValidationBarWidgetState extends State<TagsValidationBarWidget> {
                 var clipData = ClipboardData(
                   text: await _templateService.render(templateFile, data),
                 );
-                Clipboard.setData(clipData);
+                await Clipboard.setData(clipData);
 
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
-                    content: Text(
-                      "Dados de validação de tags copiados para a Área de Transferência!",
+                if (context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text(
+                        "Dados de validação de tags copiados para a Área de Transferência!",
+                      ),
                     ),
-                  ),
-                );
+                  );
+                }
               },
               tooltip: "Copiar para Clipboard",
               icon: Icon(Icons.copy),

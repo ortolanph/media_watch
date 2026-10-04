@@ -27,25 +27,28 @@ class TagWidget extends StatelessWidget {
               subtitle: _formatValues(tagData.values),
               trailing: IconButton(
                 onPressed: () async {
-                  var templateFile = ReportTemplateNames.tag_report.prefix;
+                  var templateFile = ReportTemplateNames.tagReport.prefix;
 
                   Map<String, Object> data = {
                     'label': tagData.label,
                     'values': tagData.values.toList(),
                   };
 
-                  ClipboardData clipData = ClipboardData(
-                    text: await _templateService.render(templateFile, data),
+                  final text = await _templateService.render(
+                    templateFile,
+                    data,
                   );
-                  Clipboard.setData(clipData);
+                  await Clipboard.setData(ClipboardData(text: text));
 
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(
-                      content: Text(
-                        "Dados da tag ${tagData.label} copiados para a Área de Transferência!",
+                  if (context.mounted) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text(
+                          "Dados da tag ${tagData.label} copiados para a Área de Transferência!",
+                        ),
                       ),
-                    ),
-                  );
+                    );
+                  }
                 },
                 icon: Icon(Icons.copy),
               ),
