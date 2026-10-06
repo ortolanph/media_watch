@@ -26,83 +26,54 @@ class _TagsValidationBarWidgetState extends State<TagsValidationBarWidget> {
         scrollDirection: Axis.horizontal,
         child: Row(
           mainAxisSize: MainAxisSize.min,
-          children: [
-            _createTag(
-              TagValidationResult.emptyTags,
-              widget.histogram[TagValidationResult.emptyTags] ?? 0,
-            ),
-            _divider(),
-            _createTag(
-              TagValidationResult.invalidTagsFormat,
-              widget.histogram[TagValidationResult.invalidTagsFormat] ?? 0,
-            ),
-            _divider(),
-            _createTag(
-              TagValidationResult.missingSourceTag,
-              widget.histogram[TagValidationResult.missingSourceTag] ?? 0,
-            ),
-            _divider(),
-            _createTag(
-              TagValidationResult.nonUniqueSourceTag,
-              widget.histogram[TagValidationResult.nonUniqueSourceTag] ?? 0,
-            ),
-            _createTag(
-              TagValidationResult.missingTMDBIDTag,
-              widget.histogram[TagValidationResult.missingTMDBIDTag] ?? 0,
-            ),
-            _divider(),
-            _createTag(
-              TagValidationResult.nonUniqueTmdbIdTag,
-              widget.histogram[TagValidationResult.nonUniqueTmdbIdTag] ?? 0,
-            ),
-            _divider(),
-            _createTag(
-              TagValidationResult.missingGenreTag,
-              widget.histogram[TagValidationResult.missingGenreTag] ?? 0,
-            ),
-            _divider(),
-            _createTag(
-              TagValidationResult.validTagsField,
-              widget.histogram[TagValidationResult.validTagsField] ?? 0,
-            ),
-            _divider(),
-            IconButton(
-              onPressed: () async {
-                var templateFile = ReportTemplateNames.tagValidation.prefix;
-                Map<String, Object> data = {
-                  'timestamp': dateFormat.format(DateTime.now()).toString(),
-                  'validations': widget.histogram.entries
-                      .map(
-                        (h) => {
-                          'label': h.key.label,
-                          'description': h.key.description,
-                          'quantity': h.value,
-                        },
-                      )
-                      .toList(),
-                };
-
-                var clipData = ClipboardData(
-                  text: await _templateService.render(templateFile, data),
-                );
-                await Clipboard.setData(clipData);
-
-                if (context.mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(
-                      content: Text(
-                        "Dados de validação de tags copiados para a Área de Transferência!",
-                      ),
-                    ),
-                  );
-                }
-              },
-              tooltip: "Copiar para Clipboard",
-              icon: Icon(Icons.copy),
-            ),
-          ],
+          children:
+              TagValidationResult.values
+                  .map(
+                    (element) =>
+                        _createTag(element, widget.histogram[element] ?? 0),
+                  )
+                  .toList()
+                ..add(_divider())
+                ..add(_createCopyButton(context)),
         ),
       ),
+    );
+  }
+
+  IconButton _createCopyButton(BuildContext context) {
+    return IconButton(
+      onPressed: () async {
+        var templateFile = ReportTemplateNames.tagValidation.prefix;
+        Map<String, Object> data = {
+          'timestamp': dateFormat.format(DateTime.now()).toString(),
+          'validations': widget.histogram.entries
+              .map(
+                (h) => {
+                  'label': h.key.label,
+                  'description': h.key.description,
+                  'quantity': h.value,
+                },
+              )
+              .toList(),
+        };
+
+        var clipData = ClipboardData(
+          text: await _templateService.render(templateFile, data),
+        );
+        await Clipboard.setData(clipData);
+
+        if (context.mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(
+                "Dados de validação de tags copiados para a Área de Transferência!",
+              ),
+            ),
+          );
+        }
+      },
+      tooltip: "Copiar para Clipboard",
+      icon: Icon(Icons.copy),
     );
   }
 
